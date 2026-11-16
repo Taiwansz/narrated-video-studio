@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narrated-video-studio"
+version = "0.1.0"
+description = "Reusable agent skill and deterministic CLI pipeline for generating 1080p narrated explainer videos with Edge-TTS WordBoundary sync and HyperFrames."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "edge-tts>=7.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pillow>=10.0.0",
+]
+
+[project.scripts]
+narrated-video = "scripts.narrated_video_cli:main"
+
+[tool.setuptools]
+packages = ["scripts"]

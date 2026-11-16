@@ -1,0 +1,77 @@
+{
+  "title": "Ciclo de Vida da Banana (Musa spp.)",
+  "language": "pt-BR",
+  "voice": "pt-BR-AntonioNeural",
+  "total_duration_sec": 60.0,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "slot_pad_sec": 0.15,
+  "target_lufs": -17.0,
+  "ambient_lufs": -24.0,
+  "palette": {
+    "ground": "#0B0D0A",
+    "ink": "#F3EFE2",
+    "ink_secondary": "#C7C1B0",
+    "accent": "#E2B43B",
+    "secondary": "#3B6E47",
+    "secondary_readable": "#7AC289"
+  },
+  "scenes": [
+    {
+      "id": "scene-01-rizoma",
+      "composition_id": "scene-01",
+      "title": "A Estrutura Oculta",
+      "kicker": "ESTAGIO 01 / 05 // SUBSOLO",
+      "subtitle": "Musa spp. - Herbacea Gigante",
+      "image": "01_rizoma_broto.png",
+      "duration_sec": 12.0,
+      "keywords": ["erva", "rizoma", "broto", "espadim", "pseudocaule"],
+      "text": "A bananeira não é uma árvore; é a maior erva do planeta. Sob o solo, seu caule real é um rizoma subterrâneo que dispara o broto espadim e ergue um pseudocaule de folhas sobrepostas."
+    },
+    {
+      "id": "scene-02-floracao",
+      "composition_id": "scene-02",
+      "title": "O Despertar do Mangara",
+      "kicker": "ESTAGIO 02 / 05 // FLORACAO",
+      "subtitle": "Diferenciacao do meristema apical",
+      "image": "02_mangara_floracao.png",
+      "duration_sec": 12.0,
+      "keywords": ["pseudocaule", "mangará,", "brácteas"],
+      "text": "Na maturidade, ocorre a diferenciação floral. O pendão atravessa o pseudocaule e irrompe como o mangará, o coração arroxeado cujas brácteas revelam flores femininas e masculinas."
+    },
+    {
+      "id": "scene-03-geotropismo",
+      "composition_id": "scene-03",
+      "title": "Contra a Forca da Gravidade",
+      "kicker": "ESTAGIO 03 / 05 // MORFOGENESE",
+      "subtitle": "Partenocarpia triploide e curvatura por auxina",
+      "image": "03_cacho_geotropismo.png",
+      "duration_sec": 12.0,
+      "keywords": ["partenocarpia.", "geotropismo", "negativo,"],
+      "text": "Sem sementes nem polinização, os frutos nascem por partenocarpia. Embora o cacho penda pelo próprio peso, cada banana faz geotropismo negativo, curvando-se para o alto."
+    },
+    {
+      "id": "scene-04-climaterio",
+      "composition_id": "scene-04",
+      "title": "O Gatilho do Etileno (C2H4)",
+      "kicker": "ESTAGIO 04 / 05 // CLIMATERIO",
+      "subtitle": "Conversao enzimatica de amido em acucares",
+      "image": "04_maturacao_climaterica.png",
+      "duration_sec": 12.0,
+      "keywords": ["climatérico,", "etileno.", "amido", "açúcares"],
+      "text": "Como fruto climatérico, a banana acelera a respiração e libera o gás etileno. Esse hormônio ativa enzimas que transformam amido em açúcares doces, amaciam a polpa e douram a casca."
+    },
+    {
+      "id": "scene-05-sucessao",
+      "composition_id": "scene-05",
+      "title": "Morte Aparente, Ciclo Continuo",
+      "kicker": "ESTAGIO 05 / 05 // SUCESSAO",
+      "subtitle": "Translocacao do rizoma para o perfilho sucessor",
+      "image": "05_sucessao_perfilho.png",
+      "duration_sec": 12.0,
+      "keywords": ["pseudocaule", "senescência.", "rizoma", "perfilho", "sucessão"],
+      "text": "Cada pseudocaule frutifica uma única vez e entra em senescência. Ao cortá-lo após a colheita, o rizoma transfere energia ao perfilho filho, garantindo sucessão contínua."
+    }
+  ]
+}

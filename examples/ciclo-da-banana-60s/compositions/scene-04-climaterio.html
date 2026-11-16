@@ -1,0 +1,315 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #0B0D0A;
+      color: #F3EFE2;
+      font-family: "Inter", sans-serif;
+    }
+
+    .s4-stage-plate {
+      position: absolute;
+      left: 792px;
+      top: 96px;
+      width: 1032px;
+      height: 576px;
+      overflow: hidden;
+      border-bottom: 3px solid #3B6E47;
+      z-index: 4;
+    }
+
+    .s4-plate-inner {
+      position: absolute;
+      inset: 0;
+      width: 1032px;
+      height: 576px;
+      transform-origin: 50% 50%;
+    }
+
+    .s4-plate-img {
+      width: 1032px;
+      height: 576px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .s4-plate-fade {
+      position: absolute;
+      left: 792px;
+      top: 96px;
+      width: 220px;
+      height: 576px;
+      z-index: 5;
+      background: linear-gradient(90deg, #0B0D0A 0%, rgba(11, 13, 10, 0) 100%);
+    }
+
+    .s4-left {
+      position: absolute;
+      left: 192px;
+      top: 108px;
+      width: 610px;
+      z-index: 12;
+    }
+
+    .s4-kicker {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #E2B43B;
+      border-left: 4px solid #E2B43B;
+      padding-left: 16px;
+      margin-bottom: 16px;
+    }
+
+    .s4-title {
+      font-family: "Playfair Display", serif;
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1.03;
+      letter-spacing: -0.025em;
+      color: #F3EFE2;
+      margin-bottom: 24px;
+    }
+
+    .s4-chart-col {
+      width: 610px;
+      height: 312px;
+      background: #121610;
+      border: 1px solid rgba(59, 110, 71, 0.65);
+      padding: 18px 22px;
+    }
+
+    .s4-chart-head {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 600;
+      color: #E2B43B;
+      margin-bottom: 10px;
+    }
+
+    .s4-gauge-strip {
+      position: absolute;
+      left: 840px;
+      top: 688px;
+      width: 888px;
+      height: 112px;
+      display: flex;
+      gap: 36px;
+      z-index: 12;
+    }
+
+    .s4-gauge-card {
+      flex: 1;
+      background: #121610;
+      border: 1px solid rgba(226, 180, 59, 0.4);
+      padding: 16px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .s4-gauge-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .s4-gauge-name {
+      font-family: "Inter", sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #F3EFE2;
+    }
+
+    .s4-gauge-val {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      width: 90px;
+      text-align: right;
+    }
+
+    .s4-gauge-val--starch {
+      color: #7AC289;
+    }
+
+    .s4-gauge-val--sugar {
+      color: #E2B43B;
+    }
+
+    .s4-track {
+      width: 100%;
+      height: 18px;
+      background: #1E241C;
+      overflow: hidden;
+    }
+
+    .s4-bar {
+      width: 100%;
+      height: 100%;
+      transform-origin: left center;
+    }
+
+    .s4-bar--starch {
+      background: #3B6E47;
+    }
+
+    .s4-bar--sugar {
+      background: #E2B43B;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene-04" data-width="1920" data-height="1080">
+    <div id="s4-stage-plate" class="s4-stage-plate" data-layout-allow-overflow>
+      <div id="s4-plate-inner" class="s4-plate-inner">
+        <img
+          id="s4-plate-img"
+          class="s4-plate-img"
+          src="assets/04_maturacao_climaterica.png"
+          alt="Transicao de bananas verdes para bananas maduras douradas"
+        />
+      </div>
+    </div>
+    <div class="s4-plate-fade" data-layout-ignore></div>
+
+    <div id="s4-left" class="s4-left">
+      <div id="s4-kicker" class="s4-kicker">ESTÁGIO 04 / 05 // CLIMATÉRIO</div>
+      <h1 id="s4-title" class="s4-title">O Gatilho do Etileno (C2H4)</h1>
+
+      <div class="s4-chart-col">
+        <div class="s4-chart-head">RESPIRAÇÃO E PICO CLIMATÉRICO</div>
+        <svg viewBox="0 0 564 226" width="564" height="226" xmlns="http://www.w3.org/2000/svg">
+          <line x1="20" y1="194" x2="544" y2="194" stroke="#C7C1B0" stroke-width="2" />
+          <line x1="20" y1="22" x2="20" y2="194" stroke="#C7C1B0" stroke-width="2" />
+
+          <path
+            id="s4-c2h4-curve"
+            d="M 24 184 C 125 184, 185 178, 240 130 C 276 96, 302 38, 336 38 C 382 38, 434 118, 536 154"
+            fill="none"
+            stroke="#E2B43B"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-dasharray="680"
+            stroke-dashoffset="680"
+          />
+
+          <circle id="s4-peak-dot" cx="336" cy="38" r="11" fill="#E2B43B" />
+          <text
+            id="s4-peak-lbl"
+            x="362"
+            y="44"
+            fill="#F3EFE2"
+            font-family="JetBrains Mono, monospace"
+            font-size="28"
+            font-weight="600"
+          >
+            PICO C2H4
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <div id="s4-gauge-strip" class="s4-gauge-strip">
+      <div class="s4-gauge-card">
+        <div class="s4-gauge-meta">
+          <span class="s4-gauge-name">Amido Insolúvel</span>
+          <span id="s4-starch-val" class="s4-gauge-val s4-gauge-val--starch">22%</span>
+        </div>
+        <div class="s4-track">
+          <div id="s4-starch-bar" class="s4-bar s4-bar--starch"></div>
+        </div>
+      </div>
+
+      <div class="s4-gauge-card">
+        <div class="s4-gauge-meta">
+          <span class="s4-gauge-name">Açúcares Solúveis</span>
+          <span id="s4-sugar-val" class="s4-gauge-val s4-gauge-val--sugar">1%</span>
+        </div>
+        <div class="s4-track">
+          <div id="s4-sugar-bar" class="s4-bar s4-bar--sugar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const SCENE_DURATION = 12;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo(
+        "#s4-plate-inner",
+        { scale: 1.03, x: 24 },
+        { scale: 1.1, x: -24, duration: SCENE_DURATION - 0.1, ease: "power2.inOut" },
+        0,
+      );
+
+      tl.fromTo(
+        "#s4-title",
+        { opacity: 0, clipPath: "inset(0% 100% 0% 0%)" },
+        { opacity: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out" },
+        0.1,
+      );
+
+      tl.fromTo(
+        "#s4-c2h4-curve",
+        { strokeDashoffset: 680 },
+        { strokeDashoffset: 0, duration: 4.0, ease: "power2.inOut" },
+        1.8,
+      );
+
+      tl.fromTo(
+        "#s4-peak-dot",
+        { scale: 0, transformOrigin: "50% 50%" },
+        { scale: 1, duration: 0.3, ease: "back.out(1.4)" },
+        3.9,
+      );
+
+      tl.fromTo("#s4-peak-lbl", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 4.05);
+
+      tl.fromTo(
+        "#s4-starch-bar",
+        { scaleX: 0.92 },
+        { scaleX: 0.08, duration: 4.5, ease: "power2.inOut" },
+        6.1,
+      );
+      tl.fromTo(
+        "#s4-sugar-bar",
+        { scaleX: 0.06 },
+        { scaleX: 0.9, duration: 4.5, ease: "power2.inOut" },
+        6.1,
+      );
+
+      const chem = { starch: 22, sugar: 1 };
+      const starchEl = document.getElementById("s4-starch-val");
+      const sugarEl = document.getElementById("s4-sugar-val");
+
+      tl.fromTo(
+        chem,
+        { starch: 22, sugar: 1 },
+        {
+          starch: 1,
+          sugar: 20,
+          duration: 4.5,
+          ease: "power2.inOut",
+          onUpdate: function () {
+            if (starchEl) starchEl.textContent = Math.round(chem.starch) + "%";
+            if (sugarEl) sugarEl.textContent = Math.round(chem.sugar) + "%";
+          },
+        },
+        6.1,
+      );
+
+      tl.to("#root", { opacity: 0.86, duration: 0.16, ease: "power3.in" }, SCENE_DURATION - 0.18);
+
+      tl.to({}, { duration: SCENE_DURATION }, 0);
+      window.__timelines["scene-04"] = tl;
+    })();
+  </script>
+</template>

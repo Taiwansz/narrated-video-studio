@@ -1,0 +1,384 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #0B0D0A;
+      color: #F3EFE2;
+      font-family: "Inter", sans-serif;
+    }
+
+    .s1-bg-wrap {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .s1-plate-inner {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      transform-origin: 50% 50%;
+    }
+
+    .s1-plate-img {
+      width: 1920px;
+      height: 1080px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .s1-scrim-left {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        90deg,
+        rgba(11, 13, 10, 0.94) 0%,
+        rgba(11, 13, 10, 0.8) 42%,
+        rgba(11, 13, 10, 0.25) 70%,
+        rgba(11, 13, 10, 0.58) 100%
+      );
+    }
+
+    .s1-scrim-bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 300px;
+      z-index: 3;
+      background: linear-gradient(0deg, rgba(11, 13, 10, 0.95) 0%, rgba(11, 13, 10, 0) 100%);
+    }
+
+    .s1-editorial {
+      position: absolute;
+      left: 192px;
+      top: 118px;
+      width: 720px;
+      z-index: 10;
+    }
+
+    .s1-kicker {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #E2B43B;
+      border-left: 4px solid #E2B43B;
+      padding-left: 18px;
+      margin-bottom: 22px;
+    }
+
+    .s1-title {
+      font-family: "Playfair Display", serif;
+      font-size: 84px;
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      color: #F3EFE2;
+      margin-bottom: 12px;
+    }
+
+    .s1-binomial {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      font-weight: 700;
+      font-style: italic;
+      color: #C7C1B0;
+      margin-bottom: 26px;
+    }
+
+    .s1-rule {
+      width: 520px;
+      height: 3px;
+      background: #3B6E47;
+      transform-origin: left center;
+      margin-bottom: 34px;
+    }
+
+    .s1-notes {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .s1-note-card {
+      background: rgba(11, 13, 10, 0.84);
+      border-left: 3px solid #E2B43B;
+      padding: 18px 24px;
+    }
+
+    .s1-note-card--leaf {
+      border-left-color: #3B6E47;
+    }
+
+    .s1-note-title {
+      font-family: "Inter", sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: #E2B43B;
+      margin-bottom: 6px;
+    }
+
+    .s1-note-card--leaf .s1-note-title {
+      color: #7AC289;
+    }
+
+    .s1-note-desc {
+      font-family: "Inter", sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.32;
+      color: #F3EFE2;
+    }
+
+    .s1-telemetry {
+      position: absolute;
+      left: 1148px;
+      top: 130px;
+      width: 580px;
+      height: 620px;
+      z-index: 10;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene-01" data-width="1920" data-height="1080">
+    <div id="s1-bg-wrap" class="s1-bg-wrap" data-layout-allow-overflow>
+      <div id="s1-plate-inner" class="s1-plate-inner">
+        <img
+          id="s1-plate-img"
+          class="s1-plate-img"
+          src="assets/01_rizoma_broto.png"
+          alt="Corte transversal do rizoma subterraneo e broto espadim de Musa spp."
+        />
+      </div>
+    </div>
+
+    <div class="s1-scrim-left" data-layout-ignore></div>
+    <div class="s1-scrim-bottom" data-layout-ignore></div>
+
+    <div id="s1-editorial" class="s1-editorial">
+      <div id="s1-kicker" class="s1-kicker">ESTÁGIO 01 / 05 // SUBSOLO</div>
+      <h1 id="s1-title" class="s1-title">A Estrutura Oculta</h1>
+      <div id="s1-binomial" class="s1-binomial">Musa spp. — Herbácea Gigante</div>
+      <div id="s1-rule" class="s1-rule"></div>
+
+      <div class="s1-notes">
+        <div id="s1-note-1-clip" class="clip" data-start="6.1" data-duration="5.9">
+          <div id="s1-note-1" class="s1-note-card">
+            <div class="s1-note-title">Rizoma Subterrâneo</div>
+            <div class="s1-note-desc">Caule verdadeiro rico em amido e gemas laterais</div>
+          </div>
+        </div>
+
+        <div id="s1-note-2-clip" class="clip" data-start="8.9" data-duration="3.1">
+          <div id="s1-note-2" class="s1-note-card s1-note-card--leaf">
+            <div class="s1-note-title">Broto Espadim e Pseudocaule</div>
+            <div class="s1-note-desc">Bainhas foliares sobrepostas sem tronco lenhoso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="s1-telemetry" class="s1-telemetry">
+      <svg viewBox="0 0 580 620" width="580" height="620" xmlns="http://www.w3.org/2000/svg">
+        <rect
+          x="10"
+          y="16"
+          width="560"
+          height="588"
+          fill="rgba(11,13,10,0.74)"
+          stroke="rgba(59,110,71,0.75)"
+          stroke-width="2"
+        />
+
+        <text
+          x="36"
+          y="58"
+          fill="#E2B43B"
+          font-family="JetBrains Mono, monospace"
+          font-size="28"
+          font-weight="600"
+        >
+          PERFIL ESTRATIGRÁFICO
+        </text>
+
+        <line
+          id="s1-axis-vert"
+          x1="96"
+          y1="82"
+          x2="96"
+          y2="544"
+          stroke="#C7C1B0"
+          stroke-width="3"
+          stroke-dasharray="470"
+          stroke-dashoffset="470"
+        />
+
+        <line
+          id="s1-soil-line"
+          x1="56"
+          y1="330"
+          x2="534"
+          y2="330"
+          stroke="#E2B43B"
+          stroke-width="3"
+          stroke-dasharray="480"
+          stroke-dashoffset="480"
+        />
+
+        <text
+          id="s1-lbl-soil"
+          x="320"
+          y="312"
+          fill="#E2B43B"
+          font-family="JetBrains Mono, monospace"
+          font-size="28"
+          font-weight="600"
+        >
+          0.0 m // SOLO
+        </text>
+
+        <path
+          id="s1-growth-curve"
+          d="M 184 470 C 234 440, 285 395, 315 270 C 335 185, 355 130, 375 94"
+          fill="none"
+          stroke="#7AC289"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-dasharray="480"
+          stroke-dashoffset="480"
+        />
+
+        <circle id="s1-node-rhizome" cx="184" cy="470" r="14" fill="#E2B43B" />
+        <circle id="s1-node-sprout" cx="375" cy="94" r="12" fill="#7AC289" />
+
+        <text
+          id="s1-lbl-rhizome"
+          x="128"
+          y="534"
+          fill="#F3EFE2"
+          font-family="JetBrains Mono, monospace"
+          font-size="28"
+          font-weight="500"
+        >
+          -0.4 m RIZOMA MATRIZ
+        </text>
+
+        <text
+          id="s1-lbl-sprout"
+          x="128"
+          y="108"
+          fill="#7AC289"
+          font-family="JetBrains Mono, monospace"
+          font-size="28"
+          font-weight="600"
+        >
+          BROTO ESPADIM
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const SCENE_DURATION = 12;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Scale >= 1.10 crops out the outer paper margin cleanly at all times
+      tl.fromTo(
+        "#s1-plate-inner",
+        { scale: 1.10, x: 0, y: 0 },
+        { scale: 1.18, x: -16, y: -18, duration: SCENE_DURATION - 0.1, ease: "power2.inOut" },
+        0,
+      );
+
+      tl.fromTo(
+        "#s1-title",
+        { opacity: 0.72, filter: "blur(5px)" },
+        { opacity: 1, filter: "blur(0px)", duration: 0.3, ease: "power4.out" },
+        0,
+      );
+
+      tl.fromTo(
+        "#s1-binomial",
+        { opacity: 0, x: -14 },
+        { opacity: 1, x: 0, duration: 0.35, ease: "power4.out" },
+        0.18,
+      );
+
+      tl.fromTo(
+        "#s1-rule",
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.55, ease: "expo.out" },
+        0.25,
+      );
+
+      tl.fromTo(
+        "#s1-axis-vert",
+        { strokeDashoffset: 470 },
+        { strokeDashoffset: 0, duration: 1.0, ease: "power2.out" },
+        0.9,
+      );
+
+      tl.fromTo(
+        "#s1-soil-line",
+        { strokeDashoffset: 480 },
+        { strokeDashoffset: 0, duration: 0.85, ease: "power2.out" },
+        4.2,
+      );
+
+      tl.fromTo("#s1-lbl-soil", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 4.5);
+
+      tl.fromTo(
+        "#s1-node-rhizome",
+        { scale: 0, transformOrigin: "50% 50%" },
+        { scale: 1, duration: 0.35, ease: "back.out(1.4)" },
+        6.15,
+      );
+
+      tl.fromTo("#s1-lbl-rhizome", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 6.25);
+
+      tl.fromTo(
+        "#s1-note-1",
+        { opacity: 0, x: -28 },
+        { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" },
+        6.15,
+      );
+
+      tl.fromTo(
+        "#s1-growth-curve",
+        { strokeDashoffset: 480 },
+        { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" },
+        7.65,
+      );
+
+      tl.fromTo(
+        "#s1-node-sprout",
+        { scale: 0, transformOrigin: "50% 50%" },
+        { scale: 1, duration: 0.35, ease: "back.out(1.4)" },
+        9.05,
+      );
+
+      tl.fromTo("#s1-lbl-sprout", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 9.15);
+
+      tl.fromTo(
+        "#s1-note-2",
+        { opacity: 0, x: -28 },
+        { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" },
+        8.95,
+      );
+
+      tl.to("#root", { opacity: 0.86, duration: 0.16, ease: "power3.in" }, SCENE_DURATION - 0.18);
+
+      tl.to({}, { duration: SCENE_DURATION }, 0);
+      window.__timelines["scene-01"] = tl;
+    })();
+  </script>
+</template>
