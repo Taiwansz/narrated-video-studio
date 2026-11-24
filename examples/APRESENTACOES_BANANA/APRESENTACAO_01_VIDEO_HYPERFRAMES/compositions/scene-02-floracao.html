@@ -1,0 +1,343 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #0B0D0A;
+      color: #F3EFE2;
+      font-family: "Inter", sans-serif;
+    }
+
+    .s2-plate-box {
+      position: absolute;
+      left: 96px;
+      top: 128px;
+      width: 920px;
+      height: 580px;
+      overflow: hidden;
+      border: 2px solid rgba(59, 110, 71, 0.75);
+      border-right: 4px solid #E2B43B;
+      z-index: 5;
+    }
+
+    .s2-plate-clip {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .s2-plate-inner {
+      position: absolute;
+      inset: 0;
+      width: 920px;
+      height: 580px;
+      transform-origin: 58% 46%;
+    }
+
+    .s2-plate-img {
+      width: 920px;
+      height: 580px;
+      object-fit: cover;
+      object-position: 56% 50%;
+      display: block;
+    }
+
+    .s2-plate-caption {
+      position: absolute;
+      left: 96px;
+      top: 726px;
+      width: 920px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      color: #C7C1B0;
+      z-index: 6;
+    }
+
+    .s2-right {
+      position: absolute;
+      left: 1068px;
+      top: 108px;
+      width: 660px;
+      height: 690px;
+      z-index: 10;
+    }
+
+    .s2-kicker {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #E2B43B;
+      border-left: 4px solid #E2B43B;
+      padding-left: 16px;
+      margin-bottom: 16px;
+    }
+
+    .s2-title {
+      font-family: "Playfair Display", serif;
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+      color: #F3EFE2;
+      margin-bottom: 20px;
+    }
+
+    .s2-diagram {
+      width: 660px;
+      height: 300px;
+      margin-bottom: 18px;
+    }
+
+    .s2-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .s2-step {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 12px 18px;
+      background: rgba(59, 110, 71, 0.18);
+      border-left: 3px solid #3B6E47;
+    }
+
+    .s2-step-num {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 700;
+      color: #E2B43B;
+      flex-shrink: 0;
+    }
+
+    .s2-step-text {
+      font-family: "Inter", sans-serif;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.25;
+      color: #F3EFE2;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene-02" data-width="1920" data-height="1080">
+    <div id="s2-plate-box" class="s2-plate-box" data-layout-allow-overflow>
+      <div id="s2-plate-clip" class="s2-plate-clip">
+        <div id="s2-plate-inner" class="s2-plate-inner">
+          <img
+            id="s2-plate-img"
+            class="s2-plate-img"
+            src="assets/02_mangara_floracao.png"
+            alt="Inflorescencia pendente mangara da bananeira abrindo bracteas"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="s2-plate-caption" class="s2-plate-caption">
+      PRANCHA 02 // INFLORESCÊNCIA PENDENTE E BRÁCTEAS
+    </div>
+
+    <div id="s2-right" class="s2-right">
+      <div id="s2-kicker" class="s2-kicker">ESTÁGIO 02 / 05 // FLORAÇÃO</div>
+      <h1 id="s2-title" class="s2-title">O Despertar do Mangará</h1>
+
+      <div id="s2-diagram" class="s2-diagram">
+        <svg viewBox="0 0 660 300" width="660" height="300" xmlns="http://www.w3.org/2000/svg">
+          <rect
+            x="2"
+            y="2"
+            width="656"
+            height="296"
+            fill="#121610"
+            stroke="rgba(59,110,71,0.55)"
+            stroke-width="2"
+          />
+
+          <text
+            x="24"
+            y="40"
+            fill="#C7C1B0"
+            font-family="JetBrains Mono, monospace"
+            font-size="28"
+            font-weight="500"
+          >
+            EIXO DA INFLORESCÊNCIA
+          </text>
+
+          <path
+            id="s2-stalk"
+            d="M 85 266 L 85 118 C 85 58, 225 52, 260 116 L 295 220"
+            fill="none"
+            stroke="#7AC289"
+            stroke-width="7"
+            stroke-linecap="round"
+            stroke-dasharray="480"
+            stroke-dashoffset="480"
+          />
+
+          <path
+            id="s2-bract-1"
+            d="M 262 110 Q 325 86 340 128"
+            fill="none"
+            stroke="#E2B43B"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="120"
+            stroke-dashoffset="120"
+          />
+
+          <path
+            id="s2-bract-2"
+            d="M 274 144 Q 336 120 352 164"
+            fill="none"
+            stroke="#E2B43B"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="120"
+            stroke-dashoffset="120"
+          />
+
+          <path
+            id="s2-heart"
+            d="M 295 198 C 266 225, 268 265, 298 279 C 328 265, 326 225, 295 198 Z"
+            fill="#5E2334"
+            stroke="#E2B43B"
+            stroke-width="3"
+          />
+
+          <text
+            id="s2-svg-lbl-1"
+            x="365"
+            y="124"
+            fill="#F3EFE2"
+            font-family="JetBrains Mono, monospace"
+            font-size="28"
+            font-weight="500"
+          >
+            FLORES FEMININAS
+          </text>
+
+          <text
+            id="s2-svg-lbl-2"
+            x="365"
+            y="252"
+            fill="#E2B43B"
+            font-family="JetBrains Mono, monospace"
+            font-size="28"
+            font-weight="600"
+          >
+            MANGARÁ TERMINAL
+          </text>
+        </svg>
+      </div>
+
+      <div class="s2-steps">
+        <div id="s2-step-1-clip" class="clip" data-start="3.8" data-duration="8.2">
+          <div id="s2-step-1" class="s2-step">
+            <span class="s2-step-num">01</span>
+            <span class="s2-step-text">Meristema apical sobe pelo interior do pseudocaule</span>
+          </div>
+        </div>
+        <div id="s2-step-2-clip" class="clip" data-start="8.5" data-duration="3.5">
+          <div id="s2-step-2" class="s2-step">
+            <span class="s2-step-num">02</span>
+            <span class="s2-step-text">Brácteas rubras abrem em espiral expondo as flores</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const SCENE_DURATION = 12;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo(
+        "#s2-plate-clip",
+        { clipPath: "inset(100% 0% 0% 0%)" },
+        { clipPath: "inset(0% 0% 0% 0%)", duration: 0.65, ease: "power4.out" },
+        0,
+      );
+
+      tl.fromTo(
+        "#s2-plate-inner",
+        { scale: 1.04, x: 8, y: 0 },
+        { scale: 1.14, x: -14, y: -12, duration: SCENE_DURATION - 0.1, ease: "power2.inOut" },
+        0,
+      );
+
+      tl.fromTo(
+        "#s2-kicker",
+        { opacity: 0, x: 24 },
+        { opacity: 1, x: 0, duration: 0.35, ease: "power4.out" },
+        0.15,
+      );
+
+      tl.fromTo(
+        "#s2-title",
+        { opacity: 0, filter: "blur(8px)" },
+        { opacity: 1, filter: "blur(0px)", duration: 0.32, ease: "power4.out" },
+        0.28,
+      );
+
+      tl.fromTo("#s2-plate-caption", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.6);
+
+      tl.fromTo(
+        "#s2-stalk",
+        { strokeDashoffset: 480 },
+        { strokeDashoffset: 0, duration: 1.9, ease: "power2.inOut" },
+        3.8,
+      );
+
+      tl.fromTo(
+        "#s2-step-1",
+        { opacity: 0, x: 24 },
+        { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" },
+        3.9,
+      );
+
+      tl.fromTo(
+        "#s2-heart",
+        { scale: 0.2, opacity: 0, transformOrigin: "295px 198px" },
+        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.4)" },
+        6.25,
+      );
+
+      tl.fromTo("#s2-svg-lbl-2", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 6.45);
+
+      tl.fromTo(
+        "#s2-bract-1",
+        { strokeDashoffset: 120 },
+        { strokeDashoffset: 0, duration: 0.55, ease: "power3.out" },
+        8.55,
+      );
+
+      tl.fromTo(
+        "#s2-bract-2",
+        { strokeDashoffset: 120 },
+        { strokeDashoffset: 0, duration: 0.55, ease: "power3.out" },
+        8.95,
+      );
+
+      tl.fromTo("#s2-svg-lbl-1", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 9.2);
+
+      tl.fromTo(
+        "#s2-step-2",
+        { opacity: 0, x: 24 },
+        { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" },
+        8.6,
+      );
+
+      tl.to("#root", { opacity: 0.86, duration: 0.16, ease: "power3.in" }, SCENE_DURATION - 0.18);
+
+      tl.to({}, { duration: SCENE_DURATION }, 0);
+      window.__timelines["scene-02"] = tl;
+    })();
+  </script>
+</template>

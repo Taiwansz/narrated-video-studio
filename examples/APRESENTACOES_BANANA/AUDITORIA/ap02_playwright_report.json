@@ -1,0 +1,264 @@
+{
+  "static_scan": {
+    "C:\\Users\\52319400\\APRESENTACOES_BANANA\\APRESENTACAO_02_DECK_EDITORIAL_HTML\\index.html": {
+      "exists": true,
+      "bytes": 86294,
+      "emojis_count": 0,
+      "rounded_full_count": 0,
+      "pill_radius_matches": []
+    },
+    "C:\\Users\\52319400\\APRESENTACOES_BANANA\\APRESENTACAO_02_DECK_EDITORIAL_HTML\\assets\\ap02.srt": {
+      "exists": true,
+      "bytes": 2225,
+      "emojis_count": 0,
+      "rounded_full_count": 0,
+      "pill_radius_matches": []
+    },
+    "C:\\Users\\52319400\\APRESENTACOES_BANANA\\APRESENTACAO_02_DECK_EDITORIAL_HTML\\assets\\ap02_timings.json": {
+      "exists": true,
+      "bytes": 73769,
+      "emojis_count": 0,
+      "rounded_full_count": 0,
+      "pill_radius_matches": []
+    },
+    "C:\\Users\\52319400\\APRESENTACOES_BANANA\\ROTEIRO_E_AUDIO\\ROTEIROS.md": {
+      "exists": true,
+      "bytes": 3523,
+      "emojis_count": 0,
+      "rounded_full_count": 0,
+      "pill_radius_matches": []
+    },
+    "C:\\Users\\52319400\\APRESENTACOES_BANANA\\ROTEIRO_E_AUDIO\\ap02.srt": {
+      "exists": true,
+      "bytes": 2225,
+      "emojis_count": 0,
+      "rounded_full_count": 0,
+      "pill_radius_matches": []
+    },
+    "C:\\Users\\52319400\\APRESENTACOES_BANANA\\ROTEIRO_E_AUDIO\\ap02_timings.json": {
+      "exists": true,
+      "bytes": 73769,
+      "emojis_count": 0,
+      "rounded_full_count": 0,
+      "pill_radius_matches": []
+    }
+  },
+  "playwright": {
+    "url": "http://127.0.0.1:57394/index.html",
+    "desktop": {
+      "console_errors": [],
+      "page_errors": [],
+      "failed_requests": [],
+      "bad_responses": [],
+      "base_metrics": {
+        "audio": {
+          "src": "blob:http://127.0.0.1:57394/b58825a5-a389-466d-be26-8d47ecb85626",
+          "readyState": 4,
+          "duration": 59.29,
+          "error": null
+        },
+        "images": [
+          {
+            "src": "assets/01_rizoma_broto.png",
+            "complete": true,
+            "naturalWidth": 1376,
+            "naturalHeight": 768
+          },
+          {
+            "src": "assets/02_mangara_floracao.png",
+            "complete": true,
+            "naturalWidth": 1376,
+            "naturalHeight": 768
+          },
+          {
+            "src": "assets/03_cacho_geotropismo.png",
+            "complete": true,
+            "naturalWidth": 1376,
+            "naturalHeight": 768
+          },
+          {
+            "src": "assets/04_maturacao_climaterica.png",
+            "complete": true,
+            "naturalWidth": 1376,
+            "naturalHeight": 768
+          },
+          {
+            "src": "assets/05_sucessao_perfilho.png",
+            "complete": true,
+            "naturalWidth": 1376,
+            "naturalHeight": 768
+          }
+        ],
+        "fonts": {
+          "bodyFamily": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+          "headlineFamily": "\"Playfair Display\", Georgia, \"Times New Roman\", serif",
+          "brandFamily": "\"Playfair Display\", Georgia, \"Times New Roman\", serif",
+          "bgColor": "rgb(247, 244, 236)",
+          "color": "rgb(23, 25, 21)"
+        },
+        "geometry": {
+          "innerWidth": 1440,
+          "innerHeight": 900,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "scrollHeight": 900,
+          "clientHeight": 900
+        }
+      },
+      "play_state": {
+        "btnText": "Pausar",
+        "pressed": "true",
+        "timeCurrent": "00:01",
+        "audioPaused": false,
+        "audioCurrentTime": 1.369689,
+        "currentWords": 0,
+        "spokenWords": 3,
+        "captionText": "No gênero Musa, o tronco aparente é um pseudocaule de bainhas foliares compactadas. O caule verdadeiro oculta-se no solo: o rizoma perene, de onde emerge o broto espadim."
+      },
+      "scene_checks": [
+        {
+          "idx": 0,
+          "tabSelected": "true",
+          "kicker": "ESTÁGIO 01 · FASE VEGETATIVA",
+          "headline": "Do rizoma oculto emerge o broto espadim",
+          "timeCurrent": "00:00",
+          "dockStatus": "ESTÁGIO 01 / 05",
+          "activeImgSrc": "assets/01_rizoma_broto.png",
+          "activeSvgVisible": "1",
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "scrollHeight": 900,
+          "innerHeight": 900,
+          "mainBottom": 821,
+          "dockTop": 821,
+          "dockBottom": 900
+        },
+        {
+          "idx": 1,
+          "tabSelected": "true",
+          "kicker": "ESTÁGIO 02 · DIFERENCIAÇÃO FLORAL",
+          "headline": "Bainhas em espiral erguem o coração roxo",
+          "timeCurrent": "00:12",
+          "dockStatus": "ESTÁGIO 02 / 05",
+          "activeImgSrc": "assets/02_mangara_floracao.png",
+          "activeSvgVisible": "1",
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "scrollHeight": 900,
+          "innerHeight": 900,
+          "mainBottom": 821,
+          "dockTop": 821,
+          "dockBottom": 900
+        },
+        {
+          "idx": 2,
+          "tabSelected": "true",
+          "kicker": "ESTÁGIO 03 · MORFOGÊNESE DO CACHO",
+          "headline": "Frutos sem sementes curvam contra a gravidade",
+          "timeCurrent": "00:24",
+          "dockStatus": "ESTÁGIO 03 / 05",
+          "activeImgSrc": "assets/03_cacho_geotropismo.png",
+          "activeSvgVisible": "1",
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "scrollHeight": 900,
+          "innerHeight": 900,
+          "mainBottom": 821,
+          "dockTop": 821,
+          "dockBottom": 900
+        },
+        {
+          "idx": 3,
+          "tabSelected": "true",
+          "kicker": "ESTÁGIO 04 · MATURAÇÃO CLIMATÉRICA",
+          "headline": "O pico de etileno converte reserva em doçura",
+          "timeCurrent": "00:36",
+          "dockStatus": "ESTÁGIO 04 / 05",
+          "activeImgSrc": "assets/04_maturacao_climaterica.png",
+          "activeSvgVisible": "1",
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "scrollHeight": 900,
+          "innerHeight": 900,
+          "mainBottom": 821,
+          "dockTop": 821,
+          "dockBottom": 900
+        },
+        {
+          "idx": 4,
+          "tabSelected": "true",
+          "kicker": "ESTÁGIO 05 · CICLO PERENE",
+          "headline": "A planta-mãe tomba para nutrir o sucessor",
+          "timeCurrent": "00:48",
+          "dockStatus": "ESTÁGIO 05 / 05",
+          "activeImgSrc": "assets/05_sucessao_perfilho.png",
+          "activeSvgVisible": "1",
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "scrollHeight": 900,
+          "innerHeight": 900,
+          "mainBottom": 821,
+          "dockTop": 821,
+          "dockBottom": 900
+        }
+      ],
+      "scrub_state": {
+        "timeCurrent": "00:39",
+        "dockStatus": "ESTÁGIO 04 / 05",
+        "scene4Selected": "true"
+      },
+      "keyboard_checks": {
+        "key1_status": "ESTÁGIO 01 / 05",
+        "mute_state": {
+          "pressed": "true",
+          "audioMuted": true
+        },
+        "arrow_right_status": "ESTÁGIO 02 / 05"
+      }
+    },
+    "mobile": {
+      "console_errors": [],
+      "page_errors": [],
+      "failed_requests": [],
+      "bad_responses": [],
+      "metrics": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 1217,
+        "dockHeight": 77,
+        "dockWidth": 390,
+        "audioReady": 4,
+        "audioDuration": 59.29,
+        "audioTime": 1.04694,
+        "imgs": [
+          {
+            "src": "assets/01_rizoma_broto.png",
+            "w": 1376,
+            "h": 768
+          },
+          {
+            "src": "assets/02_mangara_floracao.png",
+            "w": 1376,
+            "h": 768
+          },
+          {
+            "src": "assets/03_cacho_geotropismo.png",
+            "w": 1376,
+            "h": 768
+          },
+          {
+            "src": "assets/04_maturacao_climaterica.png",
+            "w": 1376,
+            "h": 768
+          },
+          {
+            "src": "assets/05_sucessao_perfilho.png",
+            "w": 1376,
+            "h": 768
+          }
+        ]
+      }
+    }
+  }
+}

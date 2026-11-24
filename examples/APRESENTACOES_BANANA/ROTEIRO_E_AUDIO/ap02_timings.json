@@ -1,0 +1,3217 @@
+{
+  "presentation": "ap02",
+  "title": "Ciclo de Vida da Banana (Musa spp.) - Monografia Botanica Editorial",
+  "voice": "pt-BR-ThalitaMultilingualNeural",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "audio_file": "ap02_narration.mp3",
+  "ambient_file": "ambient_bed_60s.mp3",
+  "srt_file": "ap02.srt",
+  "timeline_duration_sec": 60.0,
+  "ffprobe_duration_sec": 59.29,
+  "spoken_duration_sec": 55.875,
+  "volumedetect": {
+    "mean_volume_db": -20.6,
+    "max_volume_db": -3.8,
+    "integrated_lufs": -17.2
+  },
+  "scenes": [
+    {
+      "id": "cena_01",
+      "index": 1,
+      "title": "Anatomia Basal: Rizoma e Pseudocaule",
+      "file": "ap02_cenas/cena_01.mp3",
+      "slot_start_sec": 0.0,
+      "slot_end_sec": 12.0,
+      "audio_offset_sec": 0.15,
+      "ffprobe_duration_sec": 11.3275,
+      "spoken_start_sec": 0.2,
+      "spoken_end_sec": 11.3375,
+      "spoken_duration_sec": 11.1375,
+      "volumedetect": {
+        "mean_volume_db": -20.1,
+        "max_volume_db": -5.1,
+        "integrated_lufs": -16.9
+      },
+      "text": "No gênero Musa, o tronco aparente é um pseudocaule de bainhas foliares compactadas. O caule verdadeiro oculta-se no solo: o rizoma perene, de onde emerge o broto espadim.",
+      "words": [
+        {
+          "id": "s1_w0",
+          "global_id": "w0",
+          "text": "No",
+          "word": "No",
+          "start": 0.2,
+          "end": 0.35,
+          "local_start": 0.05,
+          "local_end": 0.2
+        },
+        {
+          "id": "s1_w1",
+          "global_id": "w1",
+          "text": "gênero",
+          "word": "gênero",
+          "start": 0.35,
+          "end": 0.825,
+          "local_start": 0.2,
+          "local_end": 0.675
+        },
+        {
+          "id": "s1_w2",
+          "global_id": "w2",
+          "text": "Musa,",
+          "word": "Musa",
+          "start": 0.825,
+          "end": 1.225,
+          "local_start": 0.675,
+          "local_end": 1.075
+        },
+        {
+          "id": "s1_w3",
+          "global_id": "w3",
+          "text": "o",
+          "word": "o",
+          "start": 1.4625,
+          "end": 1.5875,
+          "local_start": 1.3125,
+          "local_end": 1.4375
+        },
+        {
+          "id": "s1_w4",
+          "global_id": "w4",
+          "text": "tronco",
+          "word": "tronco",
+          "start": 1.5875,
+          "end": 1.925,
+          "local_start": 1.4375,
+          "local_end": 1.775
+        },
+        {
+          "id": "s1_w5",
+          "global_id": "w5",
+          "text": "aparente",
+          "word": "aparente",
+          "start": 1.925,
+          "end": 2.45,
+          "local_start": 1.775,
+          "local_end": 2.3
+        },
+        {
+          "id": "s1_w6",
+          "global_id": "w6",
+          "text": "é",
+          "word": "é",
+          "start": 2.45,
+          "end": 2.4875,
+          "local_start": 2.3,
+          "local_end": 2.3375
+        },
+        {
+          "id": "s1_w7",
+          "global_id": "w7",
+          "text": "um",
+          "word": "um",
+          "start": 2.4875,
+          "end": 2.5875,
+          "local_start": 2.3375,
+          "local_end": 2.4375
+        },
+        {
+          "id": "s1_w8",
+          "global_id": "w8",
+          "text": "pseudocaule",
+          "word": "pseudocaule",
+          "start": 2.5875,
+          "end": 3.3625,
+          "local_start": 2.4375,
+          "local_end": 3.2125
+        },
+        {
+          "id": "s1_w9",
+          "global_id": "w9",
+          "text": "de",
+          "word": "de",
+          "start": 3.3625,
+          "end": 3.4375,
+          "local_start": 3.2125,
+          "local_end": 3.2875
+        },
+        {
+          "id": "s1_w10",
+          "global_id": "w10",
+          "text": "bainhas",
+          "word": "bainhas",
+          "start": 3.4375,
+          "end": 3.875,
+          "local_start": 3.2875,
+          "local_end": 3.725
+        },
+        {
+          "id": "s1_w11",
+          "global_id": "w11",
+          "text": "foliares",
+          "word": "foliares",
+          "start": 3.875,
+          "end": 4.4875,
+          "local_start": 3.725,
+          "local_end": 4.3375
+        },
+        {
+          "id": "s1_w12",
+          "global_id": "w12",
+          "text": "compactadas.",
+          "word": "compactadas",
+          "start": 4.4875,
+          "end": 5.475,
+          "local_start": 4.3375,
+          "local_end": 5.325
+        },
+        {
+          "id": "s1_w13",
+          "global_id": "w13",
+          "text": "O",
+          "word": "O",
+          "start": 5.825,
+          "end": 5.9375,
+          "local_start": 5.675,
+          "local_end": 5.7875
+        },
+        {
+          "id": "s1_w14",
+          "global_id": "w14",
+          "text": "caule",
+          "word": "caule",
+          "start": 5.9375,
+          "end": 6.3,
+          "local_start": 5.7875,
+          "local_end": 6.15
+        },
+        {
+          "id": "s1_w15",
+          "global_id": "w15",
+          "text": "verdadeiro",
+          "word": "verdadeiro",
+          "start": 6.3,
+          "end": 6.9625,
+          "local_start": 6.15,
+          "local_end": 6.8125
+        },
+        {
+          "id": "s1_w16",
+          "global_id": "w16",
+          "text": "oculta-se",
+          "word": "oculta-se",
+          "start": 6.9625,
+          "end": 7.5375,
+          "local_start": 6.8125,
+          "local_end": 7.3875
+        },
+        {
+          "id": "s1_w17",
+          "global_id": "w17",
+          "text": "no",
+          "word": "no",
+          "start": 7.5375,
+          "end": 7.6375,
+          "local_start": 7.3875,
+          "local_end": 7.4875
+        },
+        {
+          "id": "s1_w18",
+          "global_id": "w18",
+          "text": "solo:",
+          "word": "solo",
+          "start": 7.6375,
+          "end": 8.075,
+          "local_start": 7.4875,
+          "local_end": 7.925
+        },
+        {
+          "id": "s1_w19",
+          "global_id": "w19",
+          "text": "o",
+          "word": "o",
+          "start": 8.2875,
+          "end": 8.35,
+          "local_start": 8.1375,
+          "local_end": 8.2
+        },
+        {
+          "id": "s1_w20",
+          "global_id": "w20",
+          "text": "rizoma",
+          "word": "rizoma",
+          "start": 8.35,
+          "end": 8.775,
+          "local_start": 8.2,
+          "local_end": 8.625
+        },
+        {
+          "id": "s1_w21",
+          "global_id": "w21",
+          "text": "perene,",
+          "word": "perene",
+          "start": 8.775,
+          "end": 9.2625,
+          "local_start": 8.625,
+          "local_end": 9.1125
+        },
+        {
+          "id": "s1_w22",
+          "global_id": "w22",
+          "text": "de",
+          "word": "de",
+          "start": 9.4375,
+          "end": 9.55,
+          "local_start": 9.2875,
+          "local_end": 9.4
+        },
+        {
+          "id": "s1_w23",
+          "global_id": "w23",
+          "text": "onde",
+          "word": "onde",
+          "start": 9.55,
+          "end": 9.8,
+          "local_start": 9.4,
+          "local_end": 9.65
+        },
+        {
+          "id": "s1_w24",
+          "global_id": "w24",
+          "text": "emerge",
+          "word": "emerge",
+          "start": 9.8,
+          "end": 10.4,
+          "local_start": 9.65,
+          "local_end": 10.25
+        },
+        {
+          "id": "s1_w25",
+          "global_id": "w25",
+          "text": "o",
+          "word": "o",
+          "start": 10.4,
+          "end": 10.5,
+          "local_start": 10.25,
+          "local_end": 10.35
+        },
+        {
+          "id": "s1_w26",
+          "global_id": "w26",
+          "text": "broto",
+          "word": "broto",
+          "start": 10.5,
+          "end": 10.8,
+          "local_start": 10.35,
+          "local_end": 10.65
+        },
+        {
+          "id": "s1_w27",
+          "global_id": "w27",
+          "text": "espadim.",
+          "word": "espadim",
+          "start": 10.8,
+          "end": 11.3375,
+          "local_start": 10.65,
+          "local_end": 11.1875
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s1_c0",
+          "global_id": "c0",
+          "text": "No gênero Musa,",
+          "start": 0.2,
+          "end": 1.305,
+          "local_start": 0.05,
+          "local_end": 1.155,
+          "word_ids": [
+            "w0",
+            "w1",
+            "w2"
+          ]
+        },
+        {
+          "id": "s1_c1",
+          "global_id": "c1",
+          "text": "o tronco aparente é um",
+          "start": 1.4625,
+          "end": 2.5775,
+          "local_start": 1.3125,
+          "local_end": 2.4275,
+          "word_ids": [
+            "w3",
+            "w4",
+            "w5",
+            "w6",
+            "w7"
+          ]
+        },
+        {
+          "id": "s1_c2",
+          "global_id": "c2",
+          "text": "pseudocaule de bainhas foliares compactadas.",
+          "start": 2.5875,
+          "end": 5.555,
+          "local_start": 2.4375,
+          "local_end": 5.405,
+          "word_ids": [
+            "w8",
+            "w9",
+            "w10",
+            "w11",
+            "w12"
+          ]
+        },
+        {
+          "id": "s1_c3",
+          "global_id": "c3",
+          "text": "O caule verdadeiro",
+          "start": 5.825,
+          "end": 6.9525,
+          "local_start": 5.675,
+          "local_end": 6.8025,
+          "word_ids": [
+            "w13",
+            "w14",
+            "w15"
+          ]
+        },
+        {
+          "id": "s1_c4",
+          "global_id": "c4",
+          "text": "oculta-se no solo:",
+          "start": 6.9625,
+          "end": 8.155,
+          "local_start": 6.8125,
+          "local_end": 8.005,
+          "word_ids": [
+            "w16",
+            "w17",
+            "w18"
+          ]
+        },
+        {
+          "id": "s1_c5",
+          "global_id": "c5",
+          "text": "o rizoma perene,",
+          "start": 8.2875,
+          "end": 9.3425,
+          "local_start": 8.1375,
+          "local_end": 9.1925,
+          "word_ids": [
+            "w19",
+            "w20",
+            "w21"
+          ]
+        },
+        {
+          "id": "s1_c6",
+          "global_id": "c6",
+          "text": "de onde emerge",
+          "start": 9.4375,
+          "end": 10.39,
+          "local_start": 9.2875,
+          "local_end": 10.24,
+          "word_ids": [
+            "w22",
+            "w23",
+            "w24"
+          ]
+        },
+        {
+          "id": "s1_c7",
+          "global_id": "c7",
+          "text": "o broto espadim.",
+          "start": 10.4,
+          "end": 11.4175,
+          "local_start": 10.25,
+          "local_end": 11.2675,
+          "word_ids": [
+            "w25",
+            "w26",
+            "w27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_02",
+      "index": 2,
+      "title": "Transicao Reprodutiva e Mangara",
+      "file": "ap02_cenas/cena_02.mp3",
+      "slot_start_sec": 12.0,
+      "slot_end_sec": 24.0,
+      "audio_offset_sec": 12.15,
+      "ffprobe_duration_sec": 11.415,
+      "spoken_start_sec": 12.2,
+      "spoken_end_sec": 23.425,
+      "spoken_duration_sec": 11.225,
+      "volumedetect": {
+        "mean_volume_db": -21.1,
+        "max_volume_db": -5.1,
+        "integrated_lufs": -18.0
+      },
+      "text": "Atingida a maturidade vegetativa, o meristema inicia a diferenciação floral. A haste sobe pelo núcleo da planta e projeta o mangará pendente, revestido por brácteas violáceas.",
+      "words": [
+        {
+          "id": "s2_w0",
+          "global_id": "w28",
+          "text": "Atingida",
+          "word": "Atingida",
+          "start": 12.2,
+          "end": 12.8625,
+          "local_start": 0.05,
+          "local_end": 0.7125
+        },
+        {
+          "id": "s2_w1",
+          "global_id": "w29",
+          "text": "a",
+          "word": "a",
+          "start": 12.8625,
+          "end": 12.9,
+          "local_start": 0.7125,
+          "local_end": 0.75
+        },
+        {
+          "id": "s2_w2",
+          "global_id": "w30",
+          "text": "maturidade",
+          "word": "maturidade",
+          "start": 12.9,
+          "end": 13.5375,
+          "local_start": 0.75,
+          "local_end": 1.3875
+        },
+        {
+          "id": "s2_w3",
+          "global_id": "w31",
+          "text": "vegetativa,",
+          "word": "vegetativa",
+          "start": 13.5375,
+          "end": 14.275,
+          "local_start": 1.3875,
+          "local_end": 2.125
+        },
+        {
+          "id": "s2_w4",
+          "global_id": "w32",
+          "text": "o",
+          "word": "o",
+          "start": 14.5,
+          "end": 14.5375,
+          "local_start": 2.35,
+          "local_end": 2.3875
+        },
+        {
+          "id": "s2_w5",
+          "global_id": "w33",
+          "text": "meristema",
+          "word": "meristema",
+          "start": 14.5375,
+          "end": 15.125,
+          "local_start": 2.3875,
+          "local_end": 2.975
+        },
+        {
+          "id": "s2_w6",
+          "global_id": "w34",
+          "text": "inicia",
+          "word": "inicia",
+          "start": 15.125,
+          "end": 15.5875,
+          "local_start": 2.975,
+          "local_end": 3.4375
+        },
+        {
+          "id": "s2_w7",
+          "global_id": "w35",
+          "text": "a",
+          "word": "a",
+          "start": 15.5875,
+          "end": 15.6125,
+          "local_start": 3.4375,
+          "local_end": 3.4625
+        },
+        {
+          "id": "s2_w8",
+          "global_id": "w36",
+          "text": "diferenciação",
+          "word": "diferenciação",
+          "start": 15.6125,
+          "end": 16.4625,
+          "local_start": 3.4625,
+          "local_end": 4.3125
+        },
+        {
+          "id": "s2_w9",
+          "global_id": "w37",
+          "text": "floral.",
+          "word": "floral",
+          "start": 16.4625,
+          "end": 17.0,
+          "local_start": 4.3125,
+          "local_end": 4.85
+        },
+        {
+          "id": "s2_w10",
+          "global_id": "w38",
+          "text": "A",
+          "word": "A",
+          "start": 17.3375,
+          "end": 17.4,
+          "local_start": 5.1875,
+          "local_end": 5.25
+        },
+        {
+          "id": "s2_w11",
+          "global_id": "w39",
+          "text": "haste",
+          "word": "haste",
+          "start": 17.4,
+          "end": 17.8875,
+          "local_start": 5.25,
+          "local_end": 5.7375
+        },
+        {
+          "id": "s2_w12",
+          "global_id": "w40",
+          "text": "sobe",
+          "word": "sobe",
+          "start": 17.8875,
+          "end": 18.25,
+          "local_start": 5.7375,
+          "local_end": 6.1
+        },
+        {
+          "id": "s2_w13",
+          "global_id": "w41",
+          "text": "pelo",
+          "word": "pelo",
+          "start": 18.25,
+          "end": 18.4875,
+          "local_start": 6.1,
+          "local_end": 6.3375
+        },
+        {
+          "id": "s2_w14",
+          "global_id": "w42",
+          "text": "núcleo",
+          "word": "núcleo",
+          "start": 18.4875,
+          "end": 18.825,
+          "local_start": 6.3375,
+          "local_end": 6.675
+        },
+        {
+          "id": "s2_w15",
+          "global_id": "w43",
+          "text": "da",
+          "word": "da",
+          "start": 18.825,
+          "end": 18.9375,
+          "local_start": 6.675,
+          "local_end": 6.7875
+        },
+        {
+          "id": "s2_w16",
+          "global_id": "w44",
+          "text": "planta",
+          "word": "planta",
+          "start": 18.9375,
+          "end": 19.475,
+          "local_start": 6.7875,
+          "local_end": 7.325
+        },
+        {
+          "id": "s2_w17",
+          "global_id": "w45",
+          "text": "e",
+          "word": "e",
+          "start": 19.475,
+          "end": 19.5375,
+          "local_start": 7.325,
+          "local_end": 7.3875
+        },
+        {
+          "id": "s2_w18",
+          "global_id": "w46",
+          "text": "projeta",
+          "word": "projeta",
+          "start": 19.5375,
+          "end": 20.0,
+          "local_start": 7.3875,
+          "local_end": 7.85
+        },
+        {
+          "id": "s2_w19",
+          "global_id": "w47",
+          "text": "o",
+          "word": "o",
+          "start": 20.0,
+          "end": 20.0125,
+          "local_start": 7.85,
+          "local_end": 7.8625
+        },
+        {
+          "id": "s2_w20",
+          "global_id": "w48",
+          "text": "mangará",
+          "word": "mangará",
+          "start": 20.0125,
+          "end": 20.4625,
+          "local_start": 7.8625,
+          "local_end": 8.3125
+        },
+        {
+          "id": "s2_w21",
+          "global_id": "w49",
+          "text": "pendente,",
+          "word": "pendente",
+          "start": 20.4625,
+          "end": 21.0875,
+          "local_start": 8.3125,
+          "local_end": 8.9375
+        },
+        {
+          "id": "s2_w22",
+          "global_id": "w50",
+          "text": "revestido",
+          "word": "revestido",
+          "start": 21.325,
+          "end": 21.8875,
+          "local_start": 9.175,
+          "local_end": 9.7375
+        },
+        {
+          "id": "s2_w23",
+          "global_id": "w51",
+          "text": "por",
+          "word": "por",
+          "start": 21.8875,
+          "end": 22.0375,
+          "local_start": 9.7375,
+          "local_end": 9.8875
+        },
+        {
+          "id": "s2_w24",
+          "global_id": "w52",
+          "text": "brácteas",
+          "word": "brácteas",
+          "start": 22.0375,
+          "end": 22.625,
+          "local_start": 9.8875,
+          "local_end": 10.475
+        },
+        {
+          "id": "s2_w25",
+          "global_id": "w53",
+          "text": "violáceas.",
+          "word": "violáceas",
+          "start": 22.625,
+          "end": 23.425,
+          "local_start": 10.475,
+          "local_end": 11.275
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s2_c0",
+          "global_id": "c8",
+          "text": "Atingida a maturidade vegetativa,",
+          "start": 12.2,
+          "end": 14.355,
+          "local_start": 0.05,
+          "local_end": 2.205,
+          "word_ids": [
+            "w28",
+            "w29",
+            "w30",
+            "w31"
+          ]
+        },
+        {
+          "id": "s2_c1",
+          "global_id": "c9",
+          "text": "o meristema inicia",
+          "start": 14.5,
+          "end": 15.5775,
+          "local_start": 2.35,
+          "local_end": 3.4275,
+          "word_ids": [
+            "w32",
+            "w33",
+            "w34"
+          ]
+        },
+        {
+          "id": "s2_c2",
+          "global_id": "c10",
+          "text": "a diferenciação floral.",
+          "start": 15.5875,
+          "end": 17.08,
+          "local_start": 3.4375,
+          "local_end": 4.93,
+          "word_ids": [
+            "w35",
+            "w36",
+            "w37"
+          ]
+        },
+        {
+          "id": "s2_c3",
+          "global_id": "c11",
+          "text": "A haste sobe pelo",
+          "start": 17.3375,
+          "end": 18.4775,
+          "local_start": 5.1875,
+          "local_end": 6.3275,
+          "word_ids": [
+            "w38",
+            "w39",
+            "w40",
+            "w41"
+          ]
+        },
+        {
+          "id": "s2_c4",
+          "global_id": "c12",
+          "text": "núcleo da planta e",
+          "start": 18.4875,
+          "end": 19.5275,
+          "local_start": 6.3375,
+          "local_end": 7.3775,
+          "word_ids": [
+            "w42",
+            "w43",
+            "w44",
+            "w45"
+          ]
+        },
+        {
+          "id": "s2_c5",
+          "global_id": "c13",
+          "text": "projeta o mangará pendente,",
+          "start": 19.5375,
+          "end": 21.1675,
+          "local_start": 7.3875,
+          "local_end": 9.0175,
+          "word_ids": [
+            "w46",
+            "w47",
+            "w48",
+            "w49"
+          ]
+        },
+        {
+          "id": "s2_c6",
+          "global_id": "c14",
+          "text": "revestido por brácteas violáceas.",
+          "start": 21.325,
+          "end": 23.505,
+          "local_start": 9.175,
+          "local_end": 11.355,
+          "word_ids": [
+            "w50",
+            "w51",
+            "w52",
+            "w53"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_03",
+      "index": 3,
+      "title": "Partenocarpia e Arquitetura das Pencas",
+      "file": "ap02_cenas/cena_03.mp3",
+      "slot_start_sec": 24.0,
+      "slot_end_sec": 36.0,
+      "audio_offset_sec": 24.15,
+      "ffprobe_duration_sec": 11.2775,
+      "spoken_start_sec": 24.2,
+      "spoken_end_sec": 35.2875,
+      "spoken_duration_sec": 11.0875,
+      "volumedetect": {
+        "mean_volume_db": -20.9,
+        "max_volume_db": -3.8,
+        "integrated_lufs": -17.6
+      },
+      "text": "As flores femininas basais formam frutos sem sementes por partenocarpia natural. Guiadas pelo geotropismo negativo, as pencas em crescimento arqueiam-se contra a gravidade.",
+      "words": [
+        {
+          "id": "s3_w0",
+          "global_id": "w54",
+          "text": "As",
+          "word": "As",
+          "start": 24.2,
+          "end": 24.375,
+          "local_start": 0.05,
+          "local_end": 0.225
+        },
+        {
+          "id": "s3_w1",
+          "global_id": "w55",
+          "text": "flores",
+          "word": "flores",
+          "start": 24.375,
+          "end": 24.7875,
+          "local_start": 0.225,
+          "local_end": 0.6375
+        },
+        {
+          "id": "s3_w2",
+          "global_id": "w56",
+          "text": "femininas",
+          "word": "femininas",
+          "start": 24.7875,
+          "end": 25.2875,
+          "local_start": 0.6375,
+          "local_end": 1.1375
+        },
+        {
+          "id": "s3_w3",
+          "global_id": "w57",
+          "text": "basais",
+          "word": "basais",
+          "start": 25.2875,
+          "end": 25.825,
+          "local_start": 1.1375,
+          "local_end": 1.675
+        },
+        {
+          "id": "s3_w4",
+          "global_id": "w58",
+          "text": "formam",
+          "word": "formam",
+          "start": 25.825,
+          "end": 26.225,
+          "local_start": 1.675,
+          "local_end": 2.075
+        },
+        {
+          "id": "s3_w5",
+          "global_id": "w59",
+          "text": "frutos",
+          "word": "frutos",
+          "start": 26.225,
+          "end": 26.7375,
+          "local_start": 2.075,
+          "local_end": 2.5875
+        },
+        {
+          "id": "s3_w6",
+          "global_id": "w60",
+          "text": "sem",
+          "word": "sem",
+          "start": 26.7375,
+          "end": 26.9625,
+          "local_start": 2.5875,
+          "local_end": 2.8125
+        },
+        {
+          "id": "s3_w7",
+          "global_id": "w61",
+          "text": "sementes",
+          "word": "sementes",
+          "start": 26.9625,
+          "end": 27.5625,
+          "local_start": 2.8125,
+          "local_end": 3.4125
+        },
+        {
+          "id": "s3_w8",
+          "global_id": "w62",
+          "text": "por",
+          "word": "por",
+          "start": 27.5625,
+          "end": 27.7375,
+          "local_start": 3.4125,
+          "local_end": 3.5875
+        },
+        {
+          "id": "s3_w9",
+          "global_id": "w63",
+          "text": "partenocarpia",
+          "word": "partenocarpia",
+          "start": 27.7375,
+          "end": 28.7625,
+          "local_start": 3.5875,
+          "local_end": 4.6125
+        },
+        {
+          "id": "s3_w10",
+          "global_id": "w64",
+          "text": "natural.",
+          "word": "natural",
+          "start": 28.7625,
+          "end": 29.375,
+          "local_start": 4.6125,
+          "local_end": 5.225
+        },
+        {
+          "id": "s3_w11",
+          "global_id": "w65",
+          "text": "Guiadas",
+          "word": "Guiadas",
+          "start": 29.725,
+          "end": 30.2875,
+          "local_start": 5.575,
+          "local_end": 6.1375
+        },
+        {
+          "id": "s3_w12",
+          "global_id": "w66",
+          "text": "pelo",
+          "word": "pelo",
+          "start": 30.2875,
+          "end": 30.525,
+          "local_start": 6.1375,
+          "local_end": 6.375
+        },
+        {
+          "id": "s3_w13",
+          "global_id": "w67",
+          "text": "geotropismo",
+          "word": "geotropismo",
+          "start": 30.525,
+          "end": 31.3375,
+          "local_start": 6.375,
+          "local_end": 7.1875
+        },
+        {
+          "id": "s3_w14",
+          "global_id": "w68",
+          "text": "negativo,",
+          "word": "negativo",
+          "start": 31.3375,
+          "end": 32.0875,
+          "local_start": 7.1875,
+          "local_end": 7.9375
+        },
+        {
+          "id": "s3_w15",
+          "global_id": "w69",
+          "text": "as",
+          "word": "as",
+          "start": 32.2625,
+          "end": 32.4375,
+          "local_start": 8.1125,
+          "local_end": 8.2875
+        },
+        {
+          "id": "s3_w16",
+          "global_id": "w70",
+          "text": "pencas",
+          "word": "pencas",
+          "start": 32.4375,
+          "end": 32.7875,
+          "local_start": 8.2875,
+          "local_end": 8.6375
+        },
+        {
+          "id": "s3_w17",
+          "global_id": "w71",
+          "text": "em",
+          "word": "em",
+          "start": 32.7875,
+          "end": 32.95,
+          "local_start": 8.6375,
+          "local_end": 8.8
+        },
+        {
+          "id": "s3_w18",
+          "global_id": "w72",
+          "text": "crescimento",
+          "word": "crescimento",
+          "start": 32.95,
+          "end": 33.525,
+          "local_start": 8.8,
+          "local_end": 9.375
+        },
+        {
+          "id": "s3_w19",
+          "global_id": "w73",
+          "text": "arqueiam-se",
+          "word": "arqueiam-se",
+          "start": 33.525,
+          "end": 34.1625,
+          "local_start": 9.375,
+          "local_end": 10.0125
+        },
+        {
+          "id": "s3_w20",
+          "global_id": "w74",
+          "text": "contra",
+          "word": "contra",
+          "start": 34.1625,
+          "end": 34.55,
+          "local_start": 10.0125,
+          "local_end": 10.4
+        },
+        {
+          "id": "s3_w21",
+          "global_id": "w75",
+          "text": "a",
+          "word": "a",
+          "start": 34.55,
+          "end": 34.575,
+          "local_start": 10.4,
+          "local_end": 10.425
+        },
+        {
+          "id": "s3_w22",
+          "global_id": "w76",
+          "text": "gravidade.",
+          "word": "gravidade",
+          "start": 34.575,
+          "end": 35.2875,
+          "local_start": 10.425,
+          "local_end": 11.1375
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s3_c0",
+          "global_id": "c15",
+          "text": "As flores femininas basais",
+          "start": 24.2,
+          "end": 25.815,
+          "local_start": 0.05,
+          "local_end": 1.665,
+          "word_ids": [
+            "w54",
+            "w55",
+            "w56",
+            "w57"
+          ]
+        },
+        {
+          "id": "s3_c1",
+          "global_id": "c16",
+          "text": "formam frutos sem sementes",
+          "start": 25.825,
+          "end": 27.5525,
+          "local_start": 1.675,
+          "local_end": 3.4025,
+          "word_ids": [
+            "w58",
+            "w59",
+            "w60",
+            "w61"
+          ]
+        },
+        {
+          "id": "s3_c2",
+          "global_id": "c17",
+          "text": "por partenocarpia natural.",
+          "start": 27.5625,
+          "end": 29.455,
+          "local_start": 3.4125,
+          "local_end": 5.305,
+          "word_ids": [
+            "w62",
+            "w63",
+            "w64"
+          ]
+        },
+        {
+          "id": "s3_c3",
+          "global_id": "c18",
+          "text": "Guiadas pelo geotropismo negativo,",
+          "start": 29.725,
+          "end": 32.1675,
+          "local_start": 5.575,
+          "local_end": 8.0175,
+          "word_ids": [
+            "w65",
+            "w66",
+            "w67",
+            "w68"
+          ]
+        },
+        {
+          "id": "s3_c4",
+          "global_id": "c19",
+          "text": "as pencas em crescimento",
+          "start": 32.2625,
+          "end": 33.515,
+          "local_start": 8.1125,
+          "local_end": 9.365,
+          "word_ids": [
+            "w69",
+            "w70",
+            "w71",
+            "w72"
+          ]
+        },
+        {
+          "id": "s3_c5",
+          "global_id": "c20",
+          "text": "arqueiam-se contra a gravidade.",
+          "start": 33.525,
+          "end": 35.3675,
+          "local_start": 9.375,
+          "local_end": 11.2175,
+          "word_ids": [
+            "w73",
+            "w74",
+            "w75",
+            "w76"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_04",
+      "index": 4,
+      "title": "Fisiologia Climaterica e Gas Etileno",
+      "file": "ap02_cenas/cena_04.mp3",
+      "slot_start_sec": 36.0,
+      "slot_end_sec": 48.0,
+      "audio_offset_sec": 36.15,
+      "ffprobe_duration_sec": 11.665,
+      "spoken_start_sec": 36.2,
+      "spoken_end_sec": 47.675,
+      "spoken_duration_sec": 11.475,
+      "volumedetect": {
+        "mean_volume_db": -19.9,
+        "max_volume_db": -4.4,
+        "integrated_lufs": -16.5
+      },
+      "text": "Na maturação climatérica, um pico respiratório acompanha a síntese natural do gás etileno. Esse sinal converte o amido de reserva em açúcares solúveis e revela o dourado intenso da casca.",
+      "words": [
+        {
+          "id": "s4_w0",
+          "global_id": "w77",
+          "text": "Na",
+          "word": "Na",
+          "start": 36.2,
+          "end": 36.3,
+          "local_start": 0.05,
+          "local_end": 0.15
+        },
+        {
+          "id": "s4_w1",
+          "global_id": "w78",
+          "text": "maturação",
+          "word": "maturação",
+          "start": 36.3,
+          "end": 36.9375,
+          "local_start": 0.15,
+          "local_end": 0.7875
+        },
+        {
+          "id": "s4_w2",
+          "global_id": "w79",
+          "text": "climatérica,",
+          "word": "climatérica",
+          "start": 36.9375,
+          "end": 37.6875,
+          "local_start": 0.7875,
+          "local_end": 1.5375
+        },
+        {
+          "id": "s4_w3",
+          "global_id": "w80",
+          "text": "um",
+          "word": "um",
+          "start": 37.9125,
+          "end": 38.075,
+          "local_start": 1.7625,
+          "local_end": 1.925
+        },
+        {
+          "id": "s4_w4",
+          "global_id": "w81",
+          "text": "pico",
+          "word": "pico",
+          "start": 38.075,
+          "end": 38.4,
+          "local_start": 1.925,
+          "local_end": 2.25
+        },
+        {
+          "id": "s4_w5",
+          "global_id": "w82",
+          "text": "respiratório",
+          "word": "respiratório",
+          "start": 38.4,
+          "end": 39.2125,
+          "local_start": 2.25,
+          "local_end": 3.0625
+        },
+        {
+          "id": "s4_w6",
+          "global_id": "w83",
+          "text": "acompanha",
+          "word": "acompanha",
+          "start": 39.2125,
+          "end": 39.7875,
+          "local_start": 3.0625,
+          "local_end": 3.6375
+        },
+        {
+          "id": "s4_w7",
+          "global_id": "w84",
+          "text": "a",
+          "word": "a",
+          "start": 39.7875,
+          "end": 39.825,
+          "local_start": 3.6375,
+          "local_end": 3.675
+        },
+        {
+          "id": "s4_w8",
+          "global_id": "w85",
+          "text": "síntese",
+          "word": "síntese",
+          "start": 39.825,
+          "end": 40.375,
+          "local_start": 3.675,
+          "local_end": 4.225
+        },
+        {
+          "id": "s4_w9",
+          "global_id": "w86",
+          "text": "natural",
+          "word": "natural",
+          "start": 40.375,
+          "end": 40.8875,
+          "local_start": 4.225,
+          "local_end": 4.7375
+        },
+        {
+          "id": "s4_w10",
+          "global_id": "w87",
+          "text": "do",
+          "word": "do",
+          "start": 40.8875,
+          "end": 40.975,
+          "local_start": 4.7375,
+          "local_end": 4.825
+        },
+        {
+          "id": "s4_w11",
+          "global_id": "w88",
+          "text": "gás",
+          "word": "gás",
+          "start": 40.975,
+          "end": 41.2,
+          "local_start": 4.825,
+          "local_end": 5.05
+        },
+        {
+          "id": "s4_w12",
+          "global_id": "w89",
+          "text": "etileno.",
+          "word": "etileno",
+          "start": 41.2,
+          "end": 41.85,
+          "local_start": 5.05,
+          "local_end": 5.7
+        },
+        {
+          "id": "s4_w13",
+          "global_id": "w90",
+          "text": "Esse",
+          "word": "Esse",
+          "start": 42.2,
+          "end": 42.425,
+          "local_start": 6.05,
+          "local_end": 6.275
+        },
+        {
+          "id": "s4_w14",
+          "global_id": "w91",
+          "text": "sinal",
+          "word": "sinal",
+          "start": 42.425,
+          "end": 42.8375,
+          "local_start": 6.275,
+          "local_end": 6.6875
+        },
+        {
+          "id": "s4_w15",
+          "global_id": "w92",
+          "text": "converte",
+          "word": "converte",
+          "start": 42.8375,
+          "end": 43.3125,
+          "local_start": 6.6875,
+          "local_end": 7.1625
+        },
+        {
+          "id": "s4_w16",
+          "global_id": "w93",
+          "text": "o",
+          "word": "o",
+          "start": 43.3125,
+          "end": 43.35,
+          "local_start": 7.1625,
+          "local_end": 7.2
+        },
+        {
+          "id": "s4_w17",
+          "global_id": "w94",
+          "text": "amido",
+          "word": "amido",
+          "start": 43.35,
+          "end": 43.65,
+          "local_start": 7.2,
+          "local_end": 7.5
+        },
+        {
+          "id": "s4_w18",
+          "global_id": "w95",
+          "text": "de",
+          "word": "de",
+          "start": 43.65,
+          "end": 43.7375,
+          "local_start": 7.5,
+          "local_end": 7.5875
+        },
+        {
+          "id": "s4_w19",
+          "global_id": "w96",
+          "text": "reserva",
+          "word": "reserva",
+          "start": 43.7375,
+          "end": 44.2125,
+          "local_start": 7.5875,
+          "local_end": 8.0625
+        },
+        {
+          "id": "s4_w20",
+          "global_id": "w97",
+          "text": "em",
+          "word": "em",
+          "start": 44.2125,
+          "end": 44.3,
+          "local_start": 8.0625,
+          "local_end": 8.15
+        },
+        {
+          "id": "s4_w21",
+          "global_id": "w98",
+          "text": "açúcares",
+          "word": "açúcares",
+          "start": 44.3,
+          "end": 44.7875,
+          "local_start": 8.15,
+          "local_end": 8.6375
+        },
+        {
+          "id": "s4_w22",
+          "global_id": "w99",
+          "text": "solúveis",
+          "word": "solúveis",
+          "start": 44.7875,
+          "end": 45.3,
+          "local_start": 8.6375,
+          "local_end": 9.15
+        },
+        {
+          "id": "s4_w23",
+          "global_id": "w100",
+          "text": "e",
+          "word": "e",
+          "start": 45.3,
+          "end": 45.475,
+          "local_start": 9.15,
+          "local_end": 9.325
+        },
+        {
+          "id": "s4_w24",
+          "global_id": "w101",
+          "text": "revela",
+          "word": "revela",
+          "start": 45.475,
+          "end": 45.975,
+          "local_start": 9.325,
+          "local_end": 9.825
+        },
+        {
+          "id": "s4_w25",
+          "global_id": "w102",
+          "text": "o",
+          "word": "o",
+          "start": 45.975,
+          "end": 46.025,
+          "local_start": 9.825,
+          "local_end": 9.875
+        },
+        {
+          "id": "s4_w26",
+          "global_id": "w103",
+          "text": "dourado",
+          "word": "dourado",
+          "start": 46.025,
+          "end": 46.5125,
+          "local_start": 9.875,
+          "local_end": 10.3625
+        },
+        {
+          "id": "s4_w27",
+          "global_id": "w104",
+          "text": "intenso",
+          "word": "intenso",
+          "start": 46.5125,
+          "end": 47.075,
+          "local_start": 10.3625,
+          "local_end": 10.925
+        },
+        {
+          "id": "s4_w28",
+          "global_id": "w105",
+          "text": "da",
+          "word": "da",
+          "start": 47.075,
+          "end": 47.2125,
+          "local_start": 10.925,
+          "local_end": 11.0625
+        },
+        {
+          "id": "s4_w29",
+          "global_id": "w106",
+          "text": "casca.",
+          "word": "casca",
+          "start": 47.2125,
+          "end": 47.675,
+          "local_start": 11.0625,
+          "local_end": 11.525
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s4_c0",
+          "global_id": "c21",
+          "text": "Na maturação climatérica,",
+          "start": 36.2,
+          "end": 37.7675,
+          "local_start": 0.05,
+          "local_end": 1.6175,
+          "word_ids": [
+            "w77",
+            "w78",
+            "w79"
+          ]
+        },
+        {
+          "id": "s4_c1",
+          "global_id": "c22",
+          "text": "um pico respiratório acompanha a",
+          "start": 37.9125,
+          "end": 39.815,
+          "local_start": 1.7625,
+          "local_end": 3.665,
+          "word_ids": [
+            "w80",
+            "w81",
+            "w82",
+            "w83",
+            "w84"
+          ]
+        },
+        {
+          "id": "s4_c2",
+          "global_id": "c23",
+          "text": "síntese natural do gás etileno.",
+          "start": 39.825,
+          "end": 41.93,
+          "local_start": 3.675,
+          "local_end": 5.78,
+          "word_ids": [
+            "w85",
+            "w86",
+            "w87",
+            "w88",
+            "w89"
+          ]
+        },
+        {
+          "id": "s4_c3",
+          "global_id": "c24",
+          "text": "Esse sinal converte o amido",
+          "start": 42.2,
+          "end": 43.64,
+          "local_start": 6.05,
+          "local_end": 7.49,
+          "word_ids": [
+            "w90",
+            "w91",
+            "w92",
+            "w93",
+            "w94"
+          ]
+        },
+        {
+          "id": "s4_c4",
+          "global_id": "c25",
+          "text": "de reserva em açúcares",
+          "start": 43.65,
+          "end": 44.7775,
+          "local_start": 7.5,
+          "local_end": 8.6275,
+          "word_ids": [
+            "w95",
+            "w96",
+            "w97",
+            "w98"
+          ]
+        },
+        {
+          "id": "s4_c5",
+          "global_id": "c26",
+          "text": "solúveis e revela o",
+          "start": 44.7875,
+          "end": 46.015,
+          "local_start": 8.6375,
+          "local_end": 9.865,
+          "word_ids": [
+            "w99",
+            "w100",
+            "w101",
+            "w102"
+          ]
+        },
+        {
+          "id": "s4_c6",
+          "global_id": "c27",
+          "text": "dourado intenso da casca.",
+          "start": 46.025,
+          "end": 47.755,
+          "local_start": 9.875,
+          "local_end": 11.605,
+          "word_ids": [
+            "w103",
+            "w104",
+            "w105",
+            "w106"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_05",
+      "index": 5,
+      "title": "Senescencia e Continuidade Clonal",
+      "file": "ap02_cenas/cena_05.mp3",
+      "slot_start_sec": 48.0,
+      "slot_end_sec": 60.0,
+      "audio_offset_sec": 48.15,
+      "ffprobe_duration_sec": 11.14,
+      "spoken_start_sec": 48.2,
+      "spoken_end_sec": 59.15,
+      "spoken_duration_sec": 10.95,
+      "volumedetect": {
+        "mean_volume_db": -20.2,
+        "max_volume_db": -4.9,
+        "integrated_lufs": -17.0
+      },
+      "text": "Concluída a colheita do cacho, o pseudocaule entra em senescência e recebe o corte de manejo. O rizoma materno nutre com vigor o perfilho sucessor, perpetuando a linhagem clonal.",
+      "words": [
+        {
+          "id": "s5_w0",
+          "global_id": "w107",
+          "text": "Concluída",
+          "word": "Concluída",
+          "start": 48.2,
+          "end": 48.725,
+          "local_start": 0.05,
+          "local_end": 0.575
+        },
+        {
+          "id": "s5_w1",
+          "global_id": "w108",
+          "text": "a",
+          "word": "a",
+          "start": 48.725,
+          "end": 48.7625,
+          "local_start": 0.575,
+          "local_end": 0.6125
+        },
+        {
+          "id": "s5_w2",
+          "global_id": "w109",
+          "text": "colheita",
+          "word": "colheita",
+          "start": 48.7625,
+          "end": 49.15,
+          "local_start": 0.6125,
+          "local_end": 1.0
+        },
+        {
+          "id": "s5_w3",
+          "global_id": "w110",
+          "text": "do",
+          "word": "do",
+          "start": 49.15,
+          "end": 49.25,
+          "local_start": 1.0,
+          "local_end": 1.1
+        },
+        {
+          "id": "s5_w4",
+          "global_id": "w111",
+          "text": "cacho,",
+          "word": "cacho",
+          "start": 49.25,
+          "end": 49.675,
+          "local_start": 1.1,
+          "local_end": 1.525
+        },
+        {
+          "id": "s5_w5",
+          "global_id": "w112",
+          "text": "o",
+          "word": "o",
+          "start": 49.8375,
+          "end": 49.9125,
+          "local_start": 1.6875,
+          "local_end": 1.7625
+        },
+        {
+          "id": "s5_w6",
+          "global_id": "w113",
+          "text": "pseudocaule",
+          "word": "pseudocaule",
+          "start": 49.9125,
+          "end": 50.8125,
+          "local_start": 1.7625,
+          "local_end": 2.6625
+        },
+        {
+          "id": "s5_w7",
+          "global_id": "w114",
+          "text": "entra",
+          "word": "entra",
+          "start": 50.8125,
+          "end": 51.0625,
+          "local_start": 2.6625,
+          "local_end": 2.9125
+        },
+        {
+          "id": "s5_w8",
+          "global_id": "w115",
+          "text": "em",
+          "word": "em",
+          "start": 51.0625,
+          "end": 51.1375,
+          "local_start": 2.9125,
+          "local_end": 2.9875
+        },
+        {
+          "id": "s5_w9",
+          "global_id": "w116",
+          "text": "senescência",
+          "word": "senescência",
+          "start": 51.1375,
+          "end": 52.05,
+          "local_start": 2.9875,
+          "local_end": 3.9
+        },
+        {
+          "id": "s5_w10",
+          "global_id": "w117",
+          "text": "e",
+          "word": "e",
+          "start": 52.05,
+          "end": 52.1125,
+          "local_start": 3.9,
+          "local_end": 3.9625
+        },
+        {
+          "id": "s5_w11",
+          "global_id": "w118",
+          "text": "recebe",
+          "word": "recebe",
+          "start": 52.1125,
+          "end": 52.575,
+          "local_start": 3.9625,
+          "local_end": 4.425
+        },
+        {
+          "id": "s5_w12",
+          "global_id": "w119",
+          "text": "o",
+          "word": "o",
+          "start": 52.575,
+          "end": 52.6625,
+          "local_start": 4.425,
+          "local_end": 4.5125
+        },
+        {
+          "id": "s5_w13",
+          "global_id": "w120",
+          "text": "corte",
+          "word": "corte",
+          "start": 52.6625,
+          "end": 53.0,
+          "local_start": 4.5125,
+          "local_end": 4.85
+        },
+        {
+          "id": "s5_w14",
+          "global_id": "w121",
+          "text": "de",
+          "word": "de",
+          "start": 53.0,
+          "end": 53.075,
+          "local_start": 4.85,
+          "local_end": 4.925
+        },
+        {
+          "id": "s5_w15",
+          "global_id": "w122",
+          "text": "manejo.",
+          "word": "manejo",
+          "start": 53.075,
+          "end": 53.575,
+          "local_start": 4.925,
+          "local_end": 5.425
+        },
+        {
+          "id": "s5_w16",
+          "global_id": "w123",
+          "text": "O",
+          "word": "O",
+          "start": 53.925,
+          "end": 54.0125,
+          "local_start": 5.775,
+          "local_end": 5.8625
+        },
+        {
+          "id": "s5_w17",
+          "global_id": "w124",
+          "text": "rizoma",
+          "word": "rizoma",
+          "start": 54.0125,
+          "end": 54.4875,
+          "local_start": 5.8625,
+          "local_end": 6.3375
+        },
+        {
+          "id": "s5_w18",
+          "global_id": "w125",
+          "text": "materno",
+          "word": "materno",
+          "start": 54.4875,
+          "end": 55.0125,
+          "local_start": 6.3375,
+          "local_end": 6.8625
+        },
+        {
+          "id": "s5_w19",
+          "global_id": "w126",
+          "text": "nutre",
+          "word": "nutre",
+          "start": 55.0125,
+          "end": 55.4375,
+          "local_start": 6.8625,
+          "local_end": 7.2875
+        },
+        {
+          "id": "s5_w20",
+          "global_id": "w127",
+          "text": "com",
+          "word": "com",
+          "start": 55.4375,
+          "end": 55.625,
+          "local_start": 7.2875,
+          "local_end": 7.475
+        },
+        {
+          "id": "s5_w21",
+          "global_id": "w128",
+          "text": "vigor",
+          "word": "vigor",
+          "start": 55.625,
+          "end": 56.025,
+          "local_start": 7.475,
+          "local_end": 7.875
+        },
+        {
+          "id": "s5_w22",
+          "global_id": "w129",
+          "text": "o",
+          "word": "o",
+          "start": 56.025,
+          "end": 56.0625,
+          "local_start": 7.875,
+          "local_end": 7.9125
+        },
+        {
+          "id": "s5_w23",
+          "global_id": "w130",
+          "text": "perfilho",
+          "word": "perfilho",
+          "start": 56.0625,
+          "end": 56.5375,
+          "local_start": 7.9125,
+          "local_end": 8.3875
+        },
+        {
+          "id": "s5_w24",
+          "global_id": "w131",
+          "text": "sucessor,",
+          "word": "sucessor",
+          "start": 56.5375,
+          "end": 57.1875,
+          "local_start": 8.3875,
+          "local_end": 9.0375
+        },
+        {
+          "id": "s5_w25",
+          "global_id": "w132",
+          "text": "perpetuando",
+          "word": "perpetuando",
+          "start": 57.3875,
+          "end": 58.0625,
+          "local_start": 9.2375,
+          "local_end": 9.9125
+        },
+        {
+          "id": "s5_w26",
+          "global_id": "w133",
+          "text": "a",
+          "word": "a",
+          "start": 58.0625,
+          "end": 58.0875,
+          "local_start": 9.9125,
+          "local_end": 9.9375
+        },
+        {
+          "id": "s5_w27",
+          "global_id": "w134",
+          "text": "linhagem",
+          "word": "linhagem",
+          "start": 58.0875,
+          "end": 58.6375,
+          "local_start": 9.9375,
+          "local_end": 10.4875
+        },
+        {
+          "id": "s5_w28",
+          "global_id": "w135",
+          "text": "clonal.",
+          "word": "clonal",
+          "start": 58.6375,
+          "end": 59.15,
+          "local_start": 10.4875,
+          "local_end": 11.0
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s5_c0",
+          "global_id": "c28",
+          "text": "Concluída a colheita do cacho,",
+          "start": 48.2,
+          "end": 49.755,
+          "local_start": 0.05,
+          "local_end": 1.605,
+          "word_ids": [
+            "w107",
+            "w108",
+            "w109",
+            "w110",
+            "w111"
+          ]
+        },
+        {
+          "id": "s5_c1",
+          "global_id": "c29",
+          "text": "o pseudocaule entra em",
+          "start": 49.8375,
+          "end": 51.1275,
+          "local_start": 1.6875,
+          "local_end": 2.9775,
+          "word_ids": [
+            "w112",
+            "w113",
+            "w114",
+            "w115"
+          ]
+        },
+        {
+          "id": "s5_c2",
+          "global_id": "c30",
+          "text": "senescência e recebe o",
+          "start": 51.1375,
+          "end": 52.6525,
+          "local_start": 2.9875,
+          "local_end": 4.5025,
+          "word_ids": [
+            "w116",
+            "w117",
+            "w118",
+            "w119"
+          ]
+        },
+        {
+          "id": "s5_c3",
+          "global_id": "c31",
+          "text": "corte de manejo.",
+          "start": 52.6625,
+          "end": 53.655,
+          "local_start": 4.5125,
+          "local_end": 5.505,
+          "word_ids": [
+            "w120",
+            "w121",
+            "w122"
+          ]
+        },
+        {
+          "id": "s5_c4",
+          "global_id": "c32",
+          "text": "O rizoma materno nutre com",
+          "start": 53.925,
+          "end": 55.615,
+          "local_start": 5.775,
+          "local_end": 7.465,
+          "word_ids": [
+            "w123",
+            "w124",
+            "w125",
+            "w126",
+            "w127"
+          ]
+        },
+        {
+          "id": "s5_c5",
+          "global_id": "c33",
+          "text": "vigor o perfilho sucessor,",
+          "start": 55.625,
+          "end": 57.2675,
+          "local_start": 7.475,
+          "local_end": 9.1175,
+          "word_ids": [
+            "w128",
+            "w129",
+            "w130",
+            "w131"
+          ]
+        },
+        {
+          "id": "s5_c6",
+          "global_id": "c34",
+          "text": "perpetuando a linhagem clonal.",
+          "start": 57.3875,
+          "end": 59.23,
+          "local_start": 9.2375,
+          "local_end": 11.08,
+          "word_ids": [
+            "w132",
+            "w133",
+            "w134",
+            "w135"
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w0",
+      "scene": 1,
+      "text": "No",
+      "start": 0.2,
+      "end": 0.35
+    },
+    {
+      "id": "w1",
+      "scene": 1,
+      "text": "gênero",
+      "start": 0.35,
+      "end": 0.825
+    },
+    {
+      "id": "w2",
+      "scene": 1,
+      "text": "Musa,",
+      "start": 0.825,
+      "end": 1.225
+    },
+    {
+      "id": "w3",
+      "scene": 1,
+      "text": "o",
+      "start": 1.4625,
+      "end": 1.5875
+    },
+    {
+      "id": "w4",
+      "scene": 1,
+      "text": "tronco",
+      "start": 1.5875,
+      "end": 1.925
+    },
+    {
+      "id": "w5",
+      "scene": 1,
+      "text": "aparente",
+      "start": 1.925,
+      "end": 2.45
+    },
+    {
+      "id": "w6",
+      "scene": 1,
+      "text": "é",
+      "start": 2.45,
+      "end": 2.4875
+    },
+    {
+      "id": "w7",
+      "scene": 1,
+      "text": "um",
+      "start": 2.4875,
+      "end": 2.5875
+    },
+    {
+      "id": "w8",
+      "scene": 1,
+      "text": "pseudocaule",
+      "start": 2.5875,
+      "end": 3.3625
+    },
+    {
+      "id": "w9",
+      "scene": 1,
+      "text": "de",
+      "start": 3.3625,
+      "end": 3.4375
+    },
+    {
+      "id": "w10",
+      "scene": 1,
+      "text": "bainhas",
+      "start": 3.4375,
+      "end": 3.875
+    },
+    {
+      "id": "w11",
+      "scene": 1,
+      "text": "foliares",
+      "start": 3.875,
+      "end": 4.4875
+    },
+    {
+      "id": "w12",
+      "scene": 1,
+      "text": "compactadas.",
+      "start": 4.4875,
+      "end": 5.475
+    },
+    {
+      "id": "w13",
+      "scene": 1,
+      "text": "O",
+      "start": 5.825,
+      "end": 5.9375
+    },
+    {
+      "id": "w14",
+      "scene": 1,
+      "text": "caule",
+      "start": 5.9375,
+      "end": 6.3
+    },
+    {
+      "id": "w15",
+      "scene": 1,
+      "text": "verdadeiro",
+      "start": 6.3,
+      "end": 6.9625
+    },
+    {
+      "id": "w16",
+      "scene": 1,
+      "text": "oculta-se",
+      "start": 6.9625,
+      "end": 7.5375
+    },
+    {
+      "id": "w17",
+      "scene": 1,
+      "text": "no",
+      "start": 7.5375,
+      "end": 7.6375
+    },
+    {
+      "id": "w18",
+      "scene": 1,
+      "text": "solo:",
+      "start": 7.6375,
+      "end": 8.075
+    },
+    {
+      "id": "w19",
+      "scene": 1,
+      "text": "o",
+      "start": 8.2875,
+      "end": 8.35
+    },
+    {
+      "id": "w20",
+      "scene": 1,
+      "text": "rizoma",
+      "start": 8.35,
+      "end": 8.775
+    },
+    {
+      "id": "w21",
+      "scene": 1,
+      "text": "perene,",
+      "start": 8.775,
+      "end": 9.2625
+    },
+    {
+      "id": "w22",
+      "scene": 1,
+      "text": "de",
+      "start": 9.4375,
+      "end": 9.55
+    },
+    {
+      "id": "w23",
+      "scene": 1,
+      "text": "onde",
+      "start": 9.55,
+      "end": 9.8
+    },
+    {
+      "id": "w24",
+      "scene": 1,
+      "text": "emerge",
+      "start": 9.8,
+      "end": 10.4
+    },
+    {
+      "id": "w25",
+      "scene": 1,
+      "text": "o",
+      "start": 10.4,
+      "end": 10.5
+    },
+    {
+      "id": "w26",
+      "scene": 1,
+      "text": "broto",
+      "start": 10.5,
+      "end": 10.8
+    },
+    {
+      "id": "w27",
+      "scene": 1,
+      "text": "espadim.",
+      "start": 10.8,
+      "end": 11.3375
+    },
+    {
+      "id": "w28",
+      "scene": 2,
+      "text": "Atingida",
+      "start": 12.2,
+      "end": 12.8625
+    },
+    {
+      "id": "w29",
+      "scene": 2,
+      "text": "a",
+      "start": 12.8625,
+      "end": 12.9
+    },
+    {
+      "id": "w30",
+      "scene": 2,
+      "text": "maturidade",
+      "start": 12.9,
+      "end": 13.5375
+    },
+    {
+      "id": "w31",
+      "scene": 2,
+      "text": "vegetativa,",
+      "start": 13.5375,
+      "end": 14.275
+    },
+    {
+      "id": "w32",
+      "scene": 2,
+      "text": "o",
+      "start": 14.5,
+      "end": 14.5375
+    },
+    {
+      "id": "w33",
+      "scene": 2,
+      "text": "meristema",
+      "start": 14.5375,
+      "end": 15.125
+    },
+    {
+      "id": "w34",
+      "scene": 2,
+      "text": "inicia",
+      "start": 15.125,
+      "end": 15.5875
+    },
+    {
+      "id": "w35",
+      "scene": 2,
+      "text": "a",
+      "start": 15.5875,
+      "end": 15.6125
+    },
+    {
+      "id": "w36",
+      "scene": 2,
+      "text": "diferenciação",
+      "start": 15.6125,
+      "end": 16.4625
+    },
+    {
+      "id": "w37",
+      "scene": 2,
+      "text": "floral.",
+      "start": 16.4625,
+      "end": 17.0
+    },
+    {
+      "id": "w38",
+      "scene": 2,
+      "text": "A",
+      "start": 17.3375,
+      "end": 17.4
+    },
+    {
+      "id": "w39",
+      "scene": 2,
+      "text": "haste",
+      "start": 17.4,
+      "end": 17.8875
+    },
+    {
+      "id": "w40",
+      "scene": 2,
+      "text": "sobe",
+      "start": 17.8875,
+      "end": 18.25
+    },
+    {
+      "id": "w41",
+      "scene": 2,
+      "text": "pelo",
+      "start": 18.25,
+      "end": 18.4875
+    },
+    {
+      "id": "w42",
+      "scene": 2,
+      "text": "núcleo",
+      "start": 18.4875,
+      "end": 18.825
+    },
+    {
+      "id": "w43",
+      "scene": 2,
+      "text": "da",
+      "start": 18.825,
+      "end": 18.9375
+    },
+    {
+      "id": "w44",
+      "scene": 2,
+      "text": "planta",
+      "start": 18.9375,
+      "end": 19.475
+    },
+    {
+      "id": "w45",
+      "scene": 2,
+      "text": "e",
+      "start": 19.475,
+      "end": 19.5375
+    },
+    {
+      "id": "w46",
+      "scene": 2,
+      "text": "projeta",
+      "start": 19.5375,
+      "end": 20.0
+    },
+    {
+      "id": "w47",
+      "scene": 2,
+      "text": "o",
+      "start": 20.0,
+      "end": 20.0125
+    },
+    {
+      "id": "w48",
+      "scene": 2,
+      "text": "mangará",
+      "start": 20.0125,
+      "end": 20.4625
+    },
+    {
+      "id": "w49",
+      "scene": 2,
+      "text": "pendente,",
+      "start": 20.4625,
+      "end": 21.0875
+    },
+    {
+      "id": "w50",
+      "scene": 2,
+      "text": "revestido",
+      "start": 21.325,
+      "end": 21.8875
+    },
+    {
+      "id": "w51",
+      "scene": 2,
+      "text": "por",
+      "start": 21.8875,
+      "end": 22.0375
+    },
+    {
+      "id": "w52",
+      "scene": 2,
+      "text": "brácteas",
+      "start": 22.0375,
+      "end": 22.625
+    },
+    {
+      "id": "w53",
+      "scene": 2,
+      "text": "violáceas.",
+      "start": 22.625,
+      "end": 23.425
+    },
+    {
+      "id": "w54",
+      "scene": 3,
+      "text": "As",
+      "start": 24.2,
+      "end": 24.375
+    },
+    {
+      "id": "w55",
+      "scene": 3,
+      "text": "flores",
+      "start": 24.375,
+      "end": 24.7875
+    },
+    {
+      "id": "w56",
+      "scene": 3,
+      "text": "femininas",
+      "start": 24.7875,
+      "end": 25.2875
+    },
+    {
+      "id": "w57",
+      "scene": 3,
+      "text": "basais",
+      "start": 25.2875,
+      "end": 25.825
+    },
+    {
+      "id": "w58",
+      "scene": 3,
+      "text": "formam",
+      "start": 25.825,
+      "end": 26.225
+    },
+    {
+      "id": "w59",
+      "scene": 3,
+      "text": "frutos",
+      "start": 26.225,
+      "end": 26.7375
+    },
+    {
+      "id": "w60",
+      "scene": 3,
+      "text": "sem",
+      "start": 26.7375,
+      "end": 26.9625
+    },
+    {
+      "id": "w61",
+      "scene": 3,
+      "text": "sementes",
+      "start": 26.9625,
+      "end": 27.5625
+    },
+    {
+      "id": "w62",
+      "scene": 3,
+      "text": "por",
+      "start": 27.5625,
+      "end": 27.7375
+    },
+    {
+      "id": "w63",
+      "scene": 3,
+      "text": "partenocarpia",
+      "start": 27.7375,
+      "end": 28.7625
+    },
+    {
+      "id": "w64",
+      "scene": 3,
+      "text": "natural.",
+      "start": 28.7625,
+      "end": 29.375
+    },
+    {
+      "id": "w65",
+      "scene": 3,
+      "text": "Guiadas",
+      "start": 29.725,
+      "end": 30.2875
+    },
+    {
+      "id": "w66",
+      "scene": 3,
+      "text": "pelo",
+      "start": 30.2875,
+      "end": 30.525
+    },
+    {
+      "id": "w67",
+      "scene": 3,
+      "text": "geotropismo",
+      "start": 30.525,
+      "end": 31.3375
+    },
+    {
+      "id": "w68",
+      "scene": 3,
+      "text": "negativo,",
+      "start": 31.3375,
+      "end": 32.0875
+    },
+    {
+      "id": "w69",
+      "scene": 3,
+      "text": "as",
+      "start": 32.2625,
+      "end": 32.4375
+    },
+    {
+      "id": "w70",
+      "scene": 3,
+      "text": "pencas",
+      "start": 32.4375,
+      "end": 32.7875
+    },
+    {
+      "id": "w71",
+      "scene": 3,
+      "text": "em",
+      "start": 32.7875,
+      "end": 32.95
+    },
+    {
+      "id": "w72",
+      "scene": 3,
+      "text": "crescimento",
+      "start": 32.95,
+      "end": 33.525
+    },
+    {
+      "id": "w73",
+      "scene": 3,
+      "text": "arqueiam-se",
+      "start": 33.525,
+      "end": 34.1625
+    },
+    {
+      "id": "w74",
+      "scene": 3,
+      "text": "contra",
+      "start": 34.1625,
+      "end": 34.55
+    },
+    {
+      "id": "w75",
+      "scene": 3,
+      "text": "a",
+      "start": 34.55,
+      "end": 34.575
+    },
+    {
+      "id": "w76",
+      "scene": 3,
+      "text": "gravidade.",
+      "start": 34.575,
+      "end": 35.2875
+    },
+    {
+      "id": "w77",
+      "scene": 4,
+      "text": "Na",
+      "start": 36.2,
+      "end": 36.3
+    },
+    {
+      "id": "w78",
+      "scene": 4,
+      "text": "maturação",
+      "start": 36.3,
+      "end": 36.9375
+    },
+    {
+      "id": "w79",
+      "scene": 4,
+      "text": "climatérica,",
+      "start": 36.9375,
+      "end": 37.6875
+    },
+    {
+      "id": "w80",
+      "scene": 4,
+      "text": "um",
+      "start": 37.9125,
+      "end": 38.075
+    },
+    {
+      "id": "w81",
+      "scene": 4,
+      "text": "pico",
+      "start": 38.075,
+      "end": 38.4
+    },
+    {
+      "id": "w82",
+      "scene": 4,
+      "text": "respiratório",
+      "start": 38.4,
+      "end": 39.2125
+    },
+    {
+      "id": "w83",
+      "scene": 4,
+      "text": "acompanha",
+      "start": 39.2125,
+      "end": 39.7875
+    },
+    {
+      "id": "w84",
+      "scene": 4,
+      "text": "a",
+      "start": 39.7875,
+      "end": 39.825
+    },
+    {
+      "id": "w85",
+      "scene": 4,
+      "text": "síntese",
+      "start": 39.825,
+      "end": 40.375
+    },
+    {
+      "id": "w86",
+      "scene": 4,
+      "text": "natural",
+      "start": 40.375,
+      "end": 40.8875
+    },
+    {
+      "id": "w87",
+      "scene": 4,
+      "text": "do",
+      "start": 40.8875,
+      "end": 40.975
+    },
+    {
+      "id": "w88",
+      "scene": 4,
+      "text": "gás",
+      "start": 40.975,
+      "end": 41.2
+    },
+    {
+      "id": "w89",
+      "scene": 4,
+      "text": "etileno.",
+      "start": 41.2,
+      "end": 41.85
+    },
+    {
+      "id": "w90",
+      "scene": 4,
+      "text": "Esse",
+      "start": 42.2,
+      "end": 42.425
+    },
+    {
+      "id": "w91",
+      "scene": 4,
+      "text": "sinal",
+      "start": 42.425,
+      "end": 42.8375
+    },
+    {
+      "id": "w92",
+      "scene": 4,
+      "text": "converte",
+      "start": 42.8375,
+      "end": 43.3125
+    },
+    {
+      "id": "w93",
+      "scene": 4,
+      "text": "o",
+      "start": 43.3125,
+      "end": 43.35
+    },
+    {
+      "id": "w94",
+      "scene": 4,
+      "text": "amido",
+      "start": 43.35,
+      "end": 43.65
+    },
+    {
+      "id": "w95",
+      "scene": 4,
+      "text": "de",
+      "start": 43.65,
+      "end": 43.7375
+    },
+    {
+      "id": "w96",
+      "scene": 4,
+      "text": "reserva",
+      "start": 43.7375,
+      "end": 44.2125
+    },
+    {
+      "id": "w97",
+      "scene": 4,
+      "text": "em",
+      "start": 44.2125,
+      "end": 44.3
+    },
+    {
+      "id": "w98",
+      "scene": 4,
+      "text": "açúcares",
+      "start": 44.3,
+      "end": 44.7875
+    },
+    {
+      "id": "w99",
+      "scene": 4,
+      "text": "solúveis",
+      "start": 44.7875,
+      "end": 45.3
+    },
+    {
+      "id": "w100",
+      "scene": 4,
+      "text": "e",
+      "start": 45.3,
+      "end": 45.475
+    },
+    {
+      "id": "w101",
+      "scene": 4,
+      "text": "revela",
+      "start": 45.475,
+      "end": 45.975
+    },
+    {
+      "id": "w102",
+      "scene": 4,
+      "text": "o",
+      "start": 45.975,
+      "end": 46.025
+    },
+    {
+      "id": "w103",
+      "scene": 4,
+      "text": "dourado",
+      "start": 46.025,
+      "end": 46.5125
+    },
+    {
+      "id": "w104",
+      "scene": 4,
+      "text": "intenso",
+      "start": 46.5125,
+      "end": 47.075
+    },
+    {
+      "id": "w105",
+      "scene": 4,
+      "text": "da",
+      "start": 47.075,
+      "end": 47.2125
+    },
+    {
+      "id": "w106",
+      "scene": 4,
+      "text": "casca.",
+      "start": 47.2125,
+      "end": 47.675
+    },
+    {
+      "id": "w107",
+      "scene": 5,
+      "text": "Concluída",
+      "start": 48.2,
+      "end": 48.725
+    },
+    {
+      "id": "w108",
+      "scene": 5,
+      "text": "a",
+      "start": 48.725,
+      "end": 48.7625
+    },
+    {
+      "id": "w109",
+      "scene": 5,
+      "text": "colheita",
+      "start": 48.7625,
+      "end": 49.15
+    },
+    {
+      "id": "w110",
+      "scene": 5,
+      "text": "do",
+      "start": 49.15,
+      "end": 49.25
+    },
+    {
+      "id": "w111",
+      "scene": 5,
+      "text": "cacho,",
+      "start": 49.25,
+      "end": 49.675
+    },
+    {
+      "id": "w112",
+      "scene": 5,
+      "text": "o",
+      "start": 49.8375,
+      "end": 49.9125
+    },
+    {
+      "id": "w113",
+      "scene": 5,
+      "text": "pseudocaule",
+      "start": 49.9125,
+      "end": 50.8125
+    },
+    {
+      "id": "w114",
+      "scene": 5,
+      "text": "entra",
+      "start": 50.8125,
+      "end": 51.0625
+    },
+    {
+      "id": "w115",
+      "scene": 5,
+      "text": "em",
+      "start": 51.0625,
+      "end": 51.1375
+    },
+    {
+      "id": "w116",
+      "scene": 5,
+      "text": "senescência",
+      "start": 51.1375,
+      "end": 52.05
+    },
+    {
+      "id": "w117",
+      "scene": 5,
+      "text": "e",
+      "start": 52.05,
+      "end": 52.1125
+    },
+    {
+      "id": "w118",
+      "scene": 5,
+      "text": "recebe",
+      "start": 52.1125,
+      "end": 52.575
+    },
+    {
+      "id": "w119",
+      "scene": 5,
+      "text": "o",
+      "start": 52.575,
+      "end": 52.6625
+    },
+    {
+      "id": "w120",
+      "scene": 5,
+      "text": "corte",
+      "start": 52.6625,
+      "end": 53.0
+    },
+    {
+      "id": "w121",
+      "scene": 5,
+      "text": "de",
+      "start": 53.0,
+      "end": 53.075
+    },
+    {
+      "id": "w122",
+      "scene": 5,
+      "text": "manejo.",
+      "start": 53.075,
+      "end": 53.575
+    },
+    {
+      "id": "w123",
+      "scene": 5,
+      "text": "O",
+      "start": 53.925,
+      "end": 54.0125
+    },
+    {
+      "id": "w124",
+      "scene": 5,
+      "text": "rizoma",
+      "start": 54.0125,
+      "end": 54.4875
+    },
+    {
+      "id": "w125",
+      "scene": 5,
+      "text": "materno",
+      "start": 54.4875,
+      "end": 55.0125
+    },
+    {
+      "id": "w126",
+      "scene": 5,
+      "text": "nutre",
+      "start": 55.0125,
+      "end": 55.4375
+    },
+    {
+      "id": "w127",
+      "scene": 5,
+      "text": "com",
+      "start": 55.4375,
+      "end": 55.625
+    },
+    {
+      "id": "w128",
+      "scene": 5,
+      "text": "vigor",
+      "start": 55.625,
+      "end": 56.025
+    },
+    {
+      "id": "w129",
+      "scene": 5,
+      "text": "o",
+      "start": 56.025,
+      "end": 56.0625
+    },
+    {
+      "id": "w130",
+      "scene": 5,
+      "text": "perfilho",
+      "start": 56.0625,
+      "end": 56.5375
+    },
+    {
+      "id": "w131",
+      "scene": 5,
+      "text": "sucessor,",
+      "start": 56.5375,
+      "end": 57.1875
+    },
+    {
+      "id": "w132",
+      "scene": 5,
+      "text": "perpetuando",
+      "start": 57.3875,
+      "end": 58.0625
+    },
+    {
+      "id": "w133",
+      "scene": 5,
+      "text": "a",
+      "start": 58.0625,
+      "end": 58.0875
+    },
+    {
+      "id": "w134",
+      "scene": 5,
+      "text": "linhagem",
+      "start": 58.0875,
+      "end": 58.6375
+    },
+    {
+      "id": "w135",
+      "scene": 5,
+      "text": "clonal.",
+      "start": 58.6375,
+      "end": 59.15
+    }
+  ],
+  "captions": [
+    {
+      "id": "c0",
+      "scene": 1,
+      "text": "No gênero Musa,",
+      "start": 0.2,
+      "end": 1.305
+    },
+    {
+      "id": "c1",
+      "scene": 1,
+      "text": "o tronco aparente é um",
+      "start": 1.4625,
+      "end": 2.5775
+    },
+    {
+      "id": "c2",
+      "scene": 1,
+      "text": "pseudocaule de bainhas foliares compactadas.",
+      "start": 2.5875,
+      "end": 5.555
+    },
+    {
+      "id": "c3",
+      "scene": 1,
+      "text": "O caule verdadeiro",
+      "start": 5.825,
+      "end": 6.9525
+    },
+    {
+      "id": "c4",
+      "scene": 1,
+      "text": "oculta-se no solo:",
+      "start": 6.9625,
+      "end": 8.155
+    },
+    {
+      "id": "c5",
+      "scene": 1,
+      "text": "o rizoma perene,",
+      "start": 8.2875,
+      "end": 9.3425
+    },
+    {
+      "id": "c6",
+      "scene": 1,
+      "text": "de onde emerge",
+      "start": 9.4375,
+      "end": 10.39
+    },
+    {
+      "id": "c7",
+      "scene": 1,
+      "text": "o broto espadim.",
+      "start": 10.4,
+      "end": 11.4175
+    },
+    {
+      "id": "c8",
+      "scene": 2,
+      "text": "Atingida a maturidade vegetativa,",
+      "start": 12.2,
+      "end": 14.355
+    },
+    {
+      "id": "c9",
+      "scene": 2,
+      "text": "o meristema inicia",
+      "start": 14.5,
+      "end": 15.5775
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "text": "a diferenciação floral.",
+      "start": 15.5875,
+      "end": 17.08
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "text": "A haste sobe pelo",
+      "start": 17.3375,
+      "end": 18.4775
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "text": "núcleo da planta e",
+      "start": 18.4875,
+      "end": 19.5275
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "text": "projeta o mangará pendente,",
+      "start": 19.5375,
+      "end": 21.1675
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "text": "revestido por brácteas violáceas.",
+      "start": 21.325,
+      "end": 23.505
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "text": "As flores femininas basais",
+      "start": 24.2,
+      "end": 25.815
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "text": "formam frutos sem sementes",
+      "start": 25.825,
+      "end": 27.5525
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "text": "por partenocarpia natural.",
+      "start": 27.5625,
+      "end": 29.455
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "text": "Guiadas pelo geotropismo negativo,",
+      "start": 29.725,
+      "end": 32.1675
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "text": "as pencas em crescimento",
+      "start": 32.2625,
+      "end": 33.515
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "text": "arqueiam-se contra a gravidade.",
+      "start": 33.525,
+      "end": 35.3675
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "text": "Na maturação climatérica,",
+      "start": 36.2,
+      "end": 37.7675
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "text": "um pico respiratório acompanha a",
+      "start": 37.9125,
+      "end": 39.815
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "text": "síntese natural do gás etileno.",
+      "start": 39.825,
+      "end": 41.93
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "text": "Esse sinal converte o amido",
+      "start": 42.2,
+      "end": 43.64
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "text": "de reserva em açúcares",
+      "start": 43.65,
+      "end": 44.7775
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "text": "solúveis e revela o",
+      "start": 44.7875,
+      "end": 46.015
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "text": "dourado intenso da casca.",
+      "start": 46.025,
+      "end": 47.755
+    },
+    {
+      "id": "c28",
+      "scene": 5,
+      "text": "Concluída a colheita do cacho,",
+      "start": 48.2,
+      "end": 49.755
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "text": "o pseudocaule entra em",
+      "start": 49.8375,
+      "end": 51.1275
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "text": "senescência e recebe o",
+      "start": 51.1375,
+      "end": 52.6525
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "text": "corte de manejo.",
+      "start": 52.6625,
+      "end": 53.655
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "text": "O rizoma materno nutre com",
+      "start": 53.925,
+      "end": 55.615
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "text": "vigor o perfilho sucessor,",
+      "start": 55.625,
+      "end": 57.2675
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "text": "perpetuando a linhagem clonal.",
+      "start": 57.3875,
+      "end": 59.23
+    }
+  ]
+}

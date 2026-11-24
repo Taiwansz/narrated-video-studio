@@ -1,0 +1,260 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #0B0D0A;
+      color: #F3EFE2;
+      font-family: "Inter", sans-serif;
+    }
+
+    .s3-right-frame {
+      position: absolute;
+      left: 744px;
+      top: 96px;
+      width: 1080px;
+      height: 696px;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .s3-plate-inner {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 696px;
+      transform-origin: 55% 50%;
+    }
+
+    .s3-plate-img {
+      width: 1080px;
+      height: 696px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .s3-right-fade {
+      position: absolute;
+      left: 744px;
+      top: 96px;
+      width: 240px;
+      height: 696px;
+      z-index: 5;
+      background: linear-gradient(90deg, #0B0D0A 0%, rgba(11, 13, 10, 0) 100%);
+    }
+
+    .s3-left {
+      position: absolute;
+      left: 192px;
+      top: 108px;
+      width: 550px;
+      height: 690px;
+      z-index: 10;
+    }
+
+    .s3-kicker {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #E2B43B;
+      border-left: 4px solid #E2B43B;
+      padding-left: 16px;
+      margin-bottom: 18px;
+    }
+
+    .s3-title {
+      font-family: "Playfair Display", serif;
+      font-size: 66px;
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      margin-bottom: 22px;
+    }
+
+    .s3-word {
+      display: inline-block;
+      color: #6B685B;
+      margin-right: 12px;
+    }
+
+    .s3-vector-box {
+      width: 540px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .s3-fact {
+      width: 540px;
+      background: rgba(18, 22, 16, 0.94);
+      border-left: 3px solid #3B6E47;
+      padding: 16px 20px;
+    }
+
+    .s3-fact-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 600;
+      color: #7AC289;
+      margin-bottom: 6px;
+    }
+
+    .s3-fact-body {
+      font-family: "Inter", sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.28;
+      color: #F3EFE2;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene-03" data-width="1920" data-height="1080">
+    <div id="s3-right-frame" class="s3-right-frame" data-layout-allow-overflow>
+      <div id="s3-plate-inner" class="s3-plate-inner">
+        <img
+          id="s3-plate-img"
+          class="s3-plate-img"
+          src="assets/03_cacho_geotropismo.png"
+          alt="Cacho de bananas curvando para cima por geotropismo negativo"
+        />
+      </div>
+    </div>
+    <div class="s3-right-fade" data-layout-ignore></div>
+
+    <div id="s3-left" class="s3-left">
+      <div id="s3-kicker" class="s3-kicker">ESTÁGIO 03 / 05 // MORFOGÊNESE</div>
+
+      <h1 id="s3-title" class="s3-title">
+        <span id="s3-w1" class="s3-word">Contra</span>
+        <span id="s3-w2" class="s3-word">a</span>
+        <span id="s3-w3" class="s3-word">Força</span>
+        <span id="s3-w4" class="s3-word">da</span>
+        <span id="s3-w5" class="s3-word">Gravidade</span>
+      </h1>
+
+      <div id="s3-vector-box" class="s3-vector-box">
+        <svg viewBox="0 0 540 300" width="540" height="300" xmlns="http://www.w3.org/2000/svg">
+          <rect
+            x="2"
+            y="2"
+            width="536"
+            height="296"
+            fill="#121610"
+            stroke="rgba(59,110,71,0.55)"
+            stroke-width="2"
+          />
+
+          <line
+            id="s3-grav-shaft"
+            x1="115"
+            y1="52"
+            x2="115"
+            y2="225"
+            stroke="#C7C1B0"
+            stroke-width="4"
+            stroke-dasharray="180"
+            stroke-dashoffset="180"
+          />
+          <polygon id="s3-grav-head" points="103,218 127,218 115,244" fill="#C7C1B0" />
+          <text
+            id="s3-lbl-grav"
+            x="38"
+            y="278"
+            fill="#C7C1B0"
+            font-family="JetBrains Mono, monospace"
+            font-size="28"
+            font-weight="600"
+          >
+            GRAVIDADE
+          </text>
+
+          <path
+            id="s3-banana-arc"
+            d="M 275 215 C 335 215, 395 168, 418 76"
+            fill="none"
+            stroke="#E2B43B"
+            stroke-width="11"
+            stroke-linecap="round"
+            stroke-dasharray="280"
+            stroke-dashoffset="280"
+          />
+          <polygon id="s3-auxin-head" points="404,84 432,92 426,56" fill="#E2B43B" />
+
+          <text
+            id="s3-lbl-auxin"
+            x="230"
+            y="50"
+            fill="#E2B43B"
+            font-family="JetBrains Mono, monospace"
+            font-size="28"
+            font-weight="600"
+          >
+            GEOTROPISMO (-)
+          </text>
+        </svg>
+      </div>
+
+      <div id="s3-fact-clip" class="clip" data-start="2.4" data-duration="9.6">
+        <div id="s3-fact" class="s3-fact">
+          <div class="s3-fact-label">PARTENOCARPIA TRIPLOIDE</div>
+          <div class="s3-fact-body">Frutos desenvolvem-se sem fecundação e sem sementes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const SCENE_DURATION = 12;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo(
+        "#s3-plate-inner",
+        { scale: 1.04, x: 20, y: 18 },
+        { scale: 1.12, x: -12, y: -16, duration: SCENE_DURATION - 0.1, ease: "power2.inOut" },
+        0,
+      );
+
+      tl.fromTo("#s3-kicker", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power4.out" }, 0.1);
+
+      tl.fromTo("#s3-w1", { color: "#6B685B" }, { color: "#F3EFE2", duration: 0.25 }, 0.25);
+      tl.fromTo("#s3-w2", { color: "#6B685B" }, { color: "#F3EFE2", duration: 0.25 }, 0.4);
+      tl.fromTo("#s3-w3", { color: "#6B685B" }, { color: "#F3EFE2", duration: 0.25 }, 0.55);
+      tl.fromTo("#s3-w4", { color: "#6B685B" }, { color: "#F3EFE2", duration: 0.25 }, 0.7);
+      tl.fromTo("#s3-w5", { color: "#6B685B" }, { color: "#E2B43B", duration: 0.35 }, 0.85);
+
+      tl.fromTo(
+        "#s3-fact",
+        { opacity: 0, y: 16 },
+        { opacity: 1, y: 0, duration: 0.45, ease: "power4.out" },
+        2.5,
+      );
+
+      tl.fromTo(
+        "#s3-grav-shaft",
+        { strokeDashoffset: 180 },
+        { strokeDashoffset: 0, duration: 0.95, ease: "power2.out" },
+        5.25,
+      );
+      tl.fromTo("#s3-grav-head", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 6.1);
+      tl.fromTo("#s3-lbl-grav", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 6.2);
+
+      tl.fromTo(
+        "#s3-banana-arc",
+        { strokeDashoffset: 280 },
+        { strokeDashoffset: 0, duration: 1.5, ease: "power3.out" },
+        8.0,
+      );
+      tl.fromTo("#s3-auxin-head", { opacity: 0 }, { opacity: 1, duration: 0.25 }, 9.4);
+      tl.fromTo("#s3-lbl-auxin", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 9.5);
+
+      tl.to("#root", { opacity: 0.86, duration: 0.16, ease: "power3.in" }, SCENE_DURATION - 0.18);
+
+      tl.to({}, { duration: SCENE_DURATION }, 0);
+      window.__timelines["scene-03"] = tl;
+    })();
+  </script>
+</template>

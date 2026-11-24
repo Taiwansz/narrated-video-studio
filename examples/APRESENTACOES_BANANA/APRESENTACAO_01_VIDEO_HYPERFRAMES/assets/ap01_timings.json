@@ -1,0 +1,3271 @@
+{
+  "presentation": "ap01",
+  "title": "Ciclo de Vida da Banana (Musa spp.) - Canal Dark Explainer",
+  "voice": "pt-BR-AntonioNeural",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "audio_file": "ap01_narration.mp3",
+  "ambient_file": "ambient_bed_60s.mp3",
+  "srt_file": "ap01.srt",
+  "timeline_duration_sec": 60.0,
+  "ffprobe_duration_sec": 59.1025,
+  "spoken_duration_sec": 55.5125,
+  "volumedetect": {
+    "mean_volume_db": -20.4,
+    "max_volume_db": -2.6,
+    "integrated_lufs": -17.3
+  },
+  "scenes": [
+    {
+      "id": "cena_01",
+      "index": 1,
+      "title": "Rizoma, Broto Espadim e Pseudocaule",
+      "file": "ap01_cenas/cena_01.mp3",
+      "slot_start_sec": 0.0,
+      "slot_end_sec": 12.0,
+      "audio_offset_sec": 0.15,
+      "ffprobe_duration_sec": 11.4525,
+      "spoken_start_sec": 0.25,
+      "spoken_end_sec": 11.4625,
+      "spoken_duration_sec": 11.2125,
+      "volumedetect": {
+        "mean_volume_db": -19.6,
+        "max_volume_db": -3.6,
+        "integrated_lufs": -16.5
+      },
+      "text": "A bananeira não é uma árvore; é a maior erva do planeta. Sob o solo, seu caule real é um rizoma subterrâneo que dispara o broto espadim e ergue um pseudocaule de folhas sobrepostas.",
+      "words": [
+        {
+          "id": "s1_w0",
+          "global_id": "w0",
+          "text": "A",
+          "word": "A",
+          "start": 0.25,
+          "end": 0.3375,
+          "local_start": 0.1,
+          "local_end": 0.1875
+        },
+        {
+          "id": "s1_w1",
+          "global_id": "w1",
+          "text": "bananeira",
+          "word": "bananeira",
+          "start": 0.35,
+          "end": 0.875,
+          "local_start": 0.2,
+          "local_end": 0.725
+        },
+        {
+          "id": "s1_w2",
+          "global_id": "w2",
+          "text": "não",
+          "word": "não",
+          "start": 0.8875,
+          "end": 1.0625,
+          "local_start": 0.7375,
+          "local_end": 0.9125
+        },
+        {
+          "id": "s1_w3",
+          "global_id": "w3",
+          "text": "é",
+          "word": "é",
+          "start": 1.075,
+          "end": 1.1625,
+          "local_start": 0.925,
+          "local_end": 1.0125
+        },
+        {
+          "id": "s1_w4",
+          "global_id": "w4",
+          "text": "uma",
+          "word": "uma",
+          "start": 1.175,
+          "end": 1.35,
+          "local_start": 1.025,
+          "local_end": 1.2
+        },
+        {
+          "id": "s1_w5",
+          "global_id": "w5",
+          "text": "árvore;",
+          "word": "árvore",
+          "start": 1.3625,
+          "end": 1.825,
+          "local_start": 1.2125,
+          "local_end": 1.675
+        },
+        {
+          "id": "s1_w6",
+          "global_id": "w6",
+          "text": "é",
+          "word": "é",
+          "start": 2.0625,
+          "end": 2.1625,
+          "local_start": 1.9125,
+          "local_end": 2.0125
+        },
+        {
+          "id": "s1_w7",
+          "global_id": "w7",
+          "text": "a",
+          "word": "a",
+          "start": 2.175,
+          "end": 2.225,
+          "local_start": 2.025,
+          "local_end": 2.075
+        },
+        {
+          "id": "s1_w8",
+          "global_id": "w8",
+          "text": "maior",
+          "word": "maior",
+          "start": 2.2375,
+          "end": 2.575,
+          "local_start": 2.0875,
+          "local_end": 2.425
+        },
+        {
+          "id": "s1_w9",
+          "global_id": "w9",
+          "text": "erva",
+          "word": "erva",
+          "start": 2.5875,
+          "end": 2.8,
+          "local_start": 2.4375,
+          "local_end": 2.65
+        },
+        {
+          "id": "s1_w10",
+          "global_id": "w10",
+          "text": "do",
+          "word": "do",
+          "start": 2.8125,
+          "end": 2.925,
+          "local_start": 2.6625,
+          "local_end": 2.775
+        },
+        {
+          "id": "s1_w11",
+          "global_id": "w11",
+          "text": "planeta.",
+          "word": "planeta",
+          "start": 2.9375,
+          "end": 3.5,
+          "local_start": 2.7875,
+          "local_end": 3.35
+        },
+        {
+          "id": "s1_w12",
+          "global_id": "w12",
+          "text": "Sob",
+          "word": "Sob",
+          "start": 4.3625,
+          "end": 4.725,
+          "local_start": 4.2125,
+          "local_end": 4.575
+        },
+        {
+          "id": "s1_w13",
+          "global_id": "w13",
+          "text": "o",
+          "word": "o",
+          "start": 4.7375,
+          "end": 4.775,
+          "local_start": 4.5875,
+          "local_end": 4.625
+        },
+        {
+          "id": "s1_w14",
+          "global_id": "w14",
+          "text": "solo,",
+          "word": "solo",
+          "start": 4.7875,
+          "end": 5.175,
+          "local_start": 4.6375,
+          "local_end": 5.025
+        },
+        {
+          "id": "s1_w15",
+          "global_id": "w15",
+          "text": "seu",
+          "word": "seu",
+          "start": 5.4375,
+          "end": 5.6375,
+          "local_start": 5.2875,
+          "local_end": 5.4875
+        },
+        {
+          "id": "s1_w16",
+          "global_id": "w16",
+          "text": "caule",
+          "word": "caule",
+          "start": 5.65,
+          "end": 5.9625,
+          "local_start": 5.5,
+          "local_end": 5.8125
+        },
+        {
+          "id": "s1_w17",
+          "global_id": "w17",
+          "text": "real",
+          "word": "real",
+          "start": 5.975,
+          "end": 6.325,
+          "local_start": 5.825,
+          "local_end": 6.175
+        },
+        {
+          "id": "s1_w18",
+          "global_id": "w18",
+          "text": "é",
+          "word": "é",
+          "start": 6.3375,
+          "end": 6.375,
+          "local_start": 6.1875,
+          "local_end": 6.225
+        },
+        {
+          "id": "s1_w19",
+          "global_id": "w19",
+          "text": "um",
+          "word": "um",
+          "start": 6.3875,
+          "end": 6.475,
+          "local_start": 6.2375,
+          "local_end": 6.325
+        },
+        {
+          "id": "s1_w20",
+          "global_id": "w20",
+          "text": "rizoma",
+          "word": "rizoma",
+          "start": 6.4875,
+          "end": 6.9125,
+          "local_start": 6.3375,
+          "local_end": 6.7625
+        },
+        {
+          "id": "s1_w21",
+          "global_id": "w21",
+          "text": "subterrâneo",
+          "word": "subterrâneo",
+          "start": 6.925,
+          "end": 7.675,
+          "local_start": 6.775,
+          "local_end": 7.525
+        },
+        {
+          "id": "s1_w22",
+          "global_id": "w22",
+          "text": "que",
+          "word": "que",
+          "start": 7.6875,
+          "end": 7.7875,
+          "local_start": 7.5375,
+          "local_end": 7.6375
+        },
+        {
+          "id": "s1_w23",
+          "global_id": "w23",
+          "text": "dispara",
+          "word": "dispara",
+          "start": 7.8,
+          "end": 8.175,
+          "local_start": 7.65,
+          "local_end": 8.025
+        },
+        {
+          "id": "s1_w24",
+          "global_id": "w24",
+          "text": "o",
+          "word": "o",
+          "start": 8.1875,
+          "end": 8.2125,
+          "local_start": 8.0375,
+          "local_end": 8.0625
+        },
+        {
+          "id": "s1_w25",
+          "global_id": "w25",
+          "text": "broto",
+          "word": "broto",
+          "start": 8.225,
+          "end": 8.5125,
+          "local_start": 8.075,
+          "local_end": 8.3625
+        },
+        {
+          "id": "s1_w26",
+          "global_id": "w26",
+          "text": "espadim",
+          "word": "espadim",
+          "start": 8.525,
+          "end": 8.9875,
+          "local_start": 8.375,
+          "local_end": 8.8375
+        },
+        {
+          "id": "s1_w27",
+          "global_id": "w27",
+          "text": "e",
+          "word": "e",
+          "start": 9.0,
+          "end": 9.0375,
+          "local_start": 8.85,
+          "local_end": 8.8875
+        },
+        {
+          "id": "s1_w28",
+          "global_id": "w28",
+          "text": "ergue",
+          "word": "ergue",
+          "start": 9.05,
+          "end": 9.325,
+          "local_start": 8.9,
+          "local_end": 9.175
+        },
+        {
+          "id": "s1_w29",
+          "global_id": "w29",
+          "text": "um",
+          "word": "um",
+          "start": 9.3375,
+          "end": 9.4375,
+          "local_start": 9.1875,
+          "local_end": 9.2875
+        },
+        {
+          "id": "s1_w30",
+          "global_id": "w30",
+          "text": "pseudocaule",
+          "word": "pseudocaule",
+          "start": 9.45,
+          "end": 10.1,
+          "local_start": 9.3,
+          "local_end": 9.95
+        },
+        {
+          "id": "s1_w31",
+          "global_id": "w31",
+          "text": "de",
+          "word": "de",
+          "start": 10.1125,
+          "end": 10.225,
+          "local_start": 9.9625,
+          "local_end": 10.075
+        },
+        {
+          "id": "s1_w32",
+          "global_id": "w32",
+          "text": "folhas",
+          "word": "folhas",
+          "start": 10.2375,
+          "end": 10.625,
+          "local_start": 10.0875,
+          "local_end": 10.475
+        },
+        {
+          "id": "s1_w33",
+          "global_id": "w33",
+          "text": "sobrepostas.",
+          "word": "sobrepostas",
+          "start": 10.6375,
+          "end": 11.4625,
+          "local_start": 10.4875,
+          "local_end": 11.3125
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s1_c0",
+          "global_id": "c0",
+          "text": "A bananeira não",
+          "start": 0.25,
+          "end": 1.065,
+          "local_start": 0.1,
+          "local_end": 0.915,
+          "word_ids": [
+            "w0",
+            "w1",
+            "w2"
+          ]
+        },
+        {
+          "id": "s1_c1",
+          "global_id": "c1",
+          "text": "é uma árvore;",
+          "start": 1.075,
+          "end": 1.905,
+          "local_start": 0.925,
+          "local_end": 1.755,
+          "word_ids": [
+            "w3",
+            "w4",
+            "w5"
+          ]
+        },
+        {
+          "id": "s1_c2",
+          "global_id": "c2",
+          "text": "é a maior",
+          "start": 2.0625,
+          "end": 2.5775,
+          "local_start": 1.9125,
+          "local_end": 2.4275,
+          "word_ids": [
+            "w6",
+            "w7",
+            "w8"
+          ]
+        },
+        {
+          "id": "s1_c3",
+          "global_id": "c3",
+          "text": "erva do planeta.",
+          "start": 2.5875,
+          "end": 3.58,
+          "local_start": 2.4375,
+          "local_end": 3.43,
+          "word_ids": [
+            "w9",
+            "w10",
+            "w11"
+          ]
+        },
+        {
+          "id": "s1_c4",
+          "global_id": "c4",
+          "text": "Sob o solo,",
+          "start": 4.3625,
+          "end": 5.255,
+          "local_start": 4.2125,
+          "local_end": 5.105,
+          "word_ids": [
+            "w12",
+            "w13",
+            "w14"
+          ]
+        },
+        {
+          "id": "s1_c5",
+          "global_id": "c5",
+          "text": "seu caule real é um",
+          "start": 5.4375,
+          "end": 6.4775,
+          "local_start": 5.2875,
+          "local_end": 6.3275,
+          "word_ids": [
+            "w15",
+            "w16",
+            "w17",
+            "w18",
+            "w19"
+          ]
+        },
+        {
+          "id": "s1_c6",
+          "global_id": "c6",
+          "text": "rizoma subterrâneo que dispara o",
+          "start": 6.4875,
+          "end": 8.215,
+          "local_start": 6.3375,
+          "local_end": 8.065,
+          "word_ids": [
+            "w20",
+            "w21",
+            "w22",
+            "w23",
+            "w24"
+          ]
+        },
+        {
+          "id": "s1_c7",
+          "global_id": "c7",
+          "text": "broto espadim e ergue um",
+          "start": 8.225,
+          "end": 9.44,
+          "local_start": 8.075,
+          "local_end": 9.29,
+          "word_ids": [
+            "w25",
+            "w26",
+            "w27",
+            "w28",
+            "w29"
+          ]
+        },
+        {
+          "id": "s1_c8",
+          "global_id": "c8",
+          "text": "pseudocaule de folhas sobrepostas.",
+          "start": 9.45,
+          "end": 11.5425,
+          "local_start": 9.3,
+          "local_end": 11.3925,
+          "word_ids": [
+            "w30",
+            "w31",
+            "w32",
+            "w33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_02",
+      "index": 2,
+      "title": "Diferenciacao Floral e Mangara",
+      "file": "ap01_cenas/cena_02.mp3",
+      "slot_start_sec": 12.0,
+      "slot_end_sec": 24.0,
+      "audio_offset_sec": 12.15,
+      "ffprobe_duration_sec": 11.5525,
+      "spoken_start_sec": 12.25,
+      "spoken_end_sec": 23.5625,
+      "spoken_duration_sec": 11.3125,
+      "volumedetect": {
+        "mean_volume_db": -20.5,
+        "max_volume_db": -2.9,
+        "integrated_lufs": -17.5
+      },
+      "text": "Na maturidade, ocorre a diferenciação floral. O pendão atravessa o pseudocaule e irrompe como o mangará, o coração arroxeado cujas brácteas revelam flores femininas e masculinas.",
+      "words": [
+        {
+          "id": "s2_w0",
+          "global_id": "w34",
+          "text": "Na",
+          "word": "Na",
+          "start": 12.25,
+          "end": 12.4,
+          "local_start": 0.1,
+          "local_end": 0.25
+        },
+        {
+          "id": "s2_w1",
+          "global_id": "w35",
+          "text": "maturidade,",
+          "word": "maturidade",
+          "start": 12.4125,
+          "end": 13.1375,
+          "local_start": 0.2625,
+          "local_end": 0.9875
+        },
+        {
+          "id": "s2_w2",
+          "global_id": "w36",
+          "text": "ocorre",
+          "word": "ocorre",
+          "start": 13.4,
+          "end": 13.8125,
+          "local_start": 1.25,
+          "local_end": 1.6625
+        },
+        {
+          "id": "s2_w3",
+          "global_id": "w37",
+          "text": "a",
+          "word": "a",
+          "start": 13.825,
+          "end": 13.8875,
+          "local_start": 1.675,
+          "local_end": 1.7375
+        },
+        {
+          "id": "s2_w4",
+          "global_id": "w38",
+          "text": "diferenciação",
+          "word": "diferenciação",
+          "start": 13.9,
+          "end": 14.675,
+          "local_start": 1.75,
+          "local_end": 2.525
+        },
+        {
+          "id": "s2_w5",
+          "global_id": "w39",
+          "text": "floral.",
+          "word": "floral",
+          "start": 14.6875,
+          "end": 15.15,
+          "local_start": 2.5375,
+          "local_end": 3.0
+        },
+        {
+          "id": "s2_w6",
+          "global_id": "w40",
+          "text": "O",
+          "word": "O",
+          "start": 16.0125,
+          "end": 16.1375,
+          "local_start": 3.8625,
+          "local_end": 3.9875
+        },
+        {
+          "id": "s2_w7",
+          "global_id": "w41",
+          "text": "pendão",
+          "word": "pendão",
+          "start": 16.15,
+          "end": 16.5875,
+          "local_start": 4.0,
+          "local_end": 4.4375
+        },
+        {
+          "id": "s2_w8",
+          "global_id": "w42",
+          "text": "atravessa",
+          "word": "atravessa",
+          "start": 16.6,
+          "end": 17.05,
+          "local_start": 4.45,
+          "local_end": 4.9
+        },
+        {
+          "id": "s2_w9",
+          "global_id": "w43",
+          "text": "o",
+          "word": "o",
+          "start": 17.0625,
+          "end": 17.0875,
+          "local_start": 4.9125,
+          "local_end": 4.9375
+        },
+        {
+          "id": "s2_w10",
+          "global_id": "w44",
+          "text": "pseudocaule",
+          "word": "pseudocaule",
+          "start": 17.1,
+          "end": 17.75,
+          "local_start": 4.95,
+          "local_end": 5.6
+        },
+        {
+          "id": "s2_w11",
+          "global_id": "w45",
+          "text": "e",
+          "word": "e",
+          "start": 17.7625,
+          "end": 17.7875,
+          "local_start": 5.6125,
+          "local_end": 5.6375
+        },
+        {
+          "id": "s2_w12",
+          "global_id": "w46",
+          "text": "irrompe",
+          "word": "irrompe",
+          "start": 17.8,
+          "end": 18.275,
+          "local_start": 5.65,
+          "local_end": 6.125
+        },
+        {
+          "id": "s2_w13",
+          "global_id": "w47",
+          "text": "como",
+          "word": "como",
+          "start": 18.2875,
+          "end": 18.5,
+          "local_start": 6.1375,
+          "local_end": 6.35
+        },
+        {
+          "id": "s2_w14",
+          "global_id": "w48",
+          "text": "o",
+          "word": "o",
+          "start": 18.5125,
+          "end": 18.525,
+          "local_start": 6.3625,
+          "local_end": 6.375
+        },
+        {
+          "id": "s2_w15",
+          "global_id": "w49",
+          "text": "mangará,",
+          "word": "mangará",
+          "start": 18.5375,
+          "end": 18.9875,
+          "local_start": 6.3875,
+          "local_end": 6.8375
+        },
+        {
+          "id": "s2_w16",
+          "global_id": "w50",
+          "text": "o",
+          "word": "o",
+          "start": 19.3,
+          "end": 19.3625,
+          "local_start": 7.15,
+          "local_end": 7.2125
+        },
+        {
+          "id": "s2_w17",
+          "global_id": "w51",
+          "text": "coração",
+          "word": "coração",
+          "start": 19.375,
+          "end": 19.8875,
+          "local_start": 7.225,
+          "local_end": 7.7375
+        },
+        {
+          "id": "s2_w18",
+          "global_id": "w52",
+          "text": "arroxeado",
+          "word": "arroxeado",
+          "start": 19.9,
+          "end": 20.475,
+          "local_start": 7.75,
+          "local_end": 8.325
+        },
+        {
+          "id": "s2_w19",
+          "global_id": "w53",
+          "text": "cujas",
+          "word": "cujas",
+          "start": 20.4875,
+          "end": 20.7875,
+          "local_start": 8.3375,
+          "local_end": 8.6375
+        },
+        {
+          "id": "s2_w20",
+          "global_id": "w54",
+          "text": "brácteas",
+          "word": "brácteas",
+          "start": 20.8,
+          "end": 21.275,
+          "local_start": 8.65,
+          "local_end": 9.125
+        },
+        {
+          "id": "s2_w21",
+          "global_id": "w55",
+          "text": "revelam",
+          "word": "revelam",
+          "start": 21.2875,
+          "end": 21.6625,
+          "local_start": 9.1375,
+          "local_end": 9.5125
+        },
+        {
+          "id": "s2_w22",
+          "global_id": "w56",
+          "text": "flores",
+          "word": "flores",
+          "start": 21.675,
+          "end": 22.0875,
+          "local_start": 9.525,
+          "local_end": 9.9375
+        },
+        {
+          "id": "s2_w23",
+          "global_id": "w57",
+          "text": "femininas",
+          "word": "femininas",
+          "start": 22.1,
+          "end": 22.6375,
+          "local_start": 9.95,
+          "local_end": 10.4875
+        },
+        {
+          "id": "s2_w24",
+          "global_id": "w58",
+          "text": "e",
+          "word": "e",
+          "start": 22.65,
+          "end": 22.7625,
+          "local_start": 10.5,
+          "local_end": 10.6125
+        },
+        {
+          "id": "s2_w25",
+          "global_id": "w59",
+          "text": "masculinas.",
+          "word": "masculinas",
+          "start": 22.775,
+          "end": 23.5625,
+          "local_start": 10.625,
+          "local_end": 11.4125
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s2_c0",
+          "global_id": "c9",
+          "text": "Na maturidade,",
+          "start": 12.25,
+          "end": 13.2175,
+          "local_start": 0.1,
+          "local_end": 1.0675,
+          "word_ids": [
+            "w34",
+            "w35"
+          ]
+        },
+        {
+          "id": "s2_c1",
+          "global_id": "c10",
+          "text": "ocorre a diferenciação floral.",
+          "start": 13.4,
+          "end": 15.23,
+          "local_start": 1.25,
+          "local_end": 3.08,
+          "word_ids": [
+            "w36",
+            "w37",
+            "w38",
+            "w39"
+          ]
+        },
+        {
+          "id": "s2_c2",
+          "global_id": "c11",
+          "text": "O pendão atravessa o pseudocaule",
+          "start": 16.0125,
+          "end": 17.7525,
+          "local_start": 3.8625,
+          "local_end": 5.6025,
+          "word_ids": [
+            "w40",
+            "w41",
+            "w42",
+            "w43",
+            "w44"
+          ]
+        },
+        {
+          "id": "s2_c3",
+          "global_id": "c12",
+          "text": "e irrompe como o mangará,",
+          "start": 17.7625,
+          "end": 19.0675,
+          "local_start": 5.6125,
+          "local_end": 6.9175,
+          "word_ids": [
+            "w45",
+            "w46",
+            "w47",
+            "w48",
+            "w49"
+          ]
+        },
+        {
+          "id": "s2_c4",
+          "global_id": "c13",
+          "text": "o coração arroxeado cujas brácteas",
+          "start": 19.3,
+          "end": 21.2775,
+          "local_start": 7.15,
+          "local_end": 9.1275,
+          "word_ids": [
+            "w50",
+            "w51",
+            "w52",
+            "w53",
+            "w54"
+          ]
+        },
+        {
+          "id": "s2_c5",
+          "global_id": "c14",
+          "text": "revelam flores femininas e masculinas.",
+          "start": 21.2875,
+          "end": 23.6425,
+          "local_start": 9.1375,
+          "local_end": 11.4925,
+          "word_ids": [
+            "w55",
+            "w56",
+            "w57",
+            "w58",
+            "w59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_03",
+      "index": 3,
+      "title": "Partenocarpia e Geotropismo Negativo",
+      "file": "ap01_cenas/cena_03.mp3",
+      "slot_start_sec": 24.0,
+      "slot_end_sec": 36.0,
+      "audio_offset_sec": 24.15,
+      "ffprobe_duration_sec": 11.44,
+      "spoken_start_sec": 24.25,
+      "spoken_end_sec": 35.45,
+      "spoken_duration_sec": 11.2,
+      "volumedetect": {
+        "mean_volume_db": -20.9,
+        "max_volume_db": -3.3,
+        "integrated_lufs": -17.8
+      },
+      "text": "Sem sementes nem polinização, os frutos nascem por partenocarpia. Embora o cacho penda pelo próprio peso, cada banana faz geotropismo negativo, curvando-se para o alto.",
+      "words": [
+        {
+          "id": "s3_w0",
+          "global_id": "w60",
+          "text": "Sem",
+          "word": "Sem",
+          "start": 24.25,
+          "end": 24.55,
+          "local_start": 0.1,
+          "local_end": 0.4
+        },
+        {
+          "id": "s3_w1",
+          "global_id": "w61",
+          "text": "sementes",
+          "word": "sementes",
+          "start": 24.5625,
+          "end": 25.125,
+          "local_start": 0.4125,
+          "local_end": 0.975
+        },
+        {
+          "id": "s3_w2",
+          "global_id": "w62",
+          "text": "nem",
+          "word": "nem",
+          "start": 25.1375,
+          "end": 25.3,
+          "local_start": 0.9875,
+          "local_end": 1.15
+        },
+        {
+          "id": "s3_w3",
+          "global_id": "w63",
+          "text": "polinização,",
+          "word": "polinização",
+          "start": 25.3125,
+          "end": 26.0375,
+          "local_start": 1.1625,
+          "local_end": 1.8875
+        },
+        {
+          "id": "s3_w4",
+          "global_id": "w64",
+          "text": "os",
+          "word": "os",
+          "start": 26.35,
+          "end": 26.475,
+          "local_start": 2.2,
+          "local_end": 2.325
+        },
+        {
+          "id": "s3_w5",
+          "global_id": "w65",
+          "text": "frutos",
+          "word": "frutos",
+          "start": 26.4875,
+          "end": 26.925,
+          "local_start": 2.3375,
+          "local_end": 2.775
+        },
+        {
+          "id": "s3_w6",
+          "global_id": "w66",
+          "text": "nascem",
+          "word": "nascem",
+          "start": 26.9375,
+          "end": 27.2875,
+          "local_start": 2.7875,
+          "local_end": 3.1375
+        },
+        {
+          "id": "s3_w7",
+          "global_id": "w67",
+          "text": "por",
+          "word": "por",
+          "start": 27.3,
+          "end": 27.45,
+          "local_start": 3.15,
+          "local_end": 3.3
+        },
+        {
+          "id": "s3_w8",
+          "global_id": "w68",
+          "text": "partenocarpia.",
+          "word": "partenocarpia",
+          "start": 27.4625,
+          "end": 28.4125,
+          "local_start": 3.3125,
+          "local_end": 4.2625
+        },
+        {
+          "id": "s3_w9",
+          "global_id": "w69",
+          "text": "Embora",
+          "word": "Embora",
+          "start": 29.275,
+          "end": 29.725,
+          "local_start": 5.125,
+          "local_end": 5.575
+        },
+        {
+          "id": "s3_w10",
+          "global_id": "w70",
+          "text": "o",
+          "word": "o",
+          "start": 29.7375,
+          "end": 29.775,
+          "local_start": 5.5875,
+          "local_end": 5.625
+        },
+        {
+          "id": "s3_w11",
+          "global_id": "w71",
+          "text": "cacho",
+          "word": "cacho",
+          "start": 29.7875,
+          "end": 30.15,
+          "local_start": 5.6375,
+          "local_end": 6.0
+        },
+        {
+          "id": "s3_w12",
+          "global_id": "w72",
+          "text": "penda",
+          "word": "penda",
+          "start": 30.1625,
+          "end": 30.425,
+          "local_start": 6.0125,
+          "local_end": 6.275
+        },
+        {
+          "id": "s3_w13",
+          "global_id": "w73",
+          "text": "pelo",
+          "word": "pelo",
+          "start": 30.4375,
+          "end": 30.65,
+          "local_start": 6.2875,
+          "local_end": 6.5
+        },
+        {
+          "id": "s3_w14",
+          "global_id": "w74",
+          "text": "próprio",
+          "word": "próprio",
+          "start": 30.6625,
+          "end": 31.0625,
+          "local_start": 6.5125,
+          "local_end": 6.9125
+        },
+        {
+          "id": "s3_w15",
+          "global_id": "w75",
+          "text": "peso,",
+          "word": "peso",
+          "start": 31.075,
+          "end": 31.4625,
+          "local_start": 6.925,
+          "local_end": 7.3125
+        },
+        {
+          "id": "s3_w16",
+          "global_id": "w76",
+          "text": "cada",
+          "word": "cada",
+          "start": 31.7,
+          "end": 31.95,
+          "local_start": 7.55,
+          "local_end": 7.8
+        },
+        {
+          "id": "s3_w17",
+          "global_id": "w77",
+          "text": "banana",
+          "word": "banana",
+          "start": 31.9625,
+          "end": 32.3875,
+          "local_start": 7.8125,
+          "local_end": 8.2375
+        },
+        {
+          "id": "s3_w18",
+          "global_id": "w78",
+          "text": "faz",
+          "word": "faz",
+          "start": 32.4,
+          "end": 32.6,
+          "local_start": 8.25,
+          "local_end": 8.45
+        },
+        {
+          "id": "s3_w19",
+          "global_id": "w79",
+          "text": "geotropismo",
+          "word": "geotropismo",
+          "start": 32.6125,
+          "end": 33.2375,
+          "local_start": 8.4625,
+          "local_end": 9.0875
+        },
+        {
+          "id": "s3_w20",
+          "global_id": "w80",
+          "text": "negativo,",
+          "word": "negativo",
+          "start": 33.25,
+          "end": 33.85,
+          "local_start": 9.1,
+          "local_end": 9.7
+        },
+        {
+          "id": "s3_w21",
+          "global_id": "w81",
+          "text": "curvando-se",
+          "word": "curvando-se",
+          "start": 34.1125,
+          "end": 34.825,
+          "local_start": 9.9625,
+          "local_end": 10.675
+        },
+        {
+          "id": "s3_w22",
+          "global_id": "w82",
+          "text": "para",
+          "word": "para",
+          "start": 34.8375,
+          "end": 35.0125,
+          "local_start": 10.6875,
+          "local_end": 10.8625
+        },
+        {
+          "id": "s3_w23",
+          "global_id": "w83",
+          "text": "o",
+          "word": "o",
+          "start": 35.025,
+          "end": 35.1,
+          "local_start": 10.875,
+          "local_end": 10.95
+        },
+        {
+          "id": "s3_w24",
+          "global_id": "w84",
+          "text": "alto.",
+          "word": "alto",
+          "start": 35.1125,
+          "end": 35.45,
+          "local_start": 10.9625,
+          "local_end": 11.3
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s3_c0",
+          "global_id": "c15",
+          "text": "Sem sementes nem polinização,",
+          "start": 24.25,
+          "end": 26.1175,
+          "local_start": 0.1,
+          "local_end": 1.9675,
+          "word_ids": [
+            "w60",
+            "w61",
+            "w62",
+            "w63"
+          ]
+        },
+        {
+          "id": "s3_c1",
+          "global_id": "c16",
+          "text": "os frutos nascem por partenocarpia.",
+          "start": 26.35,
+          "end": 28.4925,
+          "local_start": 2.2,
+          "local_end": 4.3425,
+          "word_ids": [
+            "w64",
+            "w65",
+            "w66",
+            "w67",
+            "w68"
+          ]
+        },
+        {
+          "id": "s3_c2",
+          "global_id": "c17",
+          "text": "Embora o cacho penda",
+          "start": 29.275,
+          "end": 30.4275,
+          "local_start": 5.125,
+          "local_end": 6.2775,
+          "word_ids": [
+            "w69",
+            "w70",
+            "w71",
+            "w72"
+          ]
+        },
+        {
+          "id": "s3_c3",
+          "global_id": "c18",
+          "text": "pelo próprio peso,",
+          "start": 30.4375,
+          "end": 31.5425,
+          "local_start": 6.2875,
+          "local_end": 7.3925,
+          "word_ids": [
+            "w73",
+            "w74",
+            "w75"
+          ]
+        },
+        {
+          "id": "s3_c4",
+          "global_id": "c19",
+          "text": "cada banana faz geotropismo negativo,",
+          "start": 31.7,
+          "end": 33.93,
+          "local_start": 7.55,
+          "local_end": 9.78,
+          "word_ids": [
+            "w76",
+            "w77",
+            "w78",
+            "w79",
+            "w80"
+          ]
+        },
+        {
+          "id": "s3_c5",
+          "global_id": "c20",
+          "text": "curvando-se para o alto.",
+          "start": 34.1125,
+          "end": 35.53,
+          "local_start": 9.9625,
+          "local_end": 11.38,
+          "word_ids": [
+            "w81",
+            "w82",
+            "w83",
+            "w84"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_04",
+      "index": 4,
+      "title": "Climaterio, Etileno e Amido em Acucares",
+      "file": "ap01_cenas/cena_04.mp3",
+      "slot_start_sec": 36.0,
+      "slot_end_sec": 48.0,
+      "audio_offset_sec": 36.15,
+      "ffprobe_duration_sec": 11.315,
+      "spoken_start_sec": 36.25,
+      "spoken_end_sec": 47.325,
+      "spoken_duration_sec": 11.075,
+      "volumedetect": {
+        "mean_volume_db": -19.8,
+        "max_volume_db": -2.6,
+        "integrated_lufs": -16.9
+      },
+      "text": "Como fruto climatérico, a banana acelera a respiração e libera o gás etileno. Esse hormônio ativa enzimas que transformam amido em açúcares doces, amaciam a polpa e douram a casca.",
+      "words": [
+        {
+          "id": "s4_w0",
+          "global_id": "w85",
+          "text": "Como",
+          "word": "Como",
+          "start": 36.25,
+          "end": 36.525,
+          "local_start": 0.1,
+          "local_end": 0.375
+        },
+        {
+          "id": "s4_w1",
+          "global_id": "w86",
+          "text": "fruto",
+          "word": "fruto",
+          "start": 36.5375,
+          "end": 36.85,
+          "local_start": 0.3875,
+          "local_end": 0.7
+        },
+        {
+          "id": "s4_w2",
+          "global_id": "w87",
+          "text": "climatérico,",
+          "word": "climatérico",
+          "start": 36.8625,
+          "end": 37.6125,
+          "local_start": 0.7125,
+          "local_end": 1.4625
+        },
+        {
+          "id": "s4_w3",
+          "global_id": "w88",
+          "text": "a",
+          "word": "a",
+          "start": 37.7375,
+          "end": 37.8125,
+          "local_start": 1.5875,
+          "local_end": 1.6625
+        },
+        {
+          "id": "s4_w4",
+          "global_id": "w89",
+          "text": "banana",
+          "word": "banana",
+          "start": 37.825,
+          "end": 38.2375,
+          "local_start": 1.675,
+          "local_end": 2.0875
+        },
+        {
+          "id": "s4_w5",
+          "global_id": "w90",
+          "text": "acelera",
+          "word": "acelera",
+          "start": 38.25,
+          "end": 38.6625,
+          "local_start": 2.1,
+          "local_end": 2.5125
+        },
+        {
+          "id": "s4_w6",
+          "global_id": "w91",
+          "text": "a",
+          "word": "a",
+          "start": 38.675,
+          "end": 38.7,
+          "local_start": 2.525,
+          "local_end": 2.55
+        },
+        {
+          "id": "s4_w7",
+          "global_id": "w92",
+          "text": "respiração",
+          "word": "respiração",
+          "start": 38.7125,
+          "end": 39.4125,
+          "local_start": 2.5625,
+          "local_end": 3.2625
+        },
+        {
+          "id": "s4_w8",
+          "global_id": "w93",
+          "text": "e",
+          "word": "e",
+          "start": 39.425,
+          "end": 39.45,
+          "local_start": 3.275,
+          "local_end": 3.3
+        },
+        {
+          "id": "s4_w9",
+          "global_id": "w94",
+          "text": "libera",
+          "word": "libera",
+          "start": 39.4625,
+          "end": 39.775,
+          "local_start": 3.3125,
+          "local_end": 3.625
+        },
+        {
+          "id": "s4_w10",
+          "global_id": "w95",
+          "text": "o",
+          "word": "o",
+          "start": 39.7875,
+          "end": 39.8125,
+          "local_start": 3.6375,
+          "local_end": 3.6625
+        },
+        {
+          "id": "s4_w11",
+          "global_id": "w96",
+          "text": "gás",
+          "word": "gás",
+          "start": 39.825,
+          "end": 40.0375,
+          "local_start": 3.675,
+          "local_end": 3.8875
+        },
+        {
+          "id": "s4_w12",
+          "global_id": "w97",
+          "text": "etileno.",
+          "word": "etileno",
+          "start": 40.05,
+          "end": 40.625,
+          "local_start": 3.9,
+          "local_end": 4.475
+        },
+        {
+          "id": "s4_w13",
+          "global_id": "w98",
+          "text": "Esse",
+          "word": "Esse",
+          "start": 41.4875,
+          "end": 41.75,
+          "local_start": 5.3375,
+          "local_end": 5.6
+        },
+        {
+          "id": "s4_w14",
+          "global_id": "w99",
+          "text": "hormônio",
+          "word": "hormônio",
+          "start": 41.7625,
+          "end": 42.1625,
+          "local_start": 5.6125,
+          "local_end": 6.0125
+        },
+        {
+          "id": "s4_w15",
+          "global_id": "w100",
+          "text": "ativa",
+          "word": "ativa",
+          "start": 42.175,
+          "end": 42.4875,
+          "local_start": 6.025,
+          "local_end": 6.3375
+        },
+        {
+          "id": "s4_w16",
+          "global_id": "w101",
+          "text": "enzimas",
+          "word": "enzimas",
+          "start": 42.5,
+          "end": 42.9875,
+          "local_start": 6.35,
+          "local_end": 6.8375
+        },
+        {
+          "id": "s4_w17",
+          "global_id": "w102",
+          "text": "que",
+          "word": "que",
+          "start": 43.0,
+          "end": 43.1125,
+          "local_start": 6.85,
+          "local_end": 6.9625
+        },
+        {
+          "id": "s4_w18",
+          "global_id": "w103",
+          "text": "transformam",
+          "word": "transformam",
+          "start": 43.125,
+          "end": 43.725,
+          "local_start": 6.975,
+          "local_end": 7.575
+        },
+        {
+          "id": "s4_w19",
+          "global_id": "w104",
+          "text": "amido",
+          "word": "amido",
+          "start": 43.7375,
+          "end": 44.05,
+          "local_start": 7.5875,
+          "local_end": 7.9
+        },
+        {
+          "id": "s4_w20",
+          "global_id": "w105",
+          "text": "em",
+          "word": "em",
+          "start": 44.0625,
+          "end": 44.1375,
+          "local_start": 7.9125,
+          "local_end": 7.9875
+        },
+        {
+          "id": "s4_w21",
+          "global_id": "w106",
+          "text": "açúcares",
+          "word": "açúcares",
+          "start": 44.15,
+          "end": 44.7,
+          "local_start": 8.0,
+          "local_end": 8.55
+        },
+        {
+          "id": "s4_w22",
+          "global_id": "w107",
+          "text": "doces,",
+          "word": "doces",
+          "start": 44.7125,
+          "end": 45.1875,
+          "local_start": 8.5625,
+          "local_end": 9.0375
+        },
+        {
+          "id": "s4_w23",
+          "global_id": "w108",
+          "text": "amaciam",
+          "word": "amaciam",
+          "start": 45.4625,
+          "end": 46.0375,
+          "local_start": 9.3125,
+          "local_end": 9.8875
+        },
+        {
+          "id": "s4_w24",
+          "global_id": "w109",
+          "text": "a",
+          "word": "a",
+          "start": 46.05,
+          "end": 46.1125,
+          "local_start": 9.9,
+          "local_end": 9.9625
+        },
+        {
+          "id": "s4_w25",
+          "global_id": "w110",
+          "text": "polpa",
+          "word": "polpa",
+          "start": 46.125,
+          "end": 46.4625,
+          "local_start": 9.975,
+          "local_end": 10.3125
+        },
+        {
+          "id": "s4_w26",
+          "global_id": "w111",
+          "text": "e",
+          "word": "e",
+          "start": 46.475,
+          "end": 46.5125,
+          "local_start": 10.325,
+          "local_end": 10.3625
+        },
+        {
+          "id": "s4_w27",
+          "global_id": "w112",
+          "text": "douram",
+          "word": "douram",
+          "start": 46.525,
+          "end": 46.8375,
+          "local_start": 10.375,
+          "local_end": 10.6875
+        },
+        {
+          "id": "s4_w28",
+          "global_id": "w113",
+          "text": "a",
+          "word": "a",
+          "start": 46.85,
+          "end": 46.8875,
+          "local_start": 10.7,
+          "local_end": 10.7375
+        },
+        {
+          "id": "s4_w29",
+          "global_id": "w114",
+          "text": "casca.",
+          "word": "casca",
+          "start": 46.9,
+          "end": 47.325,
+          "local_start": 10.75,
+          "local_end": 11.175
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s4_c0",
+          "global_id": "c21",
+          "text": "Como fruto climatérico,",
+          "start": 36.25,
+          "end": 37.6925,
+          "local_start": 0.1,
+          "local_end": 1.5425,
+          "word_ids": [
+            "w85",
+            "w86",
+            "w87"
+          ]
+        },
+        {
+          "id": "s4_c1",
+          "global_id": "c22",
+          "text": "a banana acelera a respiração",
+          "start": 37.7375,
+          "end": 39.415,
+          "local_start": 1.5875,
+          "local_end": 3.265,
+          "word_ids": [
+            "w88",
+            "w89",
+            "w90",
+            "w91",
+            "w92"
+          ]
+        },
+        {
+          "id": "s4_c2",
+          "global_id": "c23",
+          "text": "e libera o gás etileno.",
+          "start": 39.425,
+          "end": 40.705,
+          "local_start": 3.275,
+          "local_end": 4.555,
+          "word_ids": [
+            "w93",
+            "w94",
+            "w95",
+            "w96",
+            "w97"
+          ]
+        },
+        {
+          "id": "s4_c3",
+          "global_id": "c24",
+          "text": "Esse hormônio ativa enzimas que",
+          "start": 41.4875,
+          "end": 43.115,
+          "local_start": 5.3375,
+          "local_end": 6.965,
+          "word_ids": [
+            "w98",
+            "w99",
+            "w100",
+            "w101",
+            "w102"
+          ]
+        },
+        {
+          "id": "s4_c4",
+          "global_id": "c25",
+          "text": "transformam amido em açúcares doces,",
+          "start": 43.125,
+          "end": 45.2675,
+          "local_start": 6.975,
+          "local_end": 9.1175,
+          "word_ids": [
+            "w103",
+            "w104",
+            "w105",
+            "w106",
+            "w107"
+          ]
+        },
+        {
+          "id": "s4_c5",
+          "global_id": "c26",
+          "text": "amaciam a polpa e",
+          "start": 45.4625,
+          "end": 46.515,
+          "local_start": 9.3125,
+          "local_end": 10.365,
+          "word_ids": [
+            "w108",
+            "w109",
+            "w110",
+            "w111"
+          ]
+        },
+        {
+          "id": "s4_c6",
+          "global_id": "c27",
+          "text": "douram a casca.",
+          "start": 46.525,
+          "end": 47.405,
+          "local_start": 10.375,
+          "local_end": 11.255,
+          "word_ids": [
+            "w112",
+            "w113",
+            "w114"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena_05",
+      "index": 5,
+      "title": "Senescencia, Corte e Sucessao pelo Perfilho",
+      "file": "ap01_cenas/cena_05.mp3",
+      "slot_start_sec": 48.0,
+      "slot_end_sec": 60.0,
+      "audio_offset_sec": 48.15,
+      "ffprobe_duration_sec": 10.9525,
+      "spoken_start_sec": 48.25,
+      "spoken_end_sec": 58.9625,
+      "spoken_duration_sec": 10.7125,
+      "volumedetect": {
+        "mean_volume_db": -20.7,
+        "max_volume_db": -4.1,
+        "integrated_lufs": -17.6
+      },
+      "text": "Cada pseudocaule frutifica uma única vez e entra em senescência. Ao cortá-lo após a colheita, o rizoma transfere energia ao perfilho filho, garantindo sucessão contínua.",
+      "words": [
+        {
+          "id": "s5_w0",
+          "global_id": "w115",
+          "text": "Cada",
+          "word": "Cada",
+          "start": 48.25,
+          "end": 48.5625,
+          "local_start": 0.1,
+          "local_end": 0.4125
+        },
+        {
+          "id": "s5_w1",
+          "global_id": "w116",
+          "text": "pseudocaule",
+          "word": "pseudocaule",
+          "start": 48.575,
+          "end": 49.2375,
+          "local_start": 0.425,
+          "local_end": 1.0875
+        },
+        {
+          "id": "s5_w2",
+          "global_id": "w117",
+          "text": "frutifica",
+          "word": "frutifica",
+          "start": 49.25,
+          "end": 49.7625,
+          "local_start": 1.1,
+          "local_end": 1.6125
+        },
+        {
+          "id": "s5_w3",
+          "global_id": "w118",
+          "text": "uma",
+          "word": "uma",
+          "start": 49.775,
+          "end": 49.925,
+          "local_start": 1.625,
+          "local_end": 1.775
+        },
+        {
+          "id": "s5_w4",
+          "global_id": "w119",
+          "text": "única",
+          "word": "única",
+          "start": 49.9375,
+          "end": 50.325,
+          "local_start": 1.7875,
+          "local_end": 2.175
+        },
+        {
+          "id": "s5_w5",
+          "global_id": "w120",
+          "text": "vez",
+          "word": "vez",
+          "start": 50.3375,
+          "end": 50.575,
+          "local_start": 2.1875,
+          "local_end": 2.425
+        },
+        {
+          "id": "s5_w6",
+          "global_id": "w121",
+          "text": "e",
+          "word": "e",
+          "start": 50.5875,
+          "end": 50.7375,
+          "local_start": 2.4375,
+          "local_end": 2.5875
+        },
+        {
+          "id": "s5_w7",
+          "global_id": "w122",
+          "text": "entra",
+          "word": "entra",
+          "start": 50.75,
+          "end": 51.0375,
+          "local_start": 2.6,
+          "local_end": 2.8875
+        },
+        {
+          "id": "s5_w8",
+          "global_id": "w123",
+          "text": "em",
+          "word": "em",
+          "start": 51.05,
+          "end": 51.1125,
+          "local_start": 2.9,
+          "local_end": 2.9625
+        },
+        {
+          "id": "s5_w9",
+          "global_id": "w124",
+          "text": "senescência.",
+          "word": "senescência",
+          "start": 51.125,
+          "end": 51.8625,
+          "local_start": 2.975,
+          "local_end": 3.7125
+        },
+        {
+          "id": "s5_w10",
+          "global_id": "w125",
+          "text": "Ao",
+          "word": "Ao",
+          "start": 52.725,
+          "end": 52.9125,
+          "local_start": 4.575,
+          "local_end": 4.7625
+        },
+        {
+          "id": "s5_w11",
+          "global_id": "w126",
+          "text": "cortá-lo",
+          "word": "cortá-lo",
+          "start": 52.925,
+          "end": 53.4125,
+          "local_start": 4.775,
+          "local_end": 5.2625
+        },
+        {
+          "id": "s5_w12",
+          "global_id": "w127",
+          "text": "após",
+          "word": "após",
+          "start": 53.425,
+          "end": 53.625,
+          "local_start": 5.275,
+          "local_end": 5.475
+        },
+        {
+          "id": "s5_w13",
+          "global_id": "w128",
+          "text": "a",
+          "word": "a",
+          "start": 53.6375,
+          "end": 53.7625,
+          "local_start": 5.4875,
+          "local_end": 5.6125
+        },
+        {
+          "id": "s5_w14",
+          "global_id": "w129",
+          "text": "colheita,",
+          "word": "colheita",
+          "start": 53.775,
+          "end": 54.25,
+          "local_start": 5.625,
+          "local_end": 6.1
+        },
+        {
+          "id": "s5_w15",
+          "global_id": "w130",
+          "text": "o",
+          "word": "o",
+          "start": 54.575,
+          "end": 54.65,
+          "local_start": 6.425,
+          "local_end": 6.5
+        },
+        {
+          "id": "s5_w16",
+          "global_id": "w131",
+          "text": "rizoma",
+          "word": "rizoma",
+          "start": 54.6625,
+          "end": 55.1375,
+          "local_start": 6.5125,
+          "local_end": 6.9875
+        },
+        {
+          "id": "s5_w17",
+          "global_id": "w132",
+          "text": "transfere",
+          "word": "transfere",
+          "start": 55.15,
+          "end": 55.575,
+          "local_start": 7.0,
+          "local_end": 7.425
+        },
+        {
+          "id": "s5_w18",
+          "global_id": "w133",
+          "text": "energia",
+          "word": "energia",
+          "start": 55.5875,
+          "end": 56.025,
+          "local_start": 7.4375,
+          "local_end": 7.875
+        },
+        {
+          "id": "s5_w19",
+          "global_id": "w134",
+          "text": "ao",
+          "word": "ao",
+          "start": 56.0375,
+          "end": 56.125,
+          "local_start": 7.8875,
+          "local_end": 7.975
+        },
+        {
+          "id": "s5_w20",
+          "global_id": "w135",
+          "text": "perfilho",
+          "word": "perfilho",
+          "start": 56.1375,
+          "end": 56.575,
+          "local_start": 7.9875,
+          "local_end": 8.425
+        },
+        {
+          "id": "s5_w21",
+          "global_id": "w136",
+          "text": "filho,",
+          "word": "filho",
+          "start": 56.5875,
+          "end": 56.9,
+          "local_start": 8.4375,
+          "local_end": 8.75
+        },
+        {
+          "id": "s5_w22",
+          "global_id": "w137",
+          "text": "garantindo",
+          "word": "garantindo",
+          "start": 57.2,
+          "end": 57.75,
+          "local_start": 9.05,
+          "local_end": 9.6
+        },
+        {
+          "id": "s5_w23",
+          "global_id": "w138",
+          "text": "sucessão",
+          "word": "sucessão",
+          "start": 57.7625,
+          "end": 58.3,
+          "local_start": 9.6125,
+          "local_end": 10.15
+        },
+        {
+          "id": "s5_w24",
+          "global_id": "w139",
+          "text": "contínua.",
+          "word": "contínua",
+          "start": 58.3125,
+          "end": 58.9625,
+          "local_start": 10.1625,
+          "local_end": 10.8125
+        }
+      ],
+      "caption_groups": [
+        {
+          "id": "s5_c0",
+          "global_id": "c28",
+          "text": "Cada pseudocaule frutifica uma única",
+          "start": 48.25,
+          "end": 50.3275,
+          "local_start": 0.1,
+          "local_end": 2.1775,
+          "word_ids": [
+            "w115",
+            "w116",
+            "w117",
+            "w118",
+            "w119"
+          ]
+        },
+        {
+          "id": "s5_c1",
+          "global_id": "c29",
+          "text": "vez e entra em senescência.",
+          "start": 50.3375,
+          "end": 51.9425,
+          "local_start": 2.1875,
+          "local_end": 3.7925,
+          "word_ids": [
+            "w120",
+            "w121",
+            "w122",
+            "w123",
+            "w124"
+          ]
+        },
+        {
+          "id": "s5_c2",
+          "global_id": "c30",
+          "text": "Ao cortá-lo após a colheita,",
+          "start": 52.725,
+          "end": 54.33,
+          "local_start": 4.575,
+          "local_end": 6.18,
+          "word_ids": [
+            "w125",
+            "w126",
+            "w127",
+            "w128",
+            "w129"
+          ]
+        },
+        {
+          "id": "s5_c3",
+          "global_id": "c31",
+          "text": "o rizoma transfere energia",
+          "start": 54.575,
+          "end": 56.0275,
+          "local_start": 6.425,
+          "local_end": 7.8775,
+          "word_ids": [
+            "w130",
+            "w131",
+            "w132",
+            "w133"
+          ]
+        },
+        {
+          "id": "s5_c4",
+          "global_id": "c32",
+          "text": "ao perfilho filho,",
+          "start": 56.0375,
+          "end": 56.98,
+          "local_start": 7.8875,
+          "local_end": 8.83,
+          "word_ids": [
+            "w134",
+            "w135",
+            "w136"
+          ]
+        },
+        {
+          "id": "s5_c5",
+          "global_id": "c33",
+          "text": "garantindo sucessão contínua.",
+          "start": 57.2,
+          "end": 59.0425,
+          "local_start": 9.05,
+          "local_end": 10.8925,
+          "word_ids": [
+            "w137",
+            "w138",
+            "w139"
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w0",
+      "scene": 1,
+      "text": "A",
+      "start": 0.25,
+      "end": 0.3375
+    },
+    {
+      "id": "w1",
+      "scene": 1,
+      "text": "bananeira",
+      "start": 0.35,
+      "end": 0.875
+    },
+    {
+      "id": "w2",
+      "scene": 1,
+      "text": "não",
+      "start": 0.8875,
+      "end": 1.0625
+    },
+    {
+      "id": "w3",
+      "scene": 1,
+      "text": "é",
+      "start": 1.075,
+      "end": 1.1625
+    },
+    {
+      "id": "w4",
+      "scene": 1,
+      "text": "uma",
+      "start": 1.175,
+      "end": 1.35
+    },
+    {
+      "id": "w5",
+      "scene": 1,
+      "text": "árvore;",
+      "start": 1.3625,
+      "end": 1.825
+    },
+    {
+      "id": "w6",
+      "scene": 1,
+      "text": "é",
+      "start": 2.0625,
+      "end": 2.1625
+    },
+    {
+      "id": "w7",
+      "scene": 1,
+      "text": "a",
+      "start": 2.175,
+      "end": 2.225
+    },
+    {
+      "id": "w8",
+      "scene": 1,
+      "text": "maior",
+      "start": 2.2375,
+      "end": 2.575
+    },
+    {
+      "id": "w9",
+      "scene": 1,
+      "text": "erva",
+      "start": 2.5875,
+      "end": 2.8
+    },
+    {
+      "id": "w10",
+      "scene": 1,
+      "text": "do",
+      "start": 2.8125,
+      "end": 2.925
+    },
+    {
+      "id": "w11",
+      "scene": 1,
+      "text": "planeta.",
+      "start": 2.9375,
+      "end": 3.5
+    },
+    {
+      "id": "w12",
+      "scene": 1,
+      "text": "Sob",
+      "start": 4.3625,
+      "end": 4.725
+    },
+    {
+      "id": "w13",
+      "scene": 1,
+      "text": "o",
+      "start": 4.7375,
+      "end": 4.775
+    },
+    {
+      "id": "w14",
+      "scene": 1,
+      "text": "solo,",
+      "start": 4.7875,
+      "end": 5.175
+    },
+    {
+      "id": "w15",
+      "scene": 1,
+      "text": "seu",
+      "start": 5.4375,
+      "end": 5.6375
+    },
+    {
+      "id": "w16",
+      "scene": 1,
+      "text": "caule",
+      "start": 5.65,
+      "end": 5.9625
+    },
+    {
+      "id": "w17",
+      "scene": 1,
+      "text": "real",
+      "start": 5.975,
+      "end": 6.325
+    },
+    {
+      "id": "w18",
+      "scene": 1,
+      "text": "é",
+      "start": 6.3375,
+      "end": 6.375
+    },
+    {
+      "id": "w19",
+      "scene": 1,
+      "text": "um",
+      "start": 6.3875,
+      "end": 6.475
+    },
+    {
+      "id": "w20",
+      "scene": 1,
+      "text": "rizoma",
+      "start": 6.4875,
+      "end": 6.9125
+    },
+    {
+      "id": "w21",
+      "scene": 1,
+      "text": "subterrâneo",
+      "start": 6.925,
+      "end": 7.675
+    },
+    {
+      "id": "w22",
+      "scene": 1,
+      "text": "que",
+      "start": 7.6875,
+      "end": 7.7875
+    },
+    {
+      "id": "w23",
+      "scene": 1,
+      "text": "dispara",
+      "start": 7.8,
+      "end": 8.175
+    },
+    {
+      "id": "w24",
+      "scene": 1,
+      "text": "o",
+      "start": 8.1875,
+      "end": 8.2125
+    },
+    {
+      "id": "w25",
+      "scene": 1,
+      "text": "broto",
+      "start": 8.225,
+      "end": 8.5125
+    },
+    {
+      "id": "w26",
+      "scene": 1,
+      "text": "espadim",
+      "start": 8.525,
+      "end": 8.9875
+    },
+    {
+      "id": "w27",
+      "scene": 1,
+      "text": "e",
+      "start": 9.0,
+      "end": 9.0375
+    },
+    {
+      "id": "w28",
+      "scene": 1,
+      "text": "ergue",
+      "start": 9.05,
+      "end": 9.325
+    },
+    {
+      "id": "w29",
+      "scene": 1,
+      "text": "um",
+      "start": 9.3375,
+      "end": 9.4375
+    },
+    {
+      "id": "w30",
+      "scene": 1,
+      "text": "pseudocaule",
+      "start": 9.45,
+      "end": 10.1
+    },
+    {
+      "id": "w31",
+      "scene": 1,
+      "text": "de",
+      "start": 10.1125,
+      "end": 10.225
+    },
+    {
+      "id": "w32",
+      "scene": 1,
+      "text": "folhas",
+      "start": 10.2375,
+      "end": 10.625
+    },
+    {
+      "id": "w33",
+      "scene": 1,
+      "text": "sobrepostas.",
+      "start": 10.6375,
+      "end": 11.4625
+    },
+    {
+      "id": "w34",
+      "scene": 2,
+      "text": "Na",
+      "start": 12.25,
+      "end": 12.4
+    },
+    {
+      "id": "w35",
+      "scene": 2,
+      "text": "maturidade,",
+      "start": 12.4125,
+      "end": 13.1375
+    },
+    {
+      "id": "w36",
+      "scene": 2,
+      "text": "ocorre",
+      "start": 13.4,
+      "end": 13.8125
+    },
+    {
+      "id": "w37",
+      "scene": 2,
+      "text": "a",
+      "start": 13.825,
+      "end": 13.8875
+    },
+    {
+      "id": "w38",
+      "scene": 2,
+      "text": "diferenciação",
+      "start": 13.9,
+      "end": 14.675
+    },
+    {
+      "id": "w39",
+      "scene": 2,
+      "text": "floral.",
+      "start": 14.6875,
+      "end": 15.15
+    },
+    {
+      "id": "w40",
+      "scene": 2,
+      "text": "O",
+      "start": 16.0125,
+      "end": 16.1375
+    },
+    {
+      "id": "w41",
+      "scene": 2,
+      "text": "pendão",
+      "start": 16.15,
+      "end": 16.5875
+    },
+    {
+      "id": "w42",
+      "scene": 2,
+      "text": "atravessa",
+      "start": 16.6,
+      "end": 17.05
+    },
+    {
+      "id": "w43",
+      "scene": 2,
+      "text": "o",
+      "start": 17.0625,
+      "end": 17.0875
+    },
+    {
+      "id": "w44",
+      "scene": 2,
+      "text": "pseudocaule",
+      "start": 17.1,
+      "end": 17.75
+    },
+    {
+      "id": "w45",
+      "scene": 2,
+      "text": "e",
+      "start": 17.7625,
+      "end": 17.7875
+    },
+    {
+      "id": "w46",
+      "scene": 2,
+      "text": "irrompe",
+      "start": 17.8,
+      "end": 18.275
+    },
+    {
+      "id": "w47",
+      "scene": 2,
+      "text": "como",
+      "start": 18.2875,
+      "end": 18.5
+    },
+    {
+      "id": "w48",
+      "scene": 2,
+      "text": "o",
+      "start": 18.5125,
+      "end": 18.525
+    },
+    {
+      "id": "w49",
+      "scene": 2,
+      "text": "mangará,",
+      "start": 18.5375,
+      "end": 18.9875
+    },
+    {
+      "id": "w50",
+      "scene": 2,
+      "text": "o",
+      "start": 19.3,
+      "end": 19.3625
+    },
+    {
+      "id": "w51",
+      "scene": 2,
+      "text": "coração",
+      "start": 19.375,
+      "end": 19.8875
+    },
+    {
+      "id": "w52",
+      "scene": 2,
+      "text": "arroxeado",
+      "start": 19.9,
+      "end": 20.475
+    },
+    {
+      "id": "w53",
+      "scene": 2,
+      "text": "cujas",
+      "start": 20.4875,
+      "end": 20.7875
+    },
+    {
+      "id": "w54",
+      "scene": 2,
+      "text": "brácteas",
+      "start": 20.8,
+      "end": 21.275
+    },
+    {
+      "id": "w55",
+      "scene": 2,
+      "text": "revelam",
+      "start": 21.2875,
+      "end": 21.6625
+    },
+    {
+      "id": "w56",
+      "scene": 2,
+      "text": "flores",
+      "start": 21.675,
+      "end": 22.0875
+    },
+    {
+      "id": "w57",
+      "scene": 2,
+      "text": "femininas",
+      "start": 22.1,
+      "end": 22.6375
+    },
+    {
+      "id": "w58",
+      "scene": 2,
+      "text": "e",
+      "start": 22.65,
+      "end": 22.7625
+    },
+    {
+      "id": "w59",
+      "scene": 2,
+      "text": "masculinas.",
+      "start": 22.775,
+      "end": 23.5625
+    },
+    {
+      "id": "w60",
+      "scene": 3,
+      "text": "Sem",
+      "start": 24.25,
+      "end": 24.55
+    },
+    {
+      "id": "w61",
+      "scene": 3,
+      "text": "sementes",
+      "start": 24.5625,
+      "end": 25.125
+    },
+    {
+      "id": "w62",
+      "scene": 3,
+      "text": "nem",
+      "start": 25.1375,
+      "end": 25.3
+    },
+    {
+      "id": "w63",
+      "scene": 3,
+      "text": "polinização,",
+      "start": 25.3125,
+      "end": 26.0375
+    },
+    {
+      "id": "w64",
+      "scene": 3,
+      "text": "os",
+      "start": 26.35,
+      "end": 26.475
+    },
+    {
+      "id": "w65",
+      "scene": 3,
+      "text": "frutos",
+      "start": 26.4875,
+      "end": 26.925
+    },
+    {
+      "id": "w66",
+      "scene": 3,
+      "text": "nascem",
+      "start": 26.9375,
+      "end": 27.2875
+    },
+    {
+      "id": "w67",
+      "scene": 3,
+      "text": "por",
+      "start": 27.3,
+      "end": 27.45
+    },
+    {
+      "id": "w68",
+      "scene": 3,
+      "text": "partenocarpia.",
+      "start": 27.4625,
+      "end": 28.4125
+    },
+    {
+      "id": "w69",
+      "scene": 3,
+      "text": "Embora",
+      "start": 29.275,
+      "end": 29.725
+    },
+    {
+      "id": "w70",
+      "scene": 3,
+      "text": "o",
+      "start": 29.7375,
+      "end": 29.775
+    },
+    {
+      "id": "w71",
+      "scene": 3,
+      "text": "cacho",
+      "start": 29.7875,
+      "end": 30.15
+    },
+    {
+      "id": "w72",
+      "scene": 3,
+      "text": "penda",
+      "start": 30.1625,
+      "end": 30.425
+    },
+    {
+      "id": "w73",
+      "scene": 3,
+      "text": "pelo",
+      "start": 30.4375,
+      "end": 30.65
+    },
+    {
+      "id": "w74",
+      "scene": 3,
+      "text": "próprio",
+      "start": 30.6625,
+      "end": 31.0625
+    },
+    {
+      "id": "w75",
+      "scene": 3,
+      "text": "peso,",
+      "start": 31.075,
+      "end": 31.4625
+    },
+    {
+      "id": "w76",
+      "scene": 3,
+      "text": "cada",
+      "start": 31.7,
+      "end": 31.95
+    },
+    {
+      "id": "w77",
+      "scene": 3,
+      "text": "banana",
+      "start": 31.9625,
+      "end": 32.3875
+    },
+    {
+      "id": "w78",
+      "scene": 3,
+      "text": "faz",
+      "start": 32.4,
+      "end": 32.6
+    },
+    {
+      "id": "w79",
+      "scene": 3,
+      "text": "geotropismo",
+      "start": 32.6125,
+      "end": 33.2375
+    },
+    {
+      "id": "w80",
+      "scene": 3,
+      "text": "negativo,",
+      "start": 33.25,
+      "end": 33.85
+    },
+    {
+      "id": "w81",
+      "scene": 3,
+      "text": "curvando-se",
+      "start": 34.1125,
+      "end": 34.825
+    },
+    {
+      "id": "w82",
+      "scene": 3,
+      "text": "para",
+      "start": 34.8375,
+      "end": 35.0125
+    },
+    {
+      "id": "w83",
+      "scene": 3,
+      "text": "o",
+      "start": 35.025,
+      "end": 35.1
+    },
+    {
+      "id": "w84",
+      "scene": 3,
+      "text": "alto.",
+      "start": 35.1125,
+      "end": 35.45
+    },
+    {
+      "id": "w85",
+      "scene": 4,
+      "text": "Como",
+      "start": 36.25,
+      "end": 36.525
+    },
+    {
+      "id": "w86",
+      "scene": 4,
+      "text": "fruto",
+      "start": 36.5375,
+      "end": 36.85
+    },
+    {
+      "id": "w87",
+      "scene": 4,
+      "text": "climatérico,",
+      "start": 36.8625,
+      "end": 37.6125
+    },
+    {
+      "id": "w88",
+      "scene": 4,
+      "text": "a",
+      "start": 37.7375,
+      "end": 37.8125
+    },
+    {
+      "id": "w89",
+      "scene": 4,
+      "text": "banana",
+      "start": 37.825,
+      "end": 38.2375
+    },
+    {
+      "id": "w90",
+      "scene": 4,
+      "text": "acelera",
+      "start": 38.25,
+      "end": 38.6625
+    },
+    {
+      "id": "w91",
+      "scene": 4,
+      "text": "a",
+      "start": 38.675,
+      "end": 38.7
+    },
+    {
+      "id": "w92",
+      "scene": 4,
+      "text": "respiração",
+      "start": 38.7125,
+      "end": 39.4125
+    },
+    {
+      "id": "w93",
+      "scene": 4,
+      "text": "e",
+      "start": 39.425,
+      "end": 39.45
+    },
+    {
+      "id": "w94",
+      "scene": 4,
+      "text": "libera",
+      "start": 39.4625,
+      "end": 39.775
+    },
+    {
+      "id": "w95",
+      "scene": 4,
+      "text": "o",
+      "start": 39.7875,
+      "end": 39.8125
+    },
+    {
+      "id": "w96",
+      "scene": 4,
+      "text": "gás",
+      "start": 39.825,
+      "end": 40.0375
+    },
+    {
+      "id": "w97",
+      "scene": 4,
+      "text": "etileno.",
+      "start": 40.05,
+      "end": 40.625
+    },
+    {
+      "id": "w98",
+      "scene": 4,
+      "text": "Esse",
+      "start": 41.4875,
+      "end": 41.75
+    },
+    {
+      "id": "w99",
+      "scene": 4,
+      "text": "hormônio",
+      "start": 41.7625,
+      "end": 42.1625
+    },
+    {
+      "id": "w100",
+      "scene": 4,
+      "text": "ativa",
+      "start": 42.175,
+      "end": 42.4875
+    },
+    {
+      "id": "w101",
+      "scene": 4,
+      "text": "enzimas",
+      "start": 42.5,
+      "end": 42.9875
+    },
+    {
+      "id": "w102",
+      "scene": 4,
+      "text": "que",
+      "start": 43.0,
+      "end": 43.1125
+    },
+    {
+      "id": "w103",
+      "scene": 4,
+      "text": "transformam",
+      "start": 43.125,
+      "end": 43.725
+    },
+    {
+      "id": "w104",
+      "scene": 4,
+      "text": "amido",
+      "start": 43.7375,
+      "end": 44.05
+    },
+    {
+      "id": "w105",
+      "scene": 4,
+      "text": "em",
+      "start": 44.0625,
+      "end": 44.1375
+    },
+    {
+      "id": "w106",
+      "scene": 4,
+      "text": "açúcares",
+      "start": 44.15,
+      "end": 44.7
+    },
+    {
+      "id": "w107",
+      "scene": 4,
+      "text": "doces,",
+      "start": 44.7125,
+      "end": 45.1875
+    },
+    {
+      "id": "w108",
+      "scene": 4,
+      "text": "amaciam",
+      "start": 45.4625,
+      "end": 46.0375
+    },
+    {
+      "id": "w109",
+      "scene": 4,
+      "text": "a",
+      "start": 46.05,
+      "end": 46.1125
+    },
+    {
+      "id": "w110",
+      "scene": 4,
+      "text": "polpa",
+      "start": 46.125,
+      "end": 46.4625
+    },
+    {
+      "id": "w111",
+      "scene": 4,
+      "text": "e",
+      "start": 46.475,
+      "end": 46.5125
+    },
+    {
+      "id": "w112",
+      "scene": 4,
+      "text": "douram",
+      "start": 46.525,
+      "end": 46.8375
+    },
+    {
+      "id": "w113",
+      "scene": 4,
+      "text": "a",
+      "start": 46.85,
+      "end": 46.8875
+    },
+    {
+      "id": "w114",
+      "scene": 4,
+      "text": "casca.",
+      "start": 46.9,
+      "end": 47.325
+    },
+    {
+      "id": "w115",
+      "scene": 5,
+      "text": "Cada",
+      "start": 48.25,
+      "end": 48.5625
+    },
+    {
+      "id": "w116",
+      "scene": 5,
+      "text": "pseudocaule",
+      "start": 48.575,
+      "end": 49.2375
+    },
+    {
+      "id": "w117",
+      "scene": 5,
+      "text": "frutifica",
+      "start": 49.25,
+      "end": 49.7625
+    },
+    {
+      "id": "w118",
+      "scene": 5,
+      "text": "uma",
+      "start": 49.775,
+      "end": 49.925
+    },
+    {
+      "id": "w119",
+      "scene": 5,
+      "text": "única",
+      "start": 49.9375,
+      "end": 50.325
+    },
+    {
+      "id": "w120",
+      "scene": 5,
+      "text": "vez",
+      "start": 50.3375,
+      "end": 50.575
+    },
+    {
+      "id": "w121",
+      "scene": 5,
+      "text": "e",
+      "start": 50.5875,
+      "end": 50.7375
+    },
+    {
+      "id": "w122",
+      "scene": 5,
+      "text": "entra",
+      "start": 50.75,
+      "end": 51.0375
+    },
+    {
+      "id": "w123",
+      "scene": 5,
+      "text": "em",
+      "start": 51.05,
+      "end": 51.1125
+    },
+    {
+      "id": "w124",
+      "scene": 5,
+      "text": "senescência.",
+      "start": 51.125,
+      "end": 51.8625
+    },
+    {
+      "id": "w125",
+      "scene": 5,
+      "text": "Ao",
+      "start": 52.725,
+      "end": 52.9125
+    },
+    {
+      "id": "w126",
+      "scene": 5,
+      "text": "cortá-lo",
+      "start": 52.925,
+      "end": 53.4125
+    },
+    {
+      "id": "w127",
+      "scene": 5,
+      "text": "após",
+      "start": 53.425,
+      "end": 53.625
+    },
+    {
+      "id": "w128",
+      "scene": 5,
+      "text": "a",
+      "start": 53.6375,
+      "end": 53.7625
+    },
+    {
+      "id": "w129",
+      "scene": 5,
+      "text": "colheita,",
+      "start": 53.775,
+      "end": 54.25
+    },
+    {
+      "id": "w130",
+      "scene": 5,
+      "text": "o",
+      "start": 54.575,
+      "end": 54.65
+    },
+    {
+      "id": "w131",
+      "scene": 5,
+      "text": "rizoma",
+      "start": 54.6625,
+      "end": 55.1375
+    },
+    {
+      "id": "w132",
+      "scene": 5,
+      "text": "transfere",
+      "start": 55.15,
+      "end": 55.575
+    },
+    {
+      "id": "w133",
+      "scene": 5,
+      "text": "energia",
+      "start": 55.5875,
+      "end": 56.025
+    },
+    {
+      "id": "w134",
+      "scene": 5,
+      "text": "ao",
+      "start": 56.0375,
+      "end": 56.125
+    },
+    {
+      "id": "w135",
+      "scene": 5,
+      "text": "perfilho",
+      "start": 56.1375,
+      "end": 56.575
+    },
+    {
+      "id": "w136",
+      "scene": 5,
+      "text": "filho,",
+      "start": 56.5875,
+      "end": 56.9
+    },
+    {
+      "id": "w137",
+      "scene": 5,
+      "text": "garantindo",
+      "start": 57.2,
+      "end": 57.75
+    },
+    {
+      "id": "w138",
+      "scene": 5,
+      "text": "sucessão",
+      "start": 57.7625,
+      "end": 58.3
+    },
+    {
+      "id": "w139",
+      "scene": 5,
+      "text": "contínua.",
+      "start": 58.3125,
+      "end": 58.9625
+    }
+  ],
+  "captions": [
+    {
+      "id": "c0",
+      "scene": 1,
+      "text": "A bananeira não",
+      "start": 0.25,
+      "end": 1.065
+    },
+    {
+      "id": "c1",
+      "scene": 1,
+      "text": "é uma árvore;",
+      "start": 1.075,
+      "end": 1.905
+    },
+    {
+      "id": "c2",
+      "scene": 1,
+      "text": "é a maior",
+      "start": 2.0625,
+      "end": 2.5775
+    },
+    {
+      "id": "c3",
+      "scene": 1,
+      "text": "erva do planeta.",
+      "start": 2.5875,
+      "end": 3.58
+    },
+    {
+      "id": "c4",
+      "scene": 1,
+      "text": "Sob o solo,",
+      "start": 4.3625,
+      "end": 5.255
+    },
+    {
+      "id": "c5",
+      "scene": 1,
+      "text": "seu caule real é um",
+      "start": 5.4375,
+      "end": 6.4775
+    },
+    {
+      "id": "c6",
+      "scene": 1,
+      "text": "rizoma subterrâneo que dispara o",
+      "start": 6.4875,
+      "end": 8.215
+    },
+    {
+      "id": "c7",
+      "scene": 1,
+      "text": "broto espadim e ergue um",
+      "start": 8.225,
+      "end": 9.44
+    },
+    {
+      "id": "c8",
+      "scene": 1,
+      "text": "pseudocaule de folhas sobrepostas.",
+      "start": 9.45,
+      "end": 11.5425
+    },
+    {
+      "id": "c9",
+      "scene": 2,
+      "text": "Na maturidade,",
+      "start": 12.25,
+      "end": 13.2175
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "text": "ocorre a diferenciação floral.",
+      "start": 13.4,
+      "end": 15.23
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "text": "O pendão atravessa o pseudocaule",
+      "start": 16.0125,
+      "end": 17.7525
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "text": "e irrompe como o mangará,",
+      "start": 17.7625,
+      "end": 19.0675
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "text": "o coração arroxeado cujas brácteas",
+      "start": 19.3,
+      "end": 21.2775
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "text": "revelam flores femininas e masculinas.",
+      "start": 21.2875,
+      "end": 23.6425
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "text": "Sem sementes nem polinização,",
+      "start": 24.25,
+      "end": 26.1175
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "text": "os frutos nascem por partenocarpia.",
+      "start": 26.35,
+      "end": 28.4925
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "text": "Embora o cacho penda",
+      "start": 29.275,
+      "end": 30.4275
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "text": "pelo próprio peso,",
+      "start": 30.4375,
+      "end": 31.5425
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "text": "cada banana faz geotropismo negativo,",
+      "start": 31.7,
+      "end": 33.93
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "text": "curvando-se para o alto.",
+      "start": 34.1125,
+      "end": 35.53
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "text": "Como fruto climatérico,",
+      "start": 36.25,
+      "end": 37.6925
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "text": "a banana acelera a respiração",
+      "start": 37.7375,
+      "end": 39.415
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "text": "e libera o gás etileno.",
+      "start": 39.425,
+      "end": 40.705
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "text": "Esse hormônio ativa enzimas que",
+      "start": 41.4875,
+      "end": 43.115
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "text": "transformam amido em açúcares doces,",
+      "start": 43.125,
+      "end": 45.2675
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "text": "amaciam a polpa e",
+      "start": 45.4625,
+      "end": 46.515
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "text": "douram a casca.",
+      "start": 46.525,
+      "end": 47.405
+    },
+    {
+      "id": "c28",
+      "scene": 5,
+      "text": "Cada pseudocaule frutifica uma única",
+      "start": 48.25,
+      "end": 50.3275
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "text": "vez e entra em senescência.",
+      "start": 50.3375,
+      "end": 51.9425
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "text": "Ao cortá-lo após a colheita,",
+      "start": 52.725,
+      "end": 54.33
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "text": "o rizoma transfere energia",
+      "start": 54.575,
+      "end": 56.0275
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "text": "ao perfilho filho,",
+      "start": 56.0375,
+      "end": 56.98
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "text": "garantindo sucessão contínua.",
+      "start": 57.2,
+      "end": 59.0425
+    }
+  ]
+}

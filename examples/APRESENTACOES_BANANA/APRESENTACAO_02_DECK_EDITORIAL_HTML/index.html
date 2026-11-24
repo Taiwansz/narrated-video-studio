@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musa spp. · Monografia do Ciclo de Vida da Banana (60s)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F7F4EC;
+      --paper-alt: #EFEAE0;
+      --paper-plate: #FBF9F4;
+      --ink: #171915;
+      --ink-2: #4D4B43;
+      --ink-3: #636057;
+      --leaf: #2C5E3B;
+      --leaf-soft: rgba(44, 94, 59, 0.10);
+      --leaf-border: rgba(44, 94, 59, 0.34);
+      --ochre: #C68B19;
+      --ochre-ink: #8E6007;
+      --ochre-soft: rgba(198, 139, 25, 0.13);
+      --rule: rgba(23, 25, 21, 0.14);
+      --rule-strong: rgba(23, 25, 21, 0.28);
+      --dock-bg: rgba(247, 244, 236, 0.86);
+      --spring-ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      background: var(--paper);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      min-height: 100dvh;
+      background-color: var(--paper);
+      background-image:
+        radial-gradient(ellipse 90% 60% at 15% 0%, rgba(44, 94, 59, 0.045), transparent 60%),
+        radial-gradient(ellipse 70% 50% at 90% 100%, rgba(198, 139, 25, 0.05), transparent 58%);
+      color: var(--ink);
+      font-family: var(--font-body);
+      display: flex;
+      flex-direction: column;
+      overflow-x: clip;
+    }
+
+    /* Architectural Top Masthead */
+    .masthead {
+      width: 100%;
+      border-bottom: 1px solid var(--rule);
+      background: rgba(247, 244, 236, 0.92);
+      position: relative;
+      z-index: 20;
+    }
+
+    .masthead-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 12px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-bar {
+      width: 4px;
+      height: 30px;
+      background: var(--leaf);
+      flex-shrink: 0;
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .brand-kicker {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--leaf);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      font-optical-sizing: auto;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-title em {
+      font-style: italic;
+      font-weight: 600;
+      color: var(--ink-2);
+    }
+
+    /* 5-Stage Editorial Index Rail */
+    .chapter-rail {
+      display: flex;
+      align-items: stretch;
+      gap: 6px;
+    }
+
+    .chapter-tab {
+      appearance: none;
+      background: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid var(--rule);
+      padding: 6px 11px 7px;
+      cursor: pointer;
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+      transition:
+        color 220ms var(--spring-ease),
+        border-color 220ms var(--spring-ease),
+        background-color 220ms var(--spring-ease),
+        transform 100ms ease-out;
+      border-radius: 3px 3px 0 0;
+      touch-action: manipulation;
+    }
+
+    .chapter-tab:hover {
+      color: var(--ink);
+      background: rgba(23, 25, 21, 0.035);
+    }
+
+    .chapter-tab:active,
+    .chapter-tab.is-pressing {
+      transform: scale(0.97);
+    }
+
+    .chapter-tab[aria-selected="true"] {
+      color: var(--ink);
+      border-bottom-color: var(--leaf);
+      background: var(--paper-plate);
+      border-top-color: var(--rule);
+      border-left-color: var(--rule);
+      border-right-color: var(--rule);
+    }
+
+    .chapter-num {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--leaf);
+    }
+
+    .chapter-tab[aria-selected="true"] .chapter-num {
+      color: var(--ochre-ink);
+    }
+
+    .chapter-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    /* Main Asymmetric Monograph Stage (60/40 Split: 7fr / 5fr) */
+    .stage-shell {
+      flex: 1 0 auto;
+      width: 100%;
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 20px 28px 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* Left Anchor Column: Specimen Plate + Live Synchronized Caption */
+    .plate-column {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .plate-frame {
+      background: var(--paper-plate);
+      border: 1px solid var(--rule-strong);
+      padding: 12px;
+      position: relative;
+      box-shadow:
+        0 1px 2px rgba(23, 25, 21, 0.04),
+        0 12px 32px -12px rgba(23, 25, 21, 0.08);
+    }
+
+    /* Herbarium Corner Registration Marks */
+    .corner-mark {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      pointer-events: none;
+      z-index: 4;
+    }
+    .corner-mark.tl { top: 4px; left: 4px; border-top: 1.5px solid var(--leaf); border-left: 1.5px solid var(--leaf); }
+    .corner-mark.tr { top: 4px; right: 4px; border-top: 1.5px solid var(--leaf); border-right: 1.5px solid var(--leaf); }
+    .corner-mark.bl { bottom: 4px; left: 4px; border-bottom: 1.5px solid var(--leaf); border-left: 1.5px solid var(--leaf); }
+    .corner-mark.br { bottom: 4px; right: 4px; border-bottom: 1.5px solid var(--leaf); border-right: 1.5px solid var(--leaf); }
+
+    .plate-viewport {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--paper-alt);
+      overflow: hidden;
+      border: 1px solid var(--rule);
+    }
+
+    .plate-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transform: scale(1.03);
+      transition:
+        opacity 620ms var(--spring-ease),
+        transform 900ms var(--spring-ease);
+      will-change: opacity, transform;
+      pointer-events: none;
+    }
+
+    .plate-slide.is-active {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+      z-index: 2;
+    }
+
+    .plate-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .plate-slide.is-active img {
+      will-change: transform;
+    }
+
+    .plate-overlay-tag {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 3;
+      background: rgba(247, 244, 236, 0.92);
+      border: 1px solid var(--rule-strong);
+      padding: 5px 10px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .plate-colophon {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--ink-3);
+      letter-spacing: 0.08em;
+    }
+
+    .plate-colophon-title {
+      color: var(--ink-2);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Synchronized Caption Strip */
+    .caption-panel {
+      background: var(--paper-alt);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--leaf);
+      padding: 13px 16px;
+      min-height: 92px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      transition:
+        border-left-color 350ms var(--spring-ease),
+        opacity 260ms var(--spring-ease);
+    }
+
+    .caption-panel.is-climacteric {
+      border-left-color: var(--ochre);
+    }
+
+    .caption-panel.is-hidden {
+      opacity: 0.25;
+    }
+
+    .caption-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.675rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--leaf);
+    }
+
+    .caption-panel.is-climacteric .caption-header {
+      color: var(--ochre-ink);
+    }
+
+    .caption-time-badge {
+      color: var(--ink-3);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.08em;
+    }
+
+    .caption-text {
+      font-family: var(--font-body);
+      font-size: 0.96rem;
+      line-height: 1.48;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .caption-word {
+      transition: color 120ms ease, background-color 120ms ease;
+    }
+
+    .caption-word.is-spoken {
+      color: var(--leaf);
+    }
+
+    .caption-panel.is-climacteric .caption-word.is-spoken {
+      color: var(--ochre-ink);
+    }
+
+    .caption-word.is-current {
+      background: var(--ochre-soft);
+      color: var(--ink);
+      padding: 1px 2px;
+      margin: -1px -2px;
+      text-decoration: underline;
+      text-decoration-color: var(--ochre);
+      text-underline-offset: 3px;
+    }
+
+    /* Right Dossier Column: Monograph Text + Biometrics + Animated SVG Schematic */
+    .dossier-column {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .dossier-header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 14px;
+    }
+
+    .stage-kicker-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .stage-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--leaf);
+    }
+
+    .stage-kicker-square {
+      width: 7px;
+      height: 7px;
+      background: var(--ochre);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .stage-window {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      color: var(--ink-3);
+    }
+
+    .scene-headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.65rem, 2.35vw, 2.32rem);
+      font-weight: 700;
+      font-optical-sizing: auto;
+      line-height: 1.10;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 10px;
+      transition: opacity 320ms var(--spring-ease), transform 420ms var(--spring-ease);
+    }
+
+    .scene-headline em {
+      font-style: italic;
+      color: var(--leaf);
+      font-weight: 600;
+    }
+
+    .scene-summary {
+      font-size: 0.935rem;
+      line-height: 1.56;
+      color: var(--ink-2);
+    }
+
+    /* Biometric Technical Ledger */
+    .biometrics-list {
+      border-top: 1px solid var(--rule-strong);
+    }
+
+    .biometric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 14px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.84rem;
+    }
+
+    .biometric-key {
+      font-family: var(--font-mono);
+      font-size: 0.69rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      flex-shrink: 0;
+    }
+
+    .biometric-val {
+      font-weight: 600;
+      color: var(--ink);
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Animated Biological Diagram Card */
+    .diagram-card {
+      background: var(--paper-plate);
+      border: 1px solid var(--rule-strong);
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .diagram-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.675rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+    }
+
+    .diagram-phase-tag {
+      color: var(--ochre-ink);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .diagram-stage-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 460 / 168;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      overflow: hidden;
+    }
+
+    .bio-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transform: translateY(6px);
+      transition:
+        opacity 450ms var(--spring-ease),
+        transform 520ms var(--spring-ease);
+      pointer-events: none;
+    }
+
+    .bio-svg.is-active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .svg-label {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      font-weight: 600;
+      fill: var(--ink-2);
+      letter-spacing: 0.08em;
+    }
+
+    .svg-label-strong {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      fill: var(--ink);
+      letter-spacing: 0.06em;
+    }
+
+    .svg-label-leaf {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      font-weight: 700;
+      fill: var(--leaf);
+      letter-spacing: 0.08em;
+    }
+
+    .svg-label-ochre {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      font-weight: 700;
+      fill: var(--ochre-ink);
+      letter-spacing: 0.08em;
+    }
+
+    .diagram-caption {
+      font-size: 0.78rem;
+      line-height: 1.4;
+      color: var(--ink-3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .diagram-progress-mono {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--leaf);
+      flex-shrink: 0;
+    }
+
+    /* Translucent Bottom Player Control Dock */
+    .player-dock {
+      position: sticky;
+      bottom: 0;
+      z-index: 30;
+      width: 100%;
+      background: var(--dock-bg);
+      -webkit-backdrop-filter: blur(20px) saturate(150%);
+      backdrop-filter: blur(20px) saturate(150%);
+      border-top: 1px solid var(--rule-strong);
+      box-shadow: 0 -8px 28px -12px rgba(23, 25, 21, 0.10);
+    }
+
+    .dock-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 6px 28px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Interactive Scrub Bar with 1:1 Pointer Capture */
+    .scrubber-hit {
+      position: relative;
+      width: 100%;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      touch-action: none;
+      user-select: none;
+    }
+
+    .scrubber-track {
+      position: relative;
+      width: 100%;
+      height: 5px;
+      background: rgba(23, 25, 21, 0.12);
+      overflow: visible;
+      transition: height 160ms var(--spring-ease);
+    }
+
+    .scrubber-hit:hover .scrubber-track,
+    .scrubber-hit.is-dragging .scrubber-track {
+      height: 7px;
+    }
+
+    .scrubber-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0%;
+      background: linear-gradient(90deg, var(--leaf) 0%, var(--ochre) 100%);
+      pointer-events: none;
+    }
+
+    .scrubber-markers {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .scrubber-tick {
+      position: absolute;
+      top: -3px;
+      width: 1.5px;
+      height: 11px;
+      background: var(--paper);
+      box-shadow: 0 0 0 1px rgba(23, 25, 21, 0.25);
+    }
+
+    .scrubber-needle {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 4px;
+      height: 16px;
+      background: var(--ink);
+      border: 1px solid var(--paper);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: transform 120ms var(--spring-ease), background-color 150ms ease;
+    }
+
+    .scrubber-hit:active .scrubber-needle,
+    .scrubber-hit.is-dragging .scrubber-needle {
+      transform: translate(-50%, -50%) scale(1.15);
+      background: var(--ochre-ink);
+    }
+
+    .scrubber-tooltip {
+      position: absolute;
+      bottom: 24px;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      padding: 3px 7px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 150ms ease;
+    }
+
+    .scrubber-hit:hover .scrubber-tooltip,
+    .scrubber-hit.is-dragging .scrubber-tooltip {
+      opacity: 1;
+    }
+
+    /* Controls Transport Row */
+    .controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .transport-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ctrl-btn {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      height: 36px;
+      padding: 0 13px;
+      border-radius: 3px;
+      border: 1px solid var(--rule-strong);
+      background: var(--paper-plate);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 0.81rem;
+      font-weight: 600;
+      cursor: pointer;
+      touch-action: manipulation;
+      transition:
+        background-color 180ms var(--spring-ease),
+        border-color 180ms var(--spring-ease),
+        color 180ms var(--spring-ease),
+        transform 100ms ease-out;
+    }
+
+    .ctrl-btn:hover {
+      background: var(--paper-alt);
+      border-color: var(--ink);
+    }
+
+    .ctrl-btn:active,
+    .ctrl-btn.is-pressing {
+      transform: scale(0.97);
+    }
+
+    .ctrl-btn:focus-visible,
+    .chapter-tab:focus-visible,
+    .scrubber-hit:focus-visible {
+      outline: 2px solid var(--leaf);
+      outline-offset: 2px;
+    }
+
+    .ctrl-btn.primary {
+      background: var(--leaf);
+      border-color: var(--leaf);
+      color: var(--paper);
+      min-width: 132px;
+    }
+
+    .ctrl-btn.primary:hover {
+      background: #234C2F;
+      border-color: #234C2F;
+    }
+
+    .ctrl-btn.is-muted {
+      color: var(--ink-3);
+      background: var(--paper-alt);
+    }
+
+    .ctrl-btn svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    .telemetry-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .chronometer {
+      font-family: var(--font-mono);
+      font-size: 0.92rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      padding: 5px 10px;
+      background: var(--paper-plate);
+      border: 1px solid var(--rule);
+    }
+
+    .chronometer .sep {
+      color: var(--ink-3);
+      margin: 0 3px;
+    }
+
+    .chronometer .total {
+      color: var(--ink-2);
+    }
+
+    .stage-status-readout {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+    }
+
+    .kbd-legend {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--ink-3);
+      border-left: 1px solid var(--rule);
+      padding-left: 14px;
+    }
+
+    /* Desktop Optimization for 1440x900 zero-clipping single-viewport frame */
+    @media (min-width: 1024px) and (max-height: 940px) {
+      .masthead-inner {
+        padding: 10px 28px;
+      }
+      .stage-shell {
+        padding: 14px 28px 12px;
+        gap: 24px;
+      }
+      .plate-frame {
+        padding: 10px;
+      }
+      .caption-panel {
+        padding: 10px 14px;
+        min-height: 82px;
+      }
+      .dossier-header {
+        padding-bottom: 10px;
+      }
+      .scene-headline {
+        font-size: clamp(1.5rem, 2.15vw, 2.1rem);
+        margin-bottom: 8px;
+      }
+      .scene-summary {
+        font-size: 0.89rem;
+        line-height: 1.5;
+      }
+      .biometric-row {
+        padding: 6px 0;
+        font-size: 0.81rem;
+      }
+      .diagram-card {
+        padding: 10px 12px;
+        gap: 6px;
+      }
+      .dock-inner {
+        padding: 4px 28px 10px;
+        gap: 6px;
+      }
+    }
+
+    /* Tablet & Mobile Responsive Layout (e.g. 390x844) */
+    @media (max-width: 1023px) {
+      .masthead-inner {
+        padding: 10px 16px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .brand-kicker {
+        font-size: 0.625rem;
+        letter-spacing: 0.14em;
+        white-space: normal;
+      }
+
+      .brand-title {
+        font-size: 0.98rem;
+        white-space: normal;
+      }
+
+      .chapter-rail {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 4px;
+      }
+
+      .chapter-tab {
+        justify-content: center;
+        padding: 6px 4px;
+      }
+
+      .chapter-label {
+        display: none;
+      }
+
+      .stage-shell {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 14px 16px 26px;
+        gap: 18px;
+      }
+
+      .plate-frame {
+        padding: 8px;
+      }
+
+      .plate-overlay-tag {
+        left: 8px;
+        bottom: 8px;
+        max-width: calc(100% - 16px);
+        font-size: 0.56rem;
+        letter-spacing: 0.08em;
+        padding: 4px 7px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .plate-colophon {
+        font-size: 0.625rem;
+        gap: 8px;
+      }
+
+      #plate-colophon-index {
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .caption-panel {
+        min-height: 88px;
+        padding: 11px 13px;
+      }
+
+      .caption-text {
+        font-size: 0.9rem;
+      }
+
+      .scene-headline {
+        font-size: 1.6rem;
+      }
+
+      .kbd-legend,
+      .stage-status-readout {
+        display: none;
+      }
+
+      .dock-inner {
+        padding: 4px 14px 10px;
+        gap: 6px;
+      }
+
+      .controls-row {
+        gap: 6px;
+        flex-wrap: nowrap;
+      }
+
+      .transport-group {
+        gap: 4px;
+        flex-wrap: nowrap;
+      }
+
+      .ctrl-btn {
+        height: 34px;
+        padding: 0 8px;
+        font-size: 0.75rem;
+      }
+
+      .ctrl-btn .btn-text-hide-sm {
+        display: none;
+      }
+
+      .ctrl-btn.primary {
+        min-width: 98px;
+        padding: 0 10px;
+      }
+
+      .telemetry-group {
+        gap: 6px;
+        flex-shrink: 0;
+      }
+
+      .chronometer {
+        font-size: 0.72rem;
+        padding: 5px 7px;
+        white-space: nowrap;
+      }
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .plate-slide {
+        transform: none !important;
+        transition: opacity 150ms ease !important;
+      }
+      .plate-slide img {
+        transform: none !important;
+      }
+      .bio-svg {
+        transform: none !important;
+      }
+      .ctrl-btn:active,
+      .ctrl-btn.is-pressing,
+      .chapter-tab:active,
+      .chapter-tab.is-pressing {
+        transform: none !important;
+      }
+    }
+
+    /* Accessibility: Reduced Transparency */
+    @media (prefers-reduced-transparency: reduce) {
+      .masthead {
+        background: var(--paper);
+      }
+      .player-dock {
+        background: var(--paper);
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+      }
+      .plate-overlay-tag {
+        background: var(--paper);
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio id="narration-audio" preload="auto" data-src="assets/ap02_narration.mp3"></audio>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand-block">
+        <div class="brand-bar" aria-hidden="true"></div>
+        <div class="brand-meta">
+          <span class="brand-kicker">Monografia Botânica · Ciclo Fenológico (60s)</span>
+          <h1 class="brand-title">Ciclo Biológico da Bananeira <em>(Musa spp.)</em></h1>
+        </div>
+      </div>
+
+      <nav class="chapter-rail" aria-label="Estágios do ciclo biológico">
+        <button type="button" class="chapter-tab" data-scene-jump="0" aria-selected="true" title="Ir para Estágio 1">
+          <span class="chapter-num">01</span>
+          <span class="chapter-label">Rizoma</span>
+        </button>
+        <button type="button" class="chapter-tab" data-scene-jump="1" aria-selected="false" title="Ir para Estágio 2">
+          <span class="chapter-num">02</span>
+          <span class="chapter-label">Mangará</span>
+        </button>
+        <button type="button" class="chapter-tab" data-scene-jump="2" aria-selected="false" title="Ir para Estágio 3">
+          <span class="chapter-num">03</span>
+          <span class="chapter-label">Cacho</span>
+        </button>
+        <button type="button" class="chapter-tab" data-scene-jump="3" aria-selected="false" title="Ir para Estágio 4">
+          <span class="chapter-num">04</span>
+          <span class="chapter-label">Climatério</span>
+        </button>
+        <button type="button" class="chapter-tab" data-scene-jump="4" aria-selected="false" title="Ir para Estágio 5">
+          <span class="chapter-num">05</span>
+          <span class="chapter-label">Sucessão</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="stage-shell" id="main-stage">
+    <!-- Left Column (7fr): Specimen Plate + Live Captions -->
+    <section class="plate-column" aria-label="Prancha botânica e legendas sincronizadas">
+      <figure class="plate-frame">
+        <span class="corner-mark tl" aria-hidden="true"></span>
+        <span class="corner-mark tr" aria-hidden="true"></span>
+        <span class="corner-mark bl" aria-hidden="true"></span>
+        <span class="corner-mark br" aria-hidden="true"></span>
+
+        <div class="plate-viewport" id="plate-viewport">
+          <div class="plate-slide is-active" data-plate="0">
+            <img src="assets/01_rizoma_broto.png" alt="Corte transversal botânico do rizoma subterrâneo e broto espadim verde rompendo o solo">
+            <div class="plate-overlay-tag">PRANCHA I · RIZOMA &amp; BROTO ESPADIM</div>
+          </div>
+          <div class="plate-slide" data-plate="1">
+            <img src="assets/02_mangara_floracao.png" alt="Bananeira com pseudocaule de bainhas sobrepostas e inflorescência pendente mangará roxo-vinho">
+            <div class="plate-overlay-tag">PRANCHA II · PSEUDOCAULE &amp; MANGARÁ</div>
+          </div>
+          <div class="plate-slide" data-plate="2">
+            <img src="assets/03_cacho_geotropismo.png" alt="Cacho de bananas verdes curvando-se para cima por geotropismo negativo sob luz foliar">
+            <div class="plate-overlay-tag">PRANCHA III · PARTENOCARPIA &amp; GEOTROPISMO</div>
+          </div>
+          <div class="plate-slide" data-plate="3">
+            <img src="assets/04_maturacao_climaterica.png" alt="Transição botânica entre bananas verdes e maduras amarelo-ocre douradas durante o climatério">
+            <div class="plate-overlay-tag">PRANCHA IV · CLIMATÉRIO &amp; ETILENO C2H4</div>
+          </div>
+          <div class="plate-slide" data-plate="4">
+            <img src="assets/05_sucessao_perfilho.png" alt="Pseudocaule recém-cortado após a colheita nutrindo o perfilho sucessor no mesmo rizoma">
+            <div class="plate-overlay-tag">PRANCHA V · SENESCÊNCIA &amp; SUCESSÃO</div>
+          </div>
+        </div>
+
+        <figcaption class="plate-colophon">
+          <span class="plate-colophon-title" id="plate-colophon-title">Fig. 01 — Corte edáfico, meristema apical e brotação espadim</span>
+          <span id="plate-colophon-index">LÂMINA 01 / 05 · 16:9</span>
+        </figcaption>
+      </figure>
+
+      <div class="caption-panel" id="caption-panel" aria-live="polite">
+        <div class="caption-header">
+          <span id="caption-stage-tag">NARRAÇÃO SINCRONIZADA · ESTÁGIO 01</span>
+          <span class="caption-time-badge" id="caption-cue-window">00:00 — 00:12</span>
+        </div>
+        <p class="caption-text" id="caption-text">Pressione Reproduzir ou a barra de espaço para iniciar a monografia narrada de 60 segundos.</p>
+      </div>
+    </section>
+
+    <!-- Right Column (5fr): Scientific Dossier + Animated Biological SVG Diagrams -->
+    <section class="dossier-column" aria-label="Dossiê científico e diagrama biológico animado">
+      <div class="dossier-header">
+        <div class="stage-kicker-row">
+          <span class="stage-kicker">
+            <span class="stage-kicker-square" aria-hidden="true"></span>
+            <span id="scene-kicker">ESTÁGIO 01 · FASE VEGETATIVA</span>
+          </span>
+          <span class="stage-window" id="scene-window">00:00 — 00:12</span>
+        </div>
+        <h2 class="scene-headline" id="scene-headline">Do rizoma oculto emerge o <em>broto espadim</em></h2>
+        <p class="scene-summary" id="scene-summary">
+          Sob o solo úmido, o caule verdadeiro da bananeira permanece subterrâneo na forma de rizoma amiláceo. Das gemas laterais emerge o perfilho espadim, com folhas lanceoladas e sistema radicular fasciculado.
+        </p>
+      </div>
+
+      <dl class="biometrics-list" id="biometrics-list">
+        <div class="biometric-row">
+          <dt class="biometric-key" id="bio-k1">Órgão verdadeiro</dt>
+          <dd class="biometric-val" id="bio-v1">Rizoma (cormo subterrâneo)</dd>
+        </div>
+        <div class="biometric-row">
+          <dt class="biometric-key" id="bio-k2">Propágulo ideal</dt>
+          <dd class="biometric-val" id="bio-v2">Broto espadim (folha estreita)</dd>
+        </div>
+        <div class="biometric-row">
+          <dt class="biometric-key" id="bio-k3">Raízes adventícias</dt>
+          <dd class="biometric-val" id="bio-v3">Superficiais (0 a 40 cm)</dd>
+        </div>
+      </dl>
+
+      <div class="diagram-card">
+        <div class="diagram-card-head">
+          <span id="diagram-title">DIAGRAMA MORFOLÓGICO · RIZOMA &amp; MERISTEMA</span>
+          <span class="diagram-phase-tag" id="diagram-phase-counter">FASE 01 / 05</span>
+        </div>
+
+        <div class="diagram-stage-wrap">
+          <!-- SVG 01: Rizoma Subterraneo e Broto Espadim -->
+          <svg class="bio-svg is-active" data-diagram="0" viewBox="0 0 460 168" role="img" aria-label="Esquema animado do rizoma subterraneo com raizes e broto espadim">
+            <defs>
+              <pattern id="soilDots" width="12" height="12" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="3" r="0.8" fill="#4D4B43" opacity="0.28"/>
+                <circle cx="9" cy="8" r="0.7" fill="#4D4B43" opacity="0.22"/>
+              </pattern>
+            </defs>
+            <!-- Soil horizon -->
+            <rect x="0" y="74" width="460" height="94" fill="url(#soilDots)"/>
+            <line x1="16" y1="74" x2="444" y2="74" stroke="#4D4B43" stroke-width="1.5"/>
+            <text x="20" y="67" class="svg-label">HORIZONTE DO SOLO (0 CM)</text>
+            <text x="440" y="157" class="svg-label" text-anchor="end">ZONA RADICULAR (-40 CM)</text>
+
+            <!-- Rhizome corm -->
+            <ellipse cx="185" cy="108" rx="46" ry="26" fill="#EFEAE0" stroke="#171915" stroke-width="1.8"/>
+            <ellipse cx="185" cy="108" rx="30" ry="15" fill="rgba(198,139,25,0.22)" stroke="#8E6007" stroke-width="1" stroke-dasharray="3 3"/>
+            <circle cx="185" cy="108" r="4" fill="#2C5E3B"/>
+            <text x="118" y="112" class="svg-label-strong" text-anchor="end">RIZOMA</text>
+
+            <!-- Animated Adventitious Roots -->
+            <path id="d1-root1" d="M 152 126 Q 134 142 110 152" fill="none" stroke="#4D4B43" stroke-width="1.5" stroke-dasharray="80" stroke-dashoffset="0"/>
+            <path id="d1-root2" d="M 172 133 Q 166 148 158 160" fill="none" stroke="#4D4B43" stroke-width="1.5" stroke-dasharray="80" stroke-dashoffset="0"/>
+            <path id="d1-root3" d="M 200 133 Q 210 148 228 159" fill="none" stroke="#4D4B43" stroke-width="1.5" stroke-dasharray="80" stroke-dashoffset="0"/>
+            <path id="d1-root4" d="M 222 123 Q 252 138 282 146" fill="none" stroke="#4D4B43" stroke-width="1.5" stroke-dasharray="90" stroke-dashoffset="0"/>
+
+            <!-- Emerging Sword Sucker (Broto Espadim) -->
+            <g id="d1-sprout">
+              <path d="M 218 96 Q 248 90 264 74 Q 278 46 286 20 Q 294 46 282 74 Q 272 95 230 108 Z" fill="rgba(44,94,59,0.18)" stroke="#2C5E3B" stroke-width="1.8"/>
+              <path id="d1-leaf-lance" d="M 284 26 Q 312 18 332 28 Q 306 38 281 44" fill="rgba(44,94,59,0.28)" stroke="#2C5E3B" stroke-width="1.4"/>
+              <line x1="274" y1="74" x2="285" y2="24" stroke="#2C5E3B" stroke-width="1" stroke-dasharray="2 2"/>
+            </g>
+
+            <!-- Callouts -->
+            <line x1="286" y1="22" x2="348" y2="22" stroke="#171915" stroke-width="1"/>
+            <text x="354" y="25" class="svg-label-leaf">BROTO ESPADIM</text>
+            <line x1="185" y1="108" x2="336" y2="108" stroke="#8E6007" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="342" y="111" class="svg-label-ochre">MERISTEMA APICAL</text>
+          </svg>
+
+          <!-- SVG 02: Pseudocaule e Mangara -->
+          <svg class="bio-svg" data-diagram="1" viewBox="0 0 460 168" role="img" aria-label="Esquema animado do pseudocaule de bainhas sobrepostas e inflorescencia mangara">
+            <!-- Pseudostem concentric sheaths -->
+            <rect x="86" y="34" width="44" height="114" fill="#EFEAE0" stroke="#171915" stroke-width="1.6"/>
+            <line x1="95" y1="34" x2="95" y2="148" stroke="#2C5E3B" stroke-width="1.2" opacity="0.65"/>
+            <line x1="104" y1="34" x2="104" y2="148" stroke="#2C5E3B" stroke-width="1.2" opacity="0.65"/>
+            <line x1="112" y1="34" x2="112" y2="148" stroke="#2C5E3B" stroke-width="1.2" opacity="0.65"/>
+            <line x1="121" y1="34" x2="121" y2="148" stroke="#2C5E3B" stroke-width="1.2" opacity="0.65"/>
+            <line x1="56" y1="148" x2="160" y2="148" stroke="#4D4B43" stroke-width="1.4"/>
+            <text x="108" y="161" class="svg-label" text-anchor="middle">BAINHAS FOLIARES</text>
+
+            <!-- Ascending floral peduncle path -->
+            <path id="d2-peduncle" d="M 108 144 L 108 32 Q 108 14 148 16 Q 194 18 202 58 L 204 92" fill="none" stroke="#2C5E3B" stroke-width="3" stroke-dasharray="260" stroke-dashoffset="0"/>
+
+            <!-- Leaves silhouette -->
+            <path d="M 104 38 Q 62 18 24 30 Q 64 38 102 44" fill="rgba(44,94,59,0.22)" stroke="#2C5E3B" stroke-width="1.3"/>
+            <path d="M 114 36 Q 158 10 198 18 Q 158 28 116 42" fill="rgba(44,94,59,0.22)" stroke="#2C5E3B" stroke-width="1.3"/>
+
+            <!-- Pendulous Mangara / Coracao -->
+            <g id="d2-heart" transform="translate(204, 92)">
+              <path d="M 0 0 C -14 12 -16 32 0 50 C 16 32 14 12 0 0 Z" fill="#6D1A2C" stroke="#171915" stroke-width="1.5"/>
+              <path id="d2-bract" d="M -2 6 Q -24 2 -32 -12 Q -12 -4 0 4" fill="rgba(109,26,44,0.32)" stroke="#6D1A2C" stroke-width="1.2"/>
+              <circle cx="-12" cy="-2" r="2.2" fill="#C68B19"/>
+              <circle cx="-17" cy="-5" r="2.2" fill="#C68B19"/>
+              <circle cx="-7" cy="1" r="2.2" fill="#C68B19"/>
+            </g>
+
+            <!-- Annotations -->
+            <line x1="224" y1="116" x2="278" y2="116" stroke="#171915" stroke-width="1"/>
+            <text x="284" y="114" class="svg-label-strong">MANGARÁ (CORAÇÃO)</text>
+            <text x="284" y="128" class="svg-label">BRÁCTEAS ROXO-VINHO</text>
+
+            <line x1="168" y1="22" x2="278" y2="22" stroke="#2C5E3B" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="284" y="25" class="svg-label-leaf">RÁQUIS EMERGENTE</text>
+            <text x="284" y="39" class="svg-label">FLORES FEMININAS BASAIS</text>
+          </svg>
+
+          <!-- SVG 03: Partenocarpia e Geotropismo Negativo -->
+          <svg class="bio-svg" data-diagram="2" viewBox="0 0 460 168" role="img" aria-label="Esquema vetorial do geotropismo negativo contra a gravidade">
+            <!-- Gravity vector on left -->
+            <line x1="58" y1="28" x2="58" y2="132" stroke="#4D4B43" stroke-width="1.8"/>
+            <polygon points="58,140 53,128 63,128" fill="#4D4B43"/>
+            <text x="58" y="20" class="svg-label" text-anchor="middle">GRAVIDADE g</text>
+            <text x="58" y="155" class="svg-label" text-anchor="middle">9,81 M/S2</text>
+
+            <!-- Protractor reference -->
+            <line x1="130" y1="106" x2="310" y2="106" stroke="#171915" stroke-width="1" stroke-dasharray="3 3"/>
+            <path d="M 240 106 A 110 110 0 0 0 212 34" fill="none" stroke="#8E6007" stroke-width="1.4" stroke-dasharray="4 3"/>
+            <text x="248" y="72" class="svg-label-ochre">GEOTROPISMO NEGATIVO (+72°)</text>
+
+            <!-- Rachis support node -->
+            <line x1="130" y1="24" x2="130" y2="144" stroke="#2C5E3B" stroke-width="4"/>
+            <circle cx="130" cy="106" r="5" fill="#171915"/>
+
+            <!-- Animated Banana Finger curving upward -->
+            <g id="d3-finger" transform="translate(130, 106) rotate(0)">
+              <path d="M 0 -6 C 36 8 76 -4 102 -46 C 107 -52 97 -60 90 -52 C 66 -18 32 -10 0 -18 Z" fill="rgba(44,94,59,0.22)" stroke="#2C5E3B" stroke-width="1.8"/>
+              <path d="M 10 -4 C 44 10 82 -2 106 -44" fill="none" stroke="#C68B19" stroke-width="1.3" stroke-dasharray="3 2"/>
+            </g>
+
+            <!-- Auxin gradient arrow -->
+            <path d="M 164 128 Q 204 124 226 98" fill="none" stroke="#8E6007" stroke-width="1.4"/>
+            <polygon points="230,93 221,98 227,104" fill="#8E6007"/>
+            <text x="150" y="148" class="svg-label-strong">REDISTRIBUIÇÃO DE AUXINAS (FACE INFERIOR)</text>
+          </svg>
+
+          <!-- SVG 04: Climaterio, Etileno e Conversao Amido-Acucares -->
+          <svg class="bio-svg" data-diagram="3" viewBox="0 0 460 168" role="img" aria-label="Curva climatérica de etileno e conversão de amido em açúcares">
+            <!-- Axes -->
+            <line x1="48" y1="22" x2="48" y2="134" stroke="#171915" stroke-width="1.5"/>
+            <line x1="48" y1="134" x2="420" y2="134" stroke="#171915" stroke-width="1.5"/>
+            <text x="48" y="14" class="svg-label">CONCENTRAÇÃO / TAXA</text>
+            <text x="420" y="152" class="svg-label" text-anchor="end">DIAS PÓS-COLHEITA (0 -> 10)</text>
+
+            <!-- Grid hairlines -->
+            <line x1="48" y1="60" x2="420" y2="60" stroke="rgba(23,25,21,0.09)" stroke-width="1"/>
+            <line x1="48" y1="97" x2="420" y2="97" stroke="rgba(23,25,21,0.09)" stroke-width="1"/>
+
+            <!-- Faint baseline reference traces so curves remain legible at 0% -->
+            <path d="M 52 38 C 140 40 210 74 280 112 C 330 126 376 128 412 129" fill="none" stroke="#4D4B43" stroke-width="1.4" opacity="0.22"/>
+            <path d="M 52 128 C 140 126 205 94 275 56 C 326 38 372 34 412 33" fill="none" stroke="#C68B19" stroke-width="1.6" opacity="0.24"/>
+            <path d="M 52 131 L 155 129 C 190 128 214 34 236 34 C 258 34 282 125 322 129 L 412 131" fill="none" stroke="#2C5E3B" stroke-width="1.5" opacity="0.24"/>
+
+            <!-- Starch descending curve (Amido 20% -> 1%) -->
+            <path id="d4-starch" d="M 52 38 C 140 40 210 74 280 112 C 330 126 376 128 412 129" fill="none" stroke="#4D4B43" stroke-width="2" stroke-dasharray="420" stroke-dashoffset="0"/>
+
+            <!-- Soluble Sugars ascending curve -->
+            <path id="d4-sugar" d="M 52 128 C 140 126 205 94 275 56 C 326 38 372 34 412 33" fill="none" stroke="#C68B19" stroke-width="2.4" stroke-dasharray="420" stroke-dashoffset="0"/>
+
+            <!-- Climacteric Ethylene peak -->
+            <path id="d4-ethylene" d="M 52 131 L 155 129 C 190 128 214 34 236 34 C 258 34 282 125 322 129 L 412 131" fill="none" stroke="#2C5E3B" stroke-width="2.2" stroke-dasharray="460" stroke-dashoffset="0"/>
+
+            <!-- Peak vertical guide -->
+            <line x1="236" y1="34" x2="236" y2="134" stroke="#2C5E3B" stroke-width="1" stroke-dasharray="3 3"/>
+            <circle id="d4-peak-dot" cx="236" cy="34" r="4" fill="#2C5E3B"/>
+
+            <!-- Non-overlapping Legends -->
+            <text x="58" y="32" class="svg-label">AMIDO (~20%)</text>
+            <text x="236" y="23" class="svg-label-leaf" text-anchor="middle">PICO C2H4 (ETILENO)</text>
+            <text x="414" y="51" class="svg-label-ochre" text-anchor="end">AÇÚCARES (+19%)</text>
+            <text x="414" y="122" class="svg-label" text-anchor="end">AMIDO (~1%)</text>
+          </svg>
+
+          <!-- SVG 05: Senescencia e Sucessao Clonal (Ciclo Perene) -->
+          <svg class="bio-svg" data-diagram="4" viewBox="0 0 460 168" role="img" aria-label="Ciclo perene fechado de sucessão clonal entre planta mãe, filho e neto">
+            <!-- Continuous circular cycle ring on left -->
+            <circle cx="116" cy="84" r="54" fill="none" stroke="rgba(23,25,21,0.14)" stroke-width="6"/>
+            <circle id="d5-loop-ring" cx="116" cy="84" r="54" fill="none" stroke="#2C5E3B" stroke-width="3" stroke-dasharray="340" stroke-dashoffset="0" transform="rotate(-90 116 84)"/>
+            <text x="116" y="81" class="svg-label-strong" text-anchor="middle">CICLO</text>
+            <text x="116" y="95" class="svg-label-ochre" text-anchor="middle">PERENE</text>
+
+            <!-- 5 nodes on the ring -->
+            <circle cx="116" cy="30" r="4" fill="#2C5E3B"/>
+            <circle cx="167" cy="67" r="4" fill="#2C5E3B"/>
+            <circle cx="148" cy="128" r="4" fill="#2C5E3B"/>
+            <circle cx="84" cy="128" r="4" fill="#C68B19"/>
+            <circle cx="65" cy="67" r="4" fill="#171915"/>
+
+            <!-- Mother cut pseudostem -> Daughter sucker transfer on right -->
+            <line x1="212" y1="130" x2="436" y2="130" stroke="#4D4B43" stroke-width="1.4"/>
+            <!-- Mother cut stump -->
+            <rect x="242" y="80" width="34" height="50" fill="#EFEAE0" stroke="#4D4B43" stroke-width="1.6"/>
+            <line x1="238" y1="84" x2="280" y2="76" stroke="#171915" stroke-width="1.6"/>
+            <text x="259" y="68" class="svg-label" text-anchor="middle">MÃE CORTADA</text>
+
+            <!-- Shared subterranean rhizome bridge -->
+            <path d="M 240 130 Q 305 154 374 130" fill="rgba(198,139,25,0.18)" stroke="#8E6007" stroke-width="1.8"/>
+            <path id="d5-flux" d="M 262 135 Q 305 148 346 135" fill="none" stroke="#C68B19" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <polygon points="350,134 341,131 343,139" fill="#C68B19"/>
+
+            <!-- Daughter sucker (Perfilho Filho) -->
+            <path d="M 348 130 L 354 44 L 366 44 L 372 130 Z" fill="rgba(44,94,59,0.22)" stroke="#2C5E3B" stroke-width="1.8"/>
+            <path d="M 358 46 Q 326 24 300 32 Q 328 42 356 54" fill="rgba(44,94,59,0.28)" stroke="#2C5E3B" stroke-width="1.3"/>
+            <path d="M 362 46 Q 394 22 422 30 Q 394 42 364 54" fill="rgba(44,94,59,0.28)" stroke="#2C5E3B" stroke-width="1.3"/>
+
+            <text x="360" y="20" class="svg-label-leaf" text-anchor="middle">PERFILHO SUCESSOR</text>
+            <text x="305" y="159" class="svg-label-ochre" text-anchor="middle">RETORNO DE ÁGUA E POTÁSSIO (K+)</text>
+          </svg>
+        </div>
+
+        <div class="diagram-caption">
+          <span id="diagram-caption-text">Fluxo ascendente do meristema a partir das reservas do rizoma subterrâneo.</span>
+          <span class="diagram-progress-mono" id="diagram-progress-pct">00% DA FASE</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="player-dock" aria-label="Controles de reprodução da apresentação narrada">
+    <div class="dock-inner">
+      <div
+        class="scrubber-hit"
+        id="scrubber"
+        role="slider"
+        tabindex="0"
+        aria-label="Linha do tempo de 60 segundos"
+        aria-valuemin="0"
+        aria-valuemax="60"
+        aria-valuenow="0"
+        aria-valuetext="00:00 de 01:00"
+      >
+        <div class="scrubber-track">
+          <div class="scrubber-fill" id="scrubber-fill"></div>
+          <div class="scrubber-markers" id="scrubber-markers"></div>
+          <div class="scrubber-needle" id="scrubber-needle"></div>
+        </div>
+        <div class="scrubber-tooltip" id="scrubber-tooltip">00:00</div>
+      </div>
+
+      <div class="controls-row">
+        <div class="transport-group">
+          <button type="button" class="ctrl-btn" id="btn-prev" aria-label="Cena anterior">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square">
+              <path d="M10 3L5 8l5 5"/>
+            </svg>
+            <span class="btn-text-hide-sm">Anterior</span>
+          </button>
+
+          <button type="button" class="ctrl-btn primary" id="btn-play" aria-label="Reproduzir ou pausar apresentação" aria-pressed="false">
+            <svg id="icon-play" viewBox="0 0 16 16" fill="currentColor">
+              <polygon points="4,2.5 13.5,8 4,13.5"/>
+            </svg>
+            <svg id="icon-pause" viewBox="0 0 16 16" fill="currentColor" style="display:none">
+              <rect x="3.5" y="2.5" width="3.2" height="11"/>
+              <rect x="9.3" y="2.5" width="3.2" height="11"/>
+            </svg>
+            <span id="btn-play-label">Reproduzir</span>
+          </button>
+
+          <button type="button" class="ctrl-btn" id="btn-restart" aria-label="Reiniciar apresentação">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="square">
+              <path d="M3 8a5 5 0 1 0 1.4-3.5L3 6"/>
+              <path d="M3 2.5V6h3.5"/>
+            </svg>
+            <span class="btn-text-hide-sm">Reiniciar</span>
+          </button>
+
+          <button type="button" class="ctrl-btn" id="btn-next" aria-label="Próxima cena">
+            <span class="btn-text-hide-sm">Próximo</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square">
+              <path d="M6 3l5 5-5 5"/>
+            </svg>
+          </button>
+
+          <button type="button" class="ctrl-btn" id="btn-mute" aria-label="Silenciar ou ativar áudio" aria-pressed="false" title="Ativar ou silenciar narração">
+            <svg id="icon-vol-on" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+              <polygon points="2.5,6 5.5,6 9.5,2.8 9.5,13.2 5.5,10 2.5,10" fill="currentColor"/>
+              <path d="M12 5.2a4 4 0 0 1 0 5.6"/>
+            </svg>
+            <svg id="icon-vol-off" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none">
+              <polygon points="2.5,6 5.5,6 9.5,2.8 9.5,13.2 5.5,10 2.5,10" fill="currentColor"/>
+              <path d="M11.5 5.5l3 5m0-5l-3 5"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="telemetry-group">
+          <div class="chronometer" aria-live="off">
+            <span id="time-current">00:00</span><span class="sep">/</span><span class="total" id="time-total">01:00</span>
+          </div>
+          <span class="stage-status-readout" id="dock-stage-status">ESTÁGIO 01 / 05</span>
+          <span class="kbd-legend">ESPAÇO · SETAS · 1–5 · R</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const TOTAL_DURATION_FALLBACK = 60.0;
+
+      const SCENE_CATALOG = [
+        {
+          id: 1,
+          shortLabel: "Rizoma",
+          kicker: "ESTÁGIO 01 · FASE VEGETATIVA",
+          headlineHtml: "Do rizoma oculto emerge o <em>broto espadim</em>",
+          summary: "Sob o solo úmido, o caule verdadeiro da bananeira permanece subterrâneo na forma de rizoma amiláceo. Das gemas laterais nasce o perfilho espadim, com folhas lanceoladas estreitas e sistema radicular fasciculado.",
+          plateTag: "Fig. 01 — Corte edáfico, meristema apical e brotação espadim",
+          diagramTitle: "DIAGRAMA MORFOLÓGICO · RIZOMA & MERISTEMA",
+          diagramCaption: "Fluxo ascendente do meristema a partir das reservas do rizoma subterrâneo.",
+          biometrics: [
+            ["Órgão verdadeiro", "Rizoma (cormo subterrâneo)"],
+            ["Propágulo ideal", "Broto espadim (folha estreita)"],
+            ["Raízes adventícias", "Superficiais (0 a 40 cm)"]
+          ],
+          defaultStart: 0.0,
+          defaultEnd: 12.0,
+          defaultText: "No gênero Musa, o tronco aparente é um pseudocaule de bainhas foliares compactadas. O caule verdadeiro oculta-se no solo: o rizoma perene, de onde emerge o broto espadim."
+        },
+        {
+          id: 2,
+          shortLabel: "Mangará",
+          kicker: "ESTÁGIO 02 · DIFERENCIAÇÃO FLORAL",
+          headlineHtml: "Bainhas em espiral erguem o <em>coração roxo</em>",
+          summary: "A estrutura aérea não é um tronco lenhoso, mas um pseudocaule formado por bainhas foliares fortemente imbricadas. Após a indução floral, o meristema sobe pelo cilindro central e projeta a inflorescência pendente chamada mangará.",
+          plateTag: "Fig. 02 — Pseudocaule herbáceo e exposição das brácteas do mangará",
+          diagramTitle: "DIAGRAMA ANATÔMICO · PSEUDOCAULE & MANGARÁ",
+          diagramCaption: "Ascensão da haste floral através das bainhas concêntricas até a abertura das brácteas.",
+          biometrics: [
+            ["Arquitetura aérea", "Pseudocaule de bainhas foliares"],
+            ["Transição biológica", "Diferenciação floral irreversível"],
+            ["Brácteas externas", "Pigmentação por antocianinas"]
+          ],
+          defaultStart: 12.0,
+          defaultEnd: 24.0,
+          defaultText: "Atingida a maturidade vegetativa, o meristema inicia a diferenciação floral. A haste sobe pelo núcleo da planta e projeta o mangará pendente, revestido por brácteas violáceas."
+        },
+        {
+          id: 3,
+          shortLabel: "Cacho",
+          kicker: "ESTÁGIO 03 · MORFOGÊNESE DO CACHO",
+          headlineHtml: "Frutos sem sementes curvam <em>contra a gravidade</em>",
+          summary: "Nas cultivares comerciais triploides, o ovário desenvolve-se por partenocarpia sem necessidade de polinização. Embora o cacho penda sob o próprio peso, a redistribuição de auxinas curva os frutos para cima por geotropismo negativo.",
+          plateTag: "Fig. 03 — Desenvolvimento partenocárpico e curvatura das pencas",
+          diagramTitle: "DIAGRAMA VETORIAL · GEOTROPISMO NEGATIVO",
+          diagramCaption: "Alongamento diferencial mediado por auxinas orientando o fruto contra o vetor gravitacional.",
+          biometrics: [
+            ["Genoma comercial", "Triploide partenocárpico (2n = 3x)"],
+            ["Tropismo dominante", "Geotropismo negativo (auxina)"],
+            ["Organização floral", "Pencas basais femininas"]
+          ],
+          defaultStart: 24.0,
+          defaultEnd: 36.0,
+          defaultText: "As flores femininas basais formam frutos sem sementes por partenocarpia natural. Guiadas pelo geotropismo negativo, as pencas em crescimento arqueiam-se contra a gravidade."
+        },
+        {
+          id: 4,
+          shortLabel: "Climatério",
+          kicker: "ESTÁGIO 04 · MATURAÇÃO CLIMATÉRICA",
+          headlineHtml: "O pico de etileno converte <em>reserva em doçura</em>",
+          summary: "Na fase climatérica, a taxa respiratória e a síntese autocatalítica de gás etileno (C2H4) aceleram em cascata. Enzimas degradam cerca de 20% de amido em açúcares solúveis enquanto a clorofila cede lugar aos carotenoides dourados.",
+          plateTag: "Fig. 04 — Espectro cromático da degradação da clorofila e pico de etileno",
+          diagramTitle: "CINÉTICA BIOQUÍMICA · CLIMATÉRIO & ETILENO",
+          diagramCaption: "Correlação temporal entre pico de C2H4, hidrólise de amido e acúmulo de açúcares.",
+          biometrics: [
+            ["Gatilho hormonal", "Etileno autocatalítico (C2H4)"],
+            ["Hidrólise de reserva", "20% amido para ~1% residual"],
+            ["Fração doce final", "Sacarose, glicose e frutose"]
+          ],
+          defaultStart: 36.0,
+          defaultEnd: 48.0,
+          defaultText: "Na maturação climatérica, um pico respiratório acompanha a síntese natural do gás etileno. Esse sinal converte o amido de reserva em açúcares solúveis e revela o dourado intenso da casca."
+        },
+        {
+          id: 5,
+          shortLabel: "Sucessão",
+          kicker: "ESTÁGIO 05 · CICLO PERENE",
+          headlineHtml: "A planta-mãe tomba para <em>nutrir o sucessor</em>",
+          summary: "Cada pseudocaule é monocárpico e frutifica uma única vez antes da senescência. O corte de manejo após a colheita devolve água e potássio ao rizoma comum, garantindo a sucessão clonal contínua entre mãe, filho e neto.",
+          plateTag: "Fig. 05 — Poda pós-colheita e translocação hídrica para o perfilho",
+          diagramTitle: "DIAGRAMA FENOLÓGICO · SUCESSÃO MÃE-FILHO-NETO",
+          diagramCaption: "Translocação de nutrientes do coto colhido ao perfilho jovem mantendo a touceira perene.",
+          biometrics: [
+            ["Hábito reprodutivo", "Haste monocárpica · touceira perene"],
+            ["Reciclagem de corte", "Retorno hídrico e de K+ ao rizoma"],
+            ["Sistema de manejo", "Tríade contínua mãe, filho e neto"]
+          ],
+          defaultStart: 48.0,
+          defaultEnd: 60.0,
+          defaultText: "Concluída a colheita do cacho, o pseudocaule entra em senescência e recebe o corte de manejo. O rizoma materno nutre com vigor o perfilho sucessor, perpetuando a linhagem clonal."
+        }
+      ];
+
+      // Embedded timings fallback synced from assets/ap02_timings.json for file:// compatibility
+      const EMBEDDED_TIMINGS = {"timeline_duration_sec":60.0,"scenes":[{"index":1,"slot_start_sec":0.0,"slot_end_sec":12.0,"text":"No gênero Musa, o tronco aparente é um pseudocaule de bainhas foliares compactadas. O caule verdadeiro oculta-se no solo: o rizoma perene, de onde emerge o broto espadim.","words":[{"text":"No","start":0.2,"end":0.35},{"text":"gênero","start":0.35,"end":0.825},{"text":"Musa,","start":0.825,"end":1.225},{"text":"o","start":1.4625,"end":1.5875},{"text":"tronco","start":1.5875,"end":1.925},{"text":"aparente","start":1.925,"end":2.45},{"text":"é","start":2.45,"end":2.4875},{"text":"um","start":2.4875,"end":2.5875},{"text":"pseudocaule","start":2.5875,"end":3.3625},{"text":"de","start":3.3625,"end":3.4375},{"text":"bainhas","start":3.4375,"end":3.875},{"text":"foliares","start":3.875,"end":4.4875},{"text":"compactadas.","start":4.4875,"end":5.475},{"text":"O","start":5.825,"end":5.9375},{"text":"caule","start":5.9375,"end":6.3},{"text":"verdadeiro","start":6.3,"end":6.9625},{"text":"oculta-se","start":6.9625,"end":7.5375},{"text":"no","start":7.5375,"end":7.6375},{"text":"solo:","start":7.6375,"end":8.075},{"text":"o","start":8.2875,"end":8.35},{"text":"rizoma","start":8.35,"end":8.775},{"text":"perene,","start":8.775,"end":9.2625},{"text":"de","start":9.4375,"end":9.55},{"text":"onde","start":9.55,"end":9.8},{"text":"emerge","start":9.8,"end":10.4},{"text":"o","start":10.4,"end":10.5},{"text":"broto","start":10.5,"end":10.8},{"text":"espadim.","start":10.8,"end":11.3375}]},{"index":2,"slot_start_sec":12.0,"slot_end_sec":24.0,"text":"Atingida a maturidade vegetativa, o meristema inicia a diferenciação floral. A haste sobe pelo núcleo da planta e projeta o mangará pendente, revestido por brácteas violáceas.","words":[{"text":"Atingida","start":12.2,"end":12.8625},{"text":"a","start":12.8625,"end":12.9},{"text":"maturidade","start":12.9,"end":13.5375},{"text":"vegetativa,","start":13.5375,"end":14.275},{"text":"o","start":14.5,"end":14.5375},{"text":"meristema","start":14.5375,"end":15.125},{"text":"inicia","start":15.125,"end":15.5875},{"text":"a","start":15.5875,"end":15.6125},{"text":"diferenciação","start":15.6125,"end":16.4625},{"text":"floral.","start":16.4625,"end":17.0},{"text":"A","start":17.3375,"end":17.4},{"text":"haste","start":17.4,"end":17.8875},{"text":"sobe","start":17.8875,"end":18.25},{"text":"pelo","start":18.25,"end":18.4875},{"text":"núcleo","start":18.4875,"end":18.825},{"text":"da","start":18.825,"end":18.9375},{"text":"planta","start":18.9375,"end":19.475},{"text":"e","start":19.475,"end":19.5375},{"text":"projeta","start":19.5375,"end":20.0},{"text":"o","start":20.0,"end":20.0125},{"text":"mangará","start":20.0125,"end":20.4625},{"text":"pendente,","start":20.4625,"end":21.0875},{"text":"revestido","start":21.325,"end":21.8875},{"text":"por","start":21.8875,"end":22.0375},{"text":"brácteas","start":22.0375,"end":22.625},{"text":"violáceas.","start":22.625,"end":23.425}]},{"index":3,"slot_start_sec":24.0,"slot_end_sec":36.0,"text":"As flores femininas basais formam frutos sem sementes por partenocarpia natural. Guiadas pelo geotropismo negativo, as pencas em crescimento arqueiam-se contra a gravidade.","words":[{"text":"As","start":24.2,"end":24.375},{"text":"flores","start":24.375,"end":24.7875},{"text":"femininas","start":24.7875,"end":25.2875},{"text":"basais","start":25.2875,"end":25.825},{"text":"formam","start":25.825,"end":26.225},{"text":"frutos","start":26.225,"end":26.7375},{"text":"sem","start":26.7375,"end":26.9625},{"text":"sementes","start":26.9625,"end":27.5625},{"text":"por","start":27.5625,"end":27.7375},{"text":"partenocarpia","start":27.7375,"end":28.7625},{"text":"natural.","start":28.7625,"end":29.375},{"text":"Guiadas","start":29.725,"end":30.2875},{"text":"pelo","start":30.2875,"end":30.525},{"text":"geotropismo","start":30.525,"end":31.3375},{"text":"negativo,","start":31.3375,"end":32.0875},{"text":"as","start":32.2625,"end":32.4375},{"text":"pencas","start":32.4375,"end":32.7875},{"text":"em","start":32.7875,"end":32.95},{"text":"crescimento","start":32.95,"end":33.525},{"text":"arqueiam-se","start":33.525,"end":34.1625},{"text":"contra","start":34.1625,"end":34.55},{"text":"a","start":34.55,"end":34.575},{"text":"gravidade.","start":34.575,"end":35.2875}]},{"index":4,"slot_start_sec":36.0,"slot_end_sec":48.0,"text":"Na maturação climatérica, um pico respiratório acompanha a síntese natural do gás etileno. Esse sinal converte o amido de reserva em açúcares solúveis e revela o dourado intenso da casca.","words":[{"text":"Na","start":36.2,"end":36.3},{"text":"maturação","start":36.3,"end":36.9375},{"text":"climatérica,","start":36.9375,"end":37.6875},{"text":"um","start":37.9125,"end":38.075},{"text":"pico","start":38.075,"end":38.4},{"text":"respiratório","start":38.4,"end":39.2125},{"text":"acompanha","start":39.2125,"end":39.7875},{"text":"a","start":39.7875,"end":39.825},{"text":"síntese","start":39.825,"end":40.375},{"text":"natural","start":40.375,"end":40.8875},{"text":"do","start":40.8875,"end":40.975},{"text":"gás","start":40.975,"end":41.2},{"text":"etileno.","start":41.2,"end":41.85},{"text":"Esse","start":42.2,"end":42.425},{"text":"sinal","start":42.425,"end":42.8375},{"text":"converte","start":42.8375,"end":43.3125},{"text":"o","start":43.3125,"end":43.35},{"text":"amido","start":43.35,"end":43.65},{"text":"de","start":43.65,"end":43.7375},{"text":"reserva","start":43.7375,"end":44.2125},{"text":"em","start":44.2125,"end":44.3},{"text":"açúcares","start":44.3,"end":44.7875},{"text":"solúveis","start":44.7875,"end":45.3},{"text":"e","start":45.3,"end":45.475},{"text":"revela","start":45.475,"end":45.975},{"text":"o","start":45.975,"end":46.025},{"text":"dourado","start":46.025,"end":46.5125},{"text":"intenso","start":46.5125,"end":47.075},{"text":"da","start":47.075,"end":47.2125},{"text":"casca.","start":47.2125,"end":47.675}]},{"index":5,"slot_start_sec":48.0,"slot_end_sec":60.0,"text":"Concluída a colheita do cacho, o pseudocaule entra em senescência e recebe o corte de manejo. O rizoma materno nutre com vigor o perfilho sucessor, perpetuando a linhagem clonal.","words":[{"text":"Concluída","start":48.2,"end":48.725},{"text":"a","start":48.725,"end":48.7625},{"text":"colheita","start":48.7625,"end":49.15},{"text":"do","start":49.15,"end":49.25},{"text":"cacho,","start":49.25,"end":49.675},{"text":"o","start":49.8375,"end":49.9125},{"text":"pseudocaule","start":49.9125,"end":50.8125},{"text":"entra","start":50.8125,"end":51.0625},{"text":"em","start":51.0625,"end":51.1375},{"text":"senescência","start":51.1375,"end":52.05},{"text":"e","start":52.05,"end":52.1125},{"text":"recebe","start":52.1125,"end":52.575},{"text":"o","start":52.575,"end":52.6625},{"text":"corte","start":52.6625,"end":53.0},{"text":"de","start":53.0,"end":53.075},{"text":"manejo.","start":53.075,"end":53.575},{"text":"O","start":53.925,"end":54.0125},{"text":"rizoma","start":54.0125,"end":54.4875},{"text":"materno","start":54.4875,"end":55.0125},{"text":"nutre","start":55.0125,"end":55.4375},{"text":"com","start":55.4375,"end":55.625},{"text":"vigor","start":55.625,"end":56.025},{"text":"o","start":56.025,"end":56.0625},{"text":"perfilho","start":56.0625,"end":56.5375},{"text":"sucessor,","start":56.5375,"end":57.1875},{"text":"perpetuando","start":57.3875,"end":58.0625},{"text":"a","start":58.0625,"end":58.0875},{"text":"linhagem","start":58.0875,"end":58.6375},{"text":"clonal.","start":58.6375,"end":59.15}]}]};
+
+      const state = {
+        totalDuration: TOTAL_DURATION_FALLBACK,
+        currentTime: 0,
+        isPlaying: false,
+        isDragging: false,
+        isMuted: false,
+        activeSceneIndex: 0,
+        lastFrameTs: null,
+        rafId: null,
+        audioReady: false,
+        audioDuration: 0,
+        scenes: SCENE_CATALOG.map((item) => ({
+          ...item,
+          start: item.defaultStart,
+          end: item.defaultEnd,
+          text: item.defaultText,
+          words: [],
+          cues: []
+        }))
+      };
+
+      const dom = {
+        audio: document.getElementById("narration-audio"),
+        tabs: Array.from(document.querySelectorAll("[data-scene-jump]")),
+        plates: Array.from(document.querySelectorAll("[data-plate]")),
+        diagrams: Array.from(document.querySelectorAll("[data-diagram]")),
+        plateColophonTitle: document.getElementById("plate-colophon-title"),
+        plateColophonIndex: document.getElementById("plate-colophon-index"),
+        captionPanel: document.getElementById("caption-panel"),
+        captionStageTag: document.getElementById("caption-stage-tag"),
+        captionCueWindow: document.getElementById("caption-cue-window"),
+        captionText: document.getElementById("caption-text"),
+        sceneKicker: document.getElementById("scene-kicker"),
+        sceneWindow: document.getElementById("scene-window"),
+        sceneHeadline: document.getElementById("scene-headline"),
+        sceneSummary: document.getElementById("scene-summary"),
+        bioKeys: [
+          document.getElementById("bio-k1"),
+          document.getElementById("bio-k2"),
+          document.getElementById("bio-k3")
+        ],
+        bioVals: [
+          document.getElementById("bio-v1"),
+          document.getElementById("bio-v2"),
+          document.getElementById("bio-v3")
+        ],
+        diagramTitle: document.getElementById("diagram-title"),
+        diagramPhaseCounter: document.getElementById("diagram-phase-counter"),
+        diagramCaptionText: document.getElementById("diagram-caption-text"),
+        diagramProgressPct: document.getElementById("diagram-progress-pct"),
+        scrubber: document.getElementById("scrubber"),
+        scrubberFill: document.getElementById("scrubber-fill"),
+        scrubberMarkers: document.getElementById("scrubber-markers"),
+        scrubberNeedle: document.getElementById("scrubber-needle"),
+        scrubberTooltip: document.getElementById("scrubber-tooltip"),
+        btnPlay: document.getElementById("btn-play"),
+        btnPlayLabel: document.getElementById("btn-play-label"),
+        iconPlay: document.getElementById("icon-play"),
+        iconPause: document.getElementById("icon-pause"),
+        btnPrev: document.getElementById("btn-prev"),
+        btnNext: document.getElementById("btn-next"),
+        btnRestart: document.getElementById("btn-restart"),
+        btnMute: document.getElementById("btn-mute"),
+        iconVolOn: document.getElementById("icon-vol-on"),
+        iconVolOff: document.getElementById("icon-vol-off"),
+        timeCurrent: document.getElementById("time-current"),
+        timeTotal: document.getElementById("time-total"),
+        dockStageStatus: document.getElementById("dock-stage-status")
+      };
+
+      const prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      function formatMMSS(sec) {
+        const clamped = Math.max(0, Math.min(state.totalDuration, sec));
+        const whole = Math.floor(clamped + 0.0001);
+        const mins = Math.floor(whole / 60);
+        const secs = whole % 60;
+        return String(mins).padStart(2, "0") + ":" + String(secs).padStart(2, "0");
+      }
+
+      function normalizeTimingsPayload(payload) {
+        if (!payload || typeof payload !== "object") return;
+
+        const durationVal = Number(
+          payload.timeline_duration_sec ??
+          payload.total_duration ??
+          payload.total_duration_s ??
+          payload.duration ??
+          60
+        );
+        if (Number.isFinite(durationVal) && durationVal >= 55 && durationVal <= 61) {
+          state.totalDuration = durationVal;
+        }
+
+        const rawScenes = Array.isArray(payload.scenes)
+          ? payload.scenes
+          : Array.isArray(payload.cenas)
+          ? payload.cenas
+          : [];
+
+        let loadedSceneWords = false;
+        if (rawScenes.length === 5) {
+          rawScenes.forEach((raw, idx) => {
+            const target = state.scenes[idx];
+            const start = Number(raw.slot_start_sec ?? raw.start ?? raw.start_s ?? raw.inicio ?? target.defaultStart);
+            const end = Number(raw.slot_end_sec ?? raw.end ?? raw.end_s ?? raw.fim ?? target.defaultEnd);
+            target.start = Number.isFinite(start) ? start : target.defaultStart;
+            target.end = Number.isFinite(end) && end > target.start ? end : target.defaultEnd;
+
+            const narrationText = raw.text || raw.narration || raw.texto || raw.subtitle || "";
+            if (typeof narrationText === "string" && narrationText.trim()) {
+              target.text = narrationText.trim();
+            }
+
+            const rawWords = Array.isArray(raw.words)
+              ? raw.words
+              : Array.isArray(raw.word_boundaries)
+              ? raw.word_boundaries
+              : [];
+            target.words = rawWords.map((w) => ({
+              word: String(w.text || w.word || "").trim(),
+              start: Number(w.start ?? w.offset ?? w.start_s ?? target.start),
+              end: Number(w.end ?? w.end_s ?? (Number(w.start ?? target.start) + Number(w.duration ?? 0.3)))
+            })).filter((w) => w.word.length > 0);
+            if (target.words.length > 0) loadedSceneWords = true;
+
+            target.cues = [];
+          });
+
+          // Ensure final scene cleanly closes at totalDuration (60.0s)
+          state.scenes[4].end = Math.max(state.scenes[4].end, state.totalDuration);
+        }
+
+        // Global word list fallback only if scene-level words were absent
+        if (!loadedSceneWords && Array.isArray(payload.words) && payload.words.length > 0) {
+          state.scenes.forEach((sc) => { sc.words = []; });
+          payload.words.forEach((w) => {
+            const ws = Number(w.start ?? w.offset ?? w.start_s ?? 0);
+            const we = Number(w.end ?? w.end_s ?? (ws + Number(w.duration ?? 0.3)));
+            const idx = findSceneIndexAt(ws);
+            state.scenes[idx].words.push({
+              word: String(w.text || w.word || "").trim(),
+              start: ws,
+              end: we
+            });
+          });
+        }
+        dom.captionText.dataset.renderedScene = "";
+      }
+
+      async function loadTimingsData() {
+        if (EMBEDDED_TIMINGS) {
+          normalizeTimingsPayload(EMBEDDED_TIMINGS);
+        }
+        if (window.location.protocol !== "file:") {
+          try {
+            const resp = await fetch("assets/ap02_timings.json", { cache: "no-store" });
+            if (resp.ok) {
+              const json = await resp.json();
+              normalizeTimingsPayload(json);
+            }
+          } catch (_) {
+            // Retain static/embedded timings cleanly if JSON not present during preview
+          }
+        }
+        buildScrubberMarkers();
+        renderAll(true);
+      }
+
+      function buildScrubberMarkers() {
+        dom.scrubberMarkers.innerHTML = "";
+        for (let i = 1; i < state.scenes.length; i++) {
+          const pct = (state.scenes[i].start / state.totalDuration) * 100;
+          const tick = document.createElement("div");
+          tick.className = "scrubber-tick";
+          tick.style.left = pct.toFixed(3) + "%";
+          dom.scrubberMarkers.appendChild(tick);
+        }
+      }
+
+      function findSceneIndexAt(t) {
+        for (let i = 0; i < state.scenes.length; i++) {
+          const s = state.scenes[i];
+          if (t < s.end || i === state.scenes.length - 1) {
+            if (t >= s.start || i === 0) {
+              return i;
+            }
+          }
+        }
+        return 0;
+      }
+
+      function renderCaptionForTime(scene, t) {
+        dom.captionPanel.classList.toggle("is-climacteric", scene.id === 4);
+        dom.captionStageTag.textContent = "NARRAÇÃO SINCRONIZADA · ESTÁGIO 0" + scene.id;
+        dom.captionCueWindow.textContent = formatMMSS(scene.start) + " — " + formatMMSS(scene.end);
+
+        if (scene.cues && scene.cues.length > 0) {
+          const activeCue = scene.cues.find((c) => t >= c.start && t <= c.end) || scene.cues[0];
+          if (dom.captionText.textContent !== activeCue.text) {
+            dom.captionText.textContent = activeCue.text;
+          }
+          return;
+        }
+
+        if (scene.words && scene.words.length > 0) {
+          // Render tokenized spans once per scene or update active word classes smoothly
+          if (dom.captionText.dataset.renderedScene !== String(scene.id)) {
+            dom.captionText.dataset.renderedScene = String(scene.id);
+            dom.captionText.innerHTML = "";
+            scene.words.forEach((w, idx) => {
+              const span = document.createElement("span");
+              span.className = "caption-word";
+              span.dataset.wIdx = String(idx);
+              span.textContent = w.word + (idx < scene.words.length - 1 ? " " : "");
+              dom.captionText.appendChild(span);
+            });
+          }
+          const wordSpans = dom.captionText.children;
+          for (let i = 0; i < scene.words.length; i++) {
+            const w = scene.words[i];
+            const el = wordSpans[i];
+            if (!el) continue;
+            const isCurrent = t >= w.start && t <= w.end;
+            const isSpoken = t > w.end;
+            el.classList.toggle("is-current", isCurrent);
+            el.classList.toggle("is-spoken", isSpoken);
+          }
+          return;
+        }
+
+        if (dom.captionText.dataset.renderedScene !== String(scene.id) + "-plain") {
+          dom.captionText.dataset.renderedScene = String(scene.id) + "-plain";
+          dom.captionText.textContent = scene.text;
+        }
+      }
+
+      function updateAnimatedDiagram(sceneIndex, progress01) {
+        const p = prefersReducedMotion ? 1 : Math.max(0, Math.min(1, progress01));
+        const visP = prefersReducedMotion ? 1 : 0.28 + 0.72 * p;
+        const pctInt = Math.round(p * 100);
+        dom.diagramProgressPct.textContent = String(pctInt).padStart(2, "0") + "% DA FASE";
+
+        if (sceneIndex === 0) {
+          const rootIds = ["d1-root1", "d1-root2", "d1-root3", "d1-root4"];
+          rootIds.forEach((id, idx) => {
+            const el = document.getElementById(id);
+            if (el) {
+              const localP = Math.max(0.2, Math.min(1, (visP - idx * 0.06) / 0.72));
+              el.style.strokeDashoffset = String(85 * (1 - localP));
+            }
+          });
+          const sprout = document.getElementById("d1-sprout");
+          if (sprout) {
+            const rise = (1 - p) * 14;
+            sprout.setAttribute("transform", "translate(0, " + rise.toFixed(2) + ")");
+          }
+        } else if (sceneIndex === 1) {
+          const peduncle = document.getElementById("d2-peduncle");
+          if (peduncle) {
+            peduncle.style.strokeDashoffset = String(260 * (1 - Math.min(1, visP * 1.05)));
+          }
+          const bract = document.getElementById("d2-bract");
+          if (bract) {
+            const lift = -Math.min(1, Math.max(0, (p - 0.15) / 0.75)) * 20;
+            bract.setAttribute("transform", "rotate(" + lift.toFixed(1) + ")");
+          }
+        } else if (sceneIndex === 2) {
+          const finger = document.getElementById("d3-finger");
+          if (finger) {
+            const angle = 24 - p * 46; // Curves upward from downward angle against gravity
+            finger.setAttribute("transform", "translate(130, 106) rotate(" + angle.toFixed(2) + ")");
+          }
+        } else if (sceneIndex === 3) {
+          const starch = document.getElementById("d4-starch");
+          const sugar = document.getElementById("d4-sugar");
+          const ethylene = document.getElementById("d4-ethylene");
+          const drawP = Math.min(1, visP * 1.05);
+          if (starch) starch.style.strokeDashoffset = String(420 * (1 - drawP));
+          if (sugar) sugar.style.strokeDashoffset = String(420 * (1 - drawP));
+          if (ethylene) ethylene.style.strokeDashoffset = String(460 * (1 - drawP));
+          const dot = document.getElementById("d4-peak-dot");
+          if (dot) {
+            dot.setAttribute("r", (3.5 + Math.sin(p * Math.PI) * 2.5).toFixed(2));
+          }
+        } else if (sceneIndex === 4) {
+          const ring = document.getElementById("d5-loop-ring");
+          if (ring) {
+            ring.style.strokeDashoffset = String(340 * (1 - Math.min(1, visP * 1.02)));
+          }
+          const flux = document.getElementById("d5-flux");
+          if (flux) {
+            const fluxP = Math.max(0.25, Math.min(1, visP));
+            flux.style.strokeDashoffset = String(100 * (1 - fluxP));
+          }
+        }
+
+        // Subtle botanical Ken Burns drift on active plate image
+        if (!prefersReducedMotion) {
+          const activePlate = dom.plates[sceneIndex];
+          const img = activePlate ? activePlate.querySelector("img") : null;
+          if (img) {
+            const zoom = 1.0 + p * 0.045;
+            img.style.transform = "scale(" + zoom.toFixed(4) + ")";
+          }
+        }
+      }
+
+      function applySceneContent(sceneIndex) {
+        const scene = state.scenes[sceneIndex];
+        state.activeSceneIndex = sceneIndex;
+
+        dom.tabs.forEach((tab, idx) => {
+          tab.setAttribute("aria-selected", idx === sceneIndex ? "true" : "false");
+        });
+
+        dom.plates.forEach((plate, idx) => {
+          plate.classList.toggle("is-active", idx === sceneIndex);
+        });
+
+        dom.diagrams.forEach((diag, idx) => {
+          diag.classList.toggle("is-active", idx === sceneIndex);
+        });
+
+        dom.plateColophonTitle.textContent = scene.plateTag;
+        dom.plateColophonIndex.textContent = "LÂMINA 0" + scene.id + " / 05 · 16:9";
+
+        dom.sceneKicker.textContent = scene.kicker;
+        dom.sceneWindow.textContent = formatMMSS(scene.start) + " — " + formatMMSS(scene.end);
+        dom.sceneHeadline.innerHTML = scene.headlineHtml;
+        dom.sceneSummary.textContent = scene.summary;
+
+        scene.biometrics.forEach(([k, v], i) => {
+          dom.bioKeys[i].textContent = k;
+          dom.bioVals[i].textContent = v;
+        });
+
+        dom.diagramTitle.textContent = scene.diagramTitle;
+        dom.diagramPhaseCounter.textContent = "FASE 0" + scene.id + " / 05";
+        dom.diagramCaptionText.textContent = scene.diagramCaption;
+        dom.dockStageStatus.textContent = "ESTÁGIO 0" + scene.id + " / 05";
+      }
+
+      function renderAll(forceSceneUpdate = false) {
+        const t = Math.max(0, Math.min(state.totalDuration, state.currentTime));
+        const nextSceneIdx = findSceneIndexAt(t);
+
+        if (forceSceneUpdate || nextSceneIdx !== state.activeSceneIndex) {
+          applySceneContent(nextSceneIdx);
+        }
+
+        const scene = state.scenes[nextSceneIdx];
+        const span = Math.max(0.1, scene.end - scene.start);
+        const sceneProgress = Math.max(0, Math.min(1, (t - scene.start) / span));
+
+        updateAnimatedDiagram(nextSceneIdx, sceneProgress);
+        renderCaptionForTime(scene, t);
+
+        const pct = (t / state.totalDuration) * 100;
+        dom.scrubberFill.style.width = pct.toFixed(3) + "%";
+        dom.scrubberNeedle.style.left = pct.toFixed(3) + "%";
+        dom.scrubber.setAttribute("aria-valuenow", t.toFixed(1));
+        dom.scrubber.setAttribute("aria-valuetext", formatMMSS(t) + " de " + formatMMSS(state.totalDuration));
+
+        dom.timeCurrent.textContent = formatMMSS(t);
+        dom.timeTotal.textContent = formatMMSS(state.totalDuration);
+
+        dom.btnPlay.setAttribute("aria-pressed", state.isPlaying ? "true" : "false");
+        dom.btnPlayLabel.textContent = state.isPlaying ? "Pausar" : "Reproduzir";
+        dom.iconPlay.style.display = state.isPlaying ? "none" : "block";
+        dom.iconPause.style.display = state.isPlaying ? "block" : "none";
+      }
+
+      function syncAudioPosition(targetTime) {
+        if (!dom.audio) return;
+        const maxAudio = Number.isFinite(dom.audio.duration) && dom.audio.duration > 0
+          ? Math.min(dom.audio.duration - 0.02, targetTime)
+          : targetTime;
+        try {
+          if (Math.abs(dom.audio.currentTime - Math.max(0, maxAudio)) > 0.12) {
+            dom.audio.currentTime = Math.max(0, maxAudio);
+          }
+        } catch (_) {
+          // Ignore seek before metadata ready
+        }
+      }
+
+      function seekTo(seconds) {
+        state.currentTime = Math.max(0, Math.min(state.totalDuration, seconds));
+        syncAudioPosition(state.currentTime);
+        if (state.isPlaying && dom.audio && dom.audio.paused && state.currentTime < (dom.audio.duration || state.totalDuration) - 0.08) {
+          dom.audio.play().catch(() => {});
+        }
+        renderAll(true);
+      }
+
+      function jumpToScene(index) {
+        const clampedIdx = Math.max(0, Math.min(state.scenes.length - 1, index));
+        seekTo(state.scenes[clampedIdx].start);
+      }
+
+      function startPlayback() {
+        if (state.currentTime >= state.totalDuration - 0.05) {
+          state.currentTime = 0;
+        }
+        state.isPlaying = true;
+        state.lastFrameTs = performance.now();
+
+        syncAudioPosition(state.currentTime);
+        if (dom.audio && state.currentTime < (dom.audio.duration || state.totalDuration) - 0.08) {
+          dom.audio.play().catch(() => {
+            // Audio play blocked or absent: timeline clock continues deterministically
+          });
+        }
+
+        if (!state.rafId) {
+          state.rafId = requestAnimationFrame(tick);
+        }
+        renderAll(false);
+      }
+
+      function pausePlayback() {
+        state.isPlaying = false;
+        state.lastFrameTs = null;
+        if (dom.audio && !dom.audio.paused) {
+          dom.audio.pause();
+        }
+        if (state.rafId) {
+          cancelAnimationFrame(state.rafId);
+          state.rafId = null;
+        }
+        renderAll(false);
+      }
+
+      function togglePlayback() {
+        if (state.isPlaying) {
+          pausePlayback();
+        } else {
+          startPlayback();
+        }
+      }
+
+      function restartPresentation() {
+        seekTo(0);
+        startPlayback();
+      }
+
+      function toggleMute() {
+        state.isMuted = !state.isMuted;
+        if (dom.audio) {
+          dom.audio.muted = state.isMuted;
+        }
+        dom.btnMute.setAttribute("aria-pressed", state.isMuted ? "true" : "false");
+        dom.btnMute.classList.toggle("is-muted", state.isMuted);
+        dom.iconVolOn.style.display = state.isMuted ? "none" : "block";
+        dom.iconVolOff.style.display = state.isMuted ? "block" : "none";
+      }
+
+      function tick(now) {
+        if (!state.isPlaying) {
+          state.rafId = null;
+          return;
+        }
+
+        const dt = state.lastFrameTs !== null ? Math.min(0.1, (now - state.lastFrameTs) / 1000) : 0;
+        state.lastFrameTs = now;
+
+        if (!state.isDragging) {
+          if (dom.audio && !dom.audio.paused && !dom.audio.ended && Number.isFinite(dom.audio.currentTime)) {
+            state.currentTime = dom.audio.currentTime;
+          } else {
+            state.currentTime += dt;
+          }
+        }
+
+        if (state.currentTime >= state.totalDuration) {
+          state.currentTime = state.totalDuration;
+          renderAll(false);
+          pausePlayback();
+          return;
+        }
+
+        renderAll(false);
+        state.rafId = requestAnimationFrame(tick);
+      }
+
+      // Direct 1:1 Pointer Capture Scrubbing (Apple Design)
+      function timeFromClientX(clientX) {
+        const rect = dom.scrubber.getBoundingClientRect();
+        const ratio = Math.max(0, Math.min(1, (clientX - rect.left) / Math.max(1, rect.width)));
+        return { ratio, seconds: ratio * state.totalDuration };
+      }
+
+      dom.scrubber.addEventListener("pointerdown", (e) => {
+        dom.scrubber.setPointerCapture(e.pointerId);
+        state.isDragging = true;
+        dom.scrubber.classList.add("is-dragging");
+        const { ratio, seconds } = timeFromClientX(e.clientX);
+        dom.scrubberTooltip.style.left = (ratio * 100).toFixed(2) + "%";
+        dom.scrubberTooltip.textContent = formatMMSS(seconds);
+        seekTo(seconds);
+      });
+
+      dom.scrubber.addEventListener("pointermove", (e) => {
+        const { ratio, seconds } = timeFromClientX(e.clientX);
+        dom.scrubberTooltip.style.left = (ratio * 100).toFixed(2) + "%";
+        dom.scrubberTooltip.textContent = formatMMSS(seconds);
+        if (state.isDragging) {
+          seekTo(seconds);
+        }
+      });
+
+      function endScrub(e) {
+        if (!state.isDragging) return;
+        state.isDragging = false;
+        dom.scrubber.classList.remove("is-dragging");
+        try {
+          dom.scrubber.releasePointerCapture(e.pointerId);
+        } catch (_) {}
+      }
+
+      dom.scrubber.addEventListener("pointerup", endScrub);
+      dom.scrubber.addEventListener("pointercancel", endScrub);
+
+      // Immediate zero-latency tactile press feedback via pointerdown on controls
+      const tactileControls = [...dom.tabs, dom.btnPlay, dom.btnPrev, dom.btnNext, dom.btnRestart, dom.btnMute];
+      tactileControls.forEach((btn) => {
+        btn.addEventListener("pointerdown", () => {
+          if (!prefersReducedMotion) {
+            btn.classList.add("is-pressing");
+          }
+        });
+        btn.addEventListener("pointerup", () => btn.classList.remove("is-pressing"));
+        btn.addEventListener("pointercancel", () => btn.classList.remove("is-pressing"));
+        btn.addEventListener("pointerleave", () => btn.classList.remove("is-pressing"));
+      });
+
+      // Button events
+      dom.btnPlay.addEventListener("click", togglePlayback);
+      dom.btnRestart.addEventListener("click", restartPresentation);
+      dom.btnPrev.addEventListener("click", () => jumpToScene(state.activeSceneIndex - 1));
+      dom.btnNext.addEventListener("click", () => jumpToScene(state.activeSceneIndex + 1));
+      dom.btnMute.addEventListener("click", toggleMute);
+
+      dom.tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const idx = Number(tab.dataset.sceneJump);
+          if (Number.isFinite(idx)) {
+            jumpToScene(idx);
+          }
+        });
+      });
+
+      // Keyboard navigation: Space, Left/Right Arrows, 1-5, R, M
+      window.addEventListener("keydown", (e) => {
+        if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) {
+          return;
+        }
+        if (e.code === "Space") {
+          e.preventDefault();
+          togglePlayback();
+        } else if (e.code === "ArrowRight") {
+          e.preventDefault();
+          jumpToScene(state.activeSceneIndex + 1);
+        } else if (e.code === "ArrowLeft") {
+          e.preventDefault();
+          jumpToScene(state.activeSceneIndex - 1);
+        } else if (e.key >= "1" && e.key <= "5") {
+          e.preventDefault();
+          jumpToScene(Number(e.key) - 1);
+        } else if (e.key === "r" || e.key === "R") {
+          e.preventDefault();
+          restartPresentation();
+        } else if (e.key === "m" || e.key === "M") {
+          e.preventDefault();
+          toggleMute();
+        }
+      });
+
+      async function loadAudioAsset() {
+        if (!dom.audio) return;
+        const audioUrl = dom.audio.dataset.src || "assets/ap02_narration.mp3";
+        if (window.location.protocol !== "file:") {
+          try {
+            const resp = await fetch(audioUrl, { cache: "no-store" });
+            if (resp.ok) {
+              const blob = await resp.blob();
+              dom.audio.src = URL.createObjectURL(blob);
+              return;
+            }
+          } catch (_) {
+            // Fallback to direct src assignment
+          }
+        }
+        dom.audio.src = audioUrl;
+      }
+
+      if (dom.audio) {
+        dom.audio.addEventListener("loadedmetadata", () => {
+          state.audioReady = true;
+          state.audioDuration = dom.audio.duration;
+        });
+      }
+
+      loadAudioAsset();
+      loadTimingsData();
+    })();
+  </script>
+</body>
+</html>
